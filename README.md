@@ -11,9 +11,9 @@ node server.js          # http://localhost:3000  (redirects to the login page)
 
 | Email | Role | Membership |
 |-------|------|------------|
-| `candidate@demo.com` | Candidate | Free (Top-10) |
+| `candidate@demo.com` | Candidate | Free (Top 10) |
 | `member@demo.com`    | Candidate | Member (unlimited) |
-| `employer@demo.com`  | Employer  | Free (Top-10) |
+| `employer@demo.com`  | Employer  | Free (Top 10) |
 | `bigco@demo.com`     | Employer  | Member (unlimited) |
 
 You can also **Create Accounts** from the login page (candidate or employer).
