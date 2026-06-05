@@ -20,8 +20,6 @@ You can also **Create Accounts** from the login page (candidate or employer).
 
 ---
 
-## How the requirements are met
-
 ### Candidate workflow
 - **Create a profile** (resume upload *or* form) — `profile.html`. Captures full name,
   contact info, education, major, years of experience, work experience, skills,
@@ -30,7 +28,7 @@ You can also **Create Accounts** from the login page (candidate or employer).
 - **Homepage shows all job postings** (relevant or not) — `dashboard.html`, "All Jobs" tab.
 - **Keyword search from the job description** — `GET /api/jobs?q=...&mode=keyword`
   (description is the primary weighted field). 
-- **Top-K (K=10) job recommendations** — `GET /api/candidates/me/recommendations`,
+- **Top 10 job recommendations** — `GET /api/candidates/me/recommendations`,
   "Recommended" tab, ranked by the match engine.
 
 ### Employer workflow
@@ -45,7 +43,7 @@ You can also **Create Accounts** from the login page (candidate or employer).
 - **Candidates** — `employer-candidates.html`: browse the whole talent pool with
   **filter + search** (skill, education, experience, work mode, keyword, fuzzy) —
   `GET /api/candidates?...`.
-- **Top-N (N=10) candidate recommendations** per posting (on the job detail page) —
+- **Top 10 candidate recommendations** per posting (on the job detail page) —
   `GET /api/jobs/:id/candidates`.
 
 ### Membership feature
