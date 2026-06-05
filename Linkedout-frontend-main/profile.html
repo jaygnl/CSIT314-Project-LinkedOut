@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LinkedOut | My Profile</title>
+        <link rel="stylesheet" href="css/themes.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+            .profile-shell {
+                width: 100%;
+                max-width: 1100px;
+                margin: 30px auto;
+                padding: 0 20px 60px;
+                display: grid;
+                grid-template-columns: 280px 1fr;
+                gap: 22px;
+                align-items: start;
+            }
+
+            .profile-left {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .profile-identity-card {
+                padding: 24px;
+                text-align: center;
+            }
+
+            .avatar-wrap {
+                position: relative;
+                display: inline-block;
+                margin-bottom: 14px;
+            }
+            .profile-avatar-lg {
+                width: 96px;
+                height: 96px;
+                border-radius: 50%;
+                background: var(--primary);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 32px;
+                font-weight: 800;
+                margin: 0 auto;
+            }
+            .avatar-edit-btn {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                background: var(--primary);
+                color: #fff;
+                border: 2px solid var(--card-bg);
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+            .profile-name {
+                font-size: 20px;
+                font-weight: 800;
+                margin-bottom: 4px;
+            }
+            .profile-headline {
+                color: var(--text-muted);
+                font-size: 13px;
+                margin-bottom: 14px;
+            }
+
+            .profile-badges {
+                display: flex;
+                gap: 8px;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-bottom: 16px;
+            }
+
+            .open-to-work-badge {
+                background: var(--primary-light);
+                color: var(--primary);
+                font-size: 11px;
+                font-weight: 700;
+                padding: 4px 10px;
+                border-radius: 999px;
+                border: 1px solid var(--primary);
+            }
+
+            .profile-stat-row {
+                display: flex;
+                justify-content: space-around;
+                padding: 14px 0;
+                border-top: 1px solid var(--border);
+                margin-top: 6px;
+            }
+            .profile-stat {
+                text-align: center;
+            }
+            .profile-stat-num {
+                font-size: 18px;
+                font-weight: 800;
+                color: var(--primary);
+            }
+            .profile-stat-label {
+                font-size: 11px;
+                color: var(--text-muted);
+                margin-top: 2px;
+            }
+
+            .profile-nav-card {
+                padding: 14px;
+            }
+            .profile-nav-card ul {
+                list-style: none;
+            }
+            .profile-nav-card ul li a {
+                display: flex;
+                align-items: center;
+                gap: 9px;
+                padding: 9px 10px;
+                border-radius: 8px;
+                color: var(--text-muted);
+                font-size: 13px;
+                text-decoration: none;
+                transition: all 0.15s;
+            }
+            .profile-nav-card ul li a:hover {
+                background: var(--primary-light);
+                color: var(--primary);
+            }
+            .profile-nav-card ul li a.active {
+                background: var(--primary-light);
+                color: var(--primary);
+                font-weight: 600;
+            }
+            .profile-nav-card ul li a svg {
+                width: 15px;
+                height: 15px;
+                flex-shrink: 0;
+            }
+
+            .profile-right {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            .section-card {
+                padding: 24px;
+            }
+            .section-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 18px;
+                padding-bottom: 12px;
+                border-bottom: 1px solid var(--border);
+            }
+            .section-title {
+                font-size: 16px;
+                font-weight: 800;
+            }
+            .edit-btn {
+                font-size: 12px;
+                font-weight: 600;
+                color: var(--primary);
+                background: var(--primary-light);
+                border: 1px solid var(--primary);
+                padding: 5px 14px;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: all 0.15s;
+            }
+            .edit-btn:hover {
+                background: var(--primary);
+                color: #fff;
+            }
+
+            .info-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+            }
+            .info-item label {
+                display: block;
+                font-size: 10px;
+                font-weight: 700;
+                color: var(--text-soft);
+                text-transform: uppercase;
+                letter-spacing: 0.06em;
+                margin-bottom: 4px;
+            }
+            .info-item p {
+                font-size: 14px;
+                color: var(--text-main);
+                font-weight: 500;
+            }
+            .info-item p.empty {
+                color: var(--text-soft);
+                font-style: italic;
+            }
+
+            .edit-form {
+                display: none;
+                flex-direction: column;
+                gap: 14px;
+            }
+            .edit-form.active {
+                display: flex;
+            }
+            .view-mode.hidden {
+                display: none;
+            }
+
+            .form-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+            }
+
+            .resume-upload-area {
+                border: 2px dashed var(--border);
+                border-radius: 10px;
+                padding: 28px;
+                text-align: center;
+                cursor: pointer;
+                transition: all 0.2s;
+                margin-bottom: 14px;
+            }
+            .resume-upload-area:hover {
+                border-color: var(--primary);
+                background: var(--primary-light);
+            }
+            .resume-icon {
+                font-size: 32px;
+                display: block;
+                margin-bottom: 8px;
+            }
+            .resume-upload-area p {
+                font-size: 13px;
+                color: var(--text-muted);
+            }
+            .resume-upload-area span {
+                font-size: 11px;
+                color: var(--text-soft);
+            }
+
+            .current-resume {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 12px 14px;
+                background: var(--input-bg);
+                border: 1px solid var(--border);
+                border-radius: 8px;
+                margin-bottom: 12px;
+            }
+            .resume-file-icon {
+                font-size: 24px;
+            }
+            .resume-file-name {
+                font-size: 13px;
+                font-weight: 600;
+                flex: 1;
+            }
+            .resume-file-date {
+                font-size: 11px;
+                color: var(--text-soft);
+            }
+            .resume-actions {
+                display: flex;
+                gap: 8px;
+            }
+
+            .skills-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-bottom: 14px;
+            }
+            .skill-tag {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                padding: 6px 12px;
+                background: var(--primary-light);
+                color: var(--primary);
+                border-radius: 999px;
+                font-size: 12px;
+                font-weight: 600;
+                border: 1px solid var(--primary);
+            }
+            .skill-remove {
+                background: none;
+                border: none;
+                color: var(--primary);
+                cursor: pointer;
+                font-size: 14px;
+                line-height: 1;
+                padding: 0;
+            }
+            .skill-input-row {
+                display: flex;
+                gap: 8px;
+            }
+            .skill-input-row input {
+                flex: 1;
+            }
+
+            .pref-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 10px;
+            }
+            .pref-opt {
+                padding: 10px;
+                border: 1.5px solid var(--border);
+                border-radius: 8px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 12px;
+                font-weight: 600;
+                color: var(--text-muted);
+                transition: all 0.15s;
+                user-select: none;
+            }
+            .pref-opt:hover,
+            .pref-opt.active {
+                border-color: var(--primary);
+                color: var(--primary);
+                background: var(--primary-light);
+            }
+            .pref-opt span {
+                display: block;
+                font-size: 20px;
+                margin-bottom: 4px;
+            }
+        </style>
+    </head>
+    <body class="light">
+        <header class="app-header">
+            <div class="header-inner">
+                <div style="display: flex; align-items: center; gap: 16px">
+                    <a id="logoLink" class="logo" href="dashboard.html"
+                        >LinkedOut</a
+                    >
+                </div>
+                <nav class="header-nav" aria-label="Navigation">
+                    <button
+                        class="nav-btn"
+                        id="homeNavBtn"
+                        type="button"
+                        aria-label="Home"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                            />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </button>
+                    <button
+                        class="nav-btn"
+                        id="applicationsNavBtn"
+                        type="button"
+                        aria-label="Applications"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                            />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                        </svg>
+                    </button>
+                    <button
+                        class="nav-btn"
+                        id="notificationsNavBtn"
+                        type="button"
+                        aria-label="Notifications"
+                        style="position: relative"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
+                            />
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                        </svg>
+                        <span class="notif-badge"></span>
+                    </button>
+                    <button
+                        id="themeToggleBtn"
+                        class="nav-btn"
+                        type="button"
+                        aria-label="Toggle theme"
+                    >
+                        🌙
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <div class="profile-shell">
+            <aside class="profile-left">
+                <div class="card profile-identity-card">
+                    <div class="avatar-wrap">
+                        <div class="profile-avatar-lg" id="profileAvatarLg">
+                            AJ
+                        </div>
+                        <button
+                            class="avatar-edit-btn"
+                            id="avatarEditBtn"
+                            type="button"
+                            title="Change photo"
+                        >
+                            ✏️
+                        </button>
+                    </div>
+                    <p class="profile-name" id="profileDisplayName">
+                        Arjun Vijayaraj
+                    </p>
+                    <p class="profile-headline" id="profileDisplayHeadline">
+                        Frontend Developer
+                    </p>
+                    <div class="profile-badges">
+                        <span class="open-to-work-badge" id="openToWorkBadge"
+                            >🟢 Open to Work</span
+                        >
+                    </div>
+                    <div class="profile-stat-row">
+                        <div class="profile-stat">
+                            <div class="profile-stat-num" id="statApplied">
+                                12
+                            </div>
+                            <div class="profile-stat-label">Applied</div>
+                        </div>
+                        <div class="profile-stat">
+                            <div class="profile-stat-num" id="statSaved">8</div>
+                            <div class="profile-stat-label">Saved</div>
+                        </div>
+                        <div class="profile-stat">
+                            <div class="profile-stat-num" id="statInterviews">
+                                3
+                            </div>
+                            <div class="profile-stat-label">Interviews</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card profile-nav-card">
+                    <ul>
+                        <li>
+                            <a href="profile.html" class="active">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                                    />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                                My Profile</a
+                            >
+                        </li>
+                        <li>
+                            <a href="applications.html">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                                    />
+                                    <polyline points="14 2 14 8 20 8" />
+                                </svg>
+                                My Applications</a
+                            >
+                        </li>
+                        <li>
+                            <a href="dashboard.html">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <rect
+                                        x="2"
+                                        y="7"
+                                        width="20"
+                                        height="14"
+                                        rx="2"
+                                    />
+                                    <path
+                                        d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"
+                                    />
+                                </svg>
+                                Browse Jobs</a
+                            >
+                        </li>
+                        <li>
+                            <a href="login.html" id="profileLogoutBtn">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"
+                                    />
+                                    <polyline points="16 17 21 12 16 7" />
+                                    <line x1="21" y1="12" x2="9" y2="12" />
+                                </svg>
+                                Log Out</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="profile-right">
+                <div class="card section-card" id="personalInfoSection">
+                    <div class="section-header">
+                        <h2 class="section-title">Personal Information</h2>
+                        <button
+                            class="edit-btn"
+                            id="editPersonalBtn"
+                            type="button"
+                        >
+                            Edit
+                        </button>
+                    </div>
+
+                    <div class="view-mode info-grid" id="personalViewMode">
+                        <div class="info-item">
+                            <label>Full Name</label>
+                            <p id="viewFullName">Arjun Vijayaraj</p>
+                        </div>
+                        <div class="info-item">
+                            <label>Email</label>
+                            <p id="viewEmail">arjun@example.com</p>
+                        </div>
+                        <div class="info-item">
+                            <label>Phone</label>
+                            <p id="viewPhone">+61 400 000 000</p>
+                        </div>
+                        <div class="info-item">
+                            <label>Location</label>
+                            <p id="viewLocation">Sydney, NSW, Australia</p>
+                        </div>
+                        <div class="info-item">
+                            <label>LinkedIn</label>
+                            <p id="viewLinkedin" class="empty">Not provided</p>
+                        </div>
+                        <div class="info-item">
+                            <label>Portfolio / Website</label>
+                            <p id="viewPortfolio" class="empty">Not provided</p>
+                        </div>
+                    </div>
+
+                    <div class="edit-form" id="personalEditForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inputFullName">Full Name</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputFullName"
+                                    name="full-name"
+                                    placeholder="Your full name"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="inputEmail"
+                                    name="email"
+                                    placeholder="your@email.com"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inputPhone">Phone</label>
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="inputPhone"
+                                    name="phone"
+                                    placeholder="+61 400 000 000"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputLocation">Location</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputLocation"
+                                    name="location"
+                                    placeholder="City, State, Country"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inputLinkedin">LinkedIn URL</label>
+                                <input
+                                    type="url"
+                                    class="form-control"
+                                    id="inputLinkedin"
+                                    name="linkedin"
+                                    placeholder="https://linkedin.com/in/yourname"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPortfolio"
+                                    >Portfolio / Website</label
+                                >
+                                <input
+                                    type="url"
+                                    class="form-control"
+                                    id="inputPortfolio"
+                                    name="portfolio"
+                                    placeholder="https://yourwebsite.com"
+                                />
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 10px">
+                            <button
+                                class="primary-btn"
+                                id="savePersonalBtn"
+                                type="button"
+                            >
+                                Save Changes
+                            </button>
+                            <button
+                                class="secondary-btn"
+                                id="cancelPersonalBtn"
+                                type="button"
+                            >
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card section-card" id="educationSection">
+                    <div class="section-header">
+                        <h2 class="section-title">Education & Experience</h2>
+                        <button
+                            class="edit-btn"
+                            id="editEducationBtn"
+                            type="button"
+                        >
+                            Edit
+                        </button>
+                    </div>
+
+                    <div class="view-mode info-grid" id="educationViewMode">
+                        <div class="info-item">
+                            <label>Education Level</label>
+                            <p id="viewEducation">Bachelor's Degree</p>
+                        </div>
+                        <div class="info-item">
+                            <label>Major / Field of Study</label>
+                            <p id="viewMajor">Computer Science</p>
+                        </div>
+                        <div class="info-item">
+                            <label>University / Institution</label>
+                            <p id="viewUniversity">University of Wollongong</p>
+                        </div>
+                        <div class="info-item">
+                            <label>Graduation Year</label>
+                            <p id="viewGradYear">2024</p>
+                        </div>
+                        <div class="info-item">
+                            <label>Years of Experience</label>
+                            <p id="viewExperience">2 years</p>
+                        </div>
+                        <div class="info-item">
+                            <label>Current / Most Recent Role</label>
+                            <p id="viewCurrentRole">Frontend Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="edit-form" id="educationEditForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inputEducation"
+                                    >Education Level</label
+                                >
+                                <select
+                                    class="form-control"
+                                    id="inputEducation"
+                                    name="education"
+                                >
+                                    <option value="">Select level</option>
+                                    <option>High School</option>
+                                    <option>Associate Degree</option>
+                                    <option>Bachelor's Degree</option>
+                                    <option>Master's Degree</option>
+                                    <option>PhD</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputMajor"
+                                    >Major / Field of Study</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputMajor"
+                                    name="major"
+                                    placeholder="e.g. Computer Science"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inputUniversity"
+                                    >University / Institution</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputUniversity"
+                                    name="university"
+                                    placeholder="e.g. University of Wollongong"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputGradYear"
+                                    >Graduation Year</label
+                                >
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="inputGradYear"
+                                    name="grad-year"
+                                    placeholder="e.g. 2024"
+                                    min="1990"
+                                    max="2030"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inputExperience"
+                                    >Years of Experience</label
+                                >
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="inputExperience"
+                                    name="experience"
+                                    placeholder="e.g. 2"
+                                    min="0"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputCurrentRole"
+                                    >Current / Most Recent Role</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputCurrentRole"
+                                    name="current-role"
+                                    placeholder="e.g. Frontend Developer"
+                                />
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 10px">
+                            <button
+                                class="primary-btn"
+                                id="saveEducationBtn"
+                                type="button"
+                            >
+                                Save Changes
+                            </button>
+                            <button
+                                class="secondary-btn"
+                                id="cancelEducationBtn"
+                                type="button"
+                            >
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card section-card" id="skillsSection">
+                    <div class="section-header">
+                        <h2 class="section-title">Skills</h2>
+                    </div>
+                    <div class="skills-wrap" id="skillsContainer"></div>
+                    <div class="skill-input-row">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="skillInput"
+                            placeholder="Add a skill (e.g. React, Python)"
+                        />
+                        <button
+                            class="primary-btn"
+                            id="addSkillBtn"
+                            type="button"
+                        >
+                            Add
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card section-card" id="resumeSection">
+                    <div class="section-header">
+                        <h2 class="section-title">Resume</h2>
+                    </div>
+
+                    <div class="current-resume" id="currentResumeRow">
+                        <span class="resume-file-icon">📄</span>
+                        <div>
+                            <p class="resume-file-name" id="resumeFileName">
+                                Arjun_Vijayaraj_Resume.pdf
+                            </p>
+                            <p class="resume-file-date" id="resumeFileDate">
+                                Uploaded 1 Jun 2026
+                            </p>
+                        </div>
+                        <div class="resume-actions">
+                            <button
+                                class="secondary-btn"
+                                id="viewResumeBtn"
+                                type="button"
+                                style="
+                                    min-height: 34px;
+                                    padding: 6px 12px;
+                                    font-size: 12px;
+                                "
+                            >
+                                View
+                            </button>
+                            <button
+                                class="secondary-btn"
+                                id="replaceResumeBtn"
+                                type="button"
+                                style="
+                                    min-height: 34px;
+                                    padding: 6px 12px;
+                                    font-size: 12px;
+                                "
+                            >
+                                Replace
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="resume-upload-area"
+                        id="resumeUploadArea"
+                        onclick="
+                            document.getElementById('resumeFileInput').click()
+                        "
+                        style="display: none"
+                    >
+                        <span class="resume-icon">📎</span>
+                        <p>Click to upload your resume</p>
+                        <span>PDF, DOC, DOCX — max 5MB</span>
+                    </div>
+                    <input
+                        type="file"
+                        id="resumeFileInput"
+                        name="resume"
+                        accept=".pdf,.doc,.docx"
+                        style="display: none"
+                    />
+                </div>
+
+                <div class="card section-card" id="preferencesSection">
+                    <div class="section-header">
+                        <h2 class="section-title">Job Preferences</h2>
+                        <button
+                            class="edit-btn"
+                            id="savePreferencesBtn"
+                            type="button"
+                        >
+                            Save
+                        </button>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prefJobTitle">Desired Job Title</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="prefJobTitle"
+                            name="pref-job-title"
+                            placeholder="e.g. Senior Frontend Developer"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="prefSalary">Expected Salary (AUD)</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="prefSalary"
+                            name="pref-salary"
+                            placeholder="e.g. $80,000 – $100,000"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="prefLocation">Preferred Location</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="prefLocation"
+                            name="pref-location"
+                            placeholder="e.g. Sydney, Australia"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label>Work Mode Preference</label>
+                        <div class="pref-grid" id="workModePrefs">
+                            <div
+                                class="pref-opt active"
+                                id="prefRemote"
+                                data-pref="Remote"
+                            >
+                                <span>🏠</span>Remote
+                            </div>
+                            <div
+                                class="pref-opt"
+                                id="prefHybrid"
+                                data-pref="Hybrid"
+                            >
+                                <span>🔀</span>Hybrid
+                            </div>
+                            <div
+                                class="pref-opt"
+                                id="prefOnsite"
+                                data-pref="On-site"
+                            >
+                                <span>🏢</span>On-site
+                            </div>
+                        </div>
+                        <input
+                            type="hidden"
+                            id="workModePrefValue"
+                            value="Remote"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toast"></div>
+
+        <script src="js/theme.js"></script>
+        <script src="js/toast.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/profile.js"></script>
+        <script src="js/notifications.js"></script>
+    </body>
+</html>

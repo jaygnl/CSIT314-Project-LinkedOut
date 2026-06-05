@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LinkedOut | Sign In</title>
+        <link rel="stylesheet" href="css/themes.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+            body {
+                min-height: 100vh;
+            }
+
+            .login-page {
+                width: 100%;
+                min-height: 100vh;
+                display: grid;
+                grid-template-columns: 48% 52%;
+            }
+
+            .form-side {
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 60px 80px;
+                background: var(--card-bg);
+            }
+
+            .login-card {
+                width: 100%;
+                max-width: 420px;
+            }
+
+            .login-logo {
+                font-size: 26px;
+                font-weight: 800;
+                color: var(--primary);
+                margin-bottom: 32px;
+                display: block;
+            }
+
+            .login-heading {
+                margin-bottom: 28px;
+            }
+            .login-heading h1 {
+                font-size: 28px;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+            .signup-text {
+                color: var(--text-muted);
+                font-size: 14px;
+            }
+            .signup-text a {
+                color: var(--primary);
+                font-weight: 600;
+            }
+
+            .role-selector {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                margin-bottom: 22px;
+            }
+            .role-btn {
+                padding: 11px;
+                border: 1.5px solid var(--border);
+                border-radius: 10px;
+                background: transparent;
+                color: var(--text-muted);
+                font-size: 13px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.2s;
+                text-align: center;
+            }
+            .role-btn:hover {
+                border-color: var(--primary);
+                color: var(--primary);
+                background: var(--primary-light);
+            }
+            .role-btn.active {
+                border-color: var(--primary);
+                color: var(--primary);
+                background: var(--primary-light);
+            }
+            .role-btn span {
+                display: block;
+                font-size: 20px;
+                margin-bottom: 4px;
+            }
+
+            .form-group {
+                margin-bottom: 16px;
+            }
+
+            .input-wrapper {
+                position: relative;
+            }
+
+            .form-input {
+                width: 100%;
+                height: 46px;
+                border: 1px solid var(--border);
+                border-radius: 8px;
+                background: var(--input-bg);
+                color: var(--text-main);
+                padding: 10px 16px;
+                font-size: 14px;
+                outline: none;
+                transition: border-color 0.2s;
+            }
+            .form-input:focus {
+                border-color: var(--primary);
+                box-shadow: 0 0 0 3px rgba(22, 69, 42, 0.07);
+            }
+            .form-input::placeholder {
+                color: var(--text-soft);
+            }
+            .password-input {
+                padding-right: 48px;
+            }
+
+            .password-toggle {
+                position: absolute;
+                top: 50%;
+                right: 14px;
+                transform: translateY(-50%);
+                border: none;
+                background: transparent;
+                cursor: pointer;
+                font-size: 16px;
+                color: var(--text-muted);
+            }
+
+            .form-options {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 22px;
+                font-size: 13px;
+            }
+            .remember-label {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                color: var(--text-muted);
+                cursor: pointer;
+            }
+            .remember-label input {
+                accent-color: var(--primary);
+                width: 16px;
+                height: 16px;
+            }
+            .forgot-link {
+                color: var(--primary);
+                font-weight: 600;
+            }
+
+            .sign-in-btn {
+                width: 100%;
+                height: 48px;
+                background: var(--primary);
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                font-size: 15px;
+                font-weight: 700;
+                cursor: pointer;
+                transition: background 0.2s;
+            }
+            .sign-in-btn:hover {
+                background: var(--primary-hover);
+            }
+
+            .divider {
+                text-align: center;
+                color: var(--text-soft);
+                font-size: 13px;
+                margin: 16px 0;
+            }
+
+            .social-buttons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+            .social-btn {
+                height: 42px;
+                border: 1px solid var(--border);
+                border-radius: 8px;
+                background: var(--card-bg);
+                color: var(--text-muted);
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                cursor: pointer;
+                transition: all 0.2s;
+            }
+            .social-btn:hover {
+                border-color: var(--primary);
+                background: var(--primary-light);
+                color: var(--primary);
+            }
+            .social-icon {
+                width: 18px;
+                height: 18px;
+                flex-shrink: 0;
+            }
+
+            .visual-side {
+                min-height: 100vh;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                padding: 0 80px 100px;
+                background: linear-gradient(160deg, #16452a 0%, #22c55e 100%);
+                position: relative;
+            }
+
+            .visual-content {
+                width: 100%;
+                max-width: 480px;
+                color: #fff;
+            }
+            .visual-content h2 {
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 1.3;
+                margin-bottom: 48px;
+            }
+
+            .stats-row {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 24px;
+            }
+            .stat-card {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            .stat-icon-box {
+                width: 56px;
+                height: 56px;
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.12);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .stat-icon-box svg {
+                width: 28px;
+                height: 28px;
+            }
+            .stat-number {
+                font-size: 18px;
+                font-weight: 700;
+            }
+            .stat-label {
+                font-size: 13px;
+                opacity: 0.7;
+            }
+
+            .login-theme-toggle {
+                position: fixed;
+                top: 18px;
+                right: 18px;
+                z-index: 200;
+            }
+        </style>
+    </head>
+    <body class="light">
+        <button
+            id="themeToggleBtn"
+            class="icon-btn login-theme-toggle"
+            type="button"
+            aria-label="Switch theme"
+        >
+            🌙
+        </button>
+
+        <main class="login-page">
+            <section class="form-side">
+                <div class="login-card">
+                    <span class="login-logo">LinkedOut</span>
+
+                    <div class="login-heading">
+                        <h1 id="loginHeading">Sign in</h1>
+                        <p class="signup-text">
+                            <span id="signupPrompt"
+                                >Don't have an account?
+                                <a id="createAccountLink" href="#"
+                                    >Create Account</a
+                                ></span
+                            >
+                            <span id="loginPrompt" style="display: none"
+                                >Already have an account?
+                                <a id="backToLoginLink" href="#"
+                                    >Sign in</a
+                                ></span
+                            >
+                        </p>
+                    </div>
+
+                    <div class="role-selector">
+                        <button
+                            class="role-btn active"
+                            id="roleApplicantBtn"
+                            type="button"
+                        >
+                            <span>🧑‍💼</span>Job Seeker
+                        </button>
+                        <button
+                            class="role-btn"
+                            id="roleEmployerBtn"
+                            type="button"
+                        >
+                            <span>🏢</span>Employer
+                        </button>
+                    </div>
+
+                    <form id="loginForm" autocomplete="on">
+                        <div
+                            class="form-group"
+                            id="fullNameGroup"
+                            style="display: none"
+                        >
+                            <input
+                                id="fullNameInput"
+                                class="form-input"
+                                type="text"
+                                name="full-name"
+                                placeholder="Full name"
+                            />
+                        </div>
+                        <div
+                            class="form-group"
+                            id="companyNameGroup"
+                            style="display: none"
+                        >
+                            <input
+                                id="companyNameInput"
+                                class="form-input"
+                                type="text"
+                                name="company-name"
+                                placeholder="Company name"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <input
+                                id="emailInput"
+                                class="form-input"
+                                type="email"
+                                name="email"
+                                placeholder="Email address"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group input-wrapper">
+                            <input
+                                id="passwordInput"
+                                class="form-input password-input"
+                                type="password"
+                                name="password"
+                                placeholder="Password"
+                                required
+                            />
+                            <button
+                                id="passwordToggleBtn"
+                                class="password-toggle"
+                                type="button"
+                                aria-label="Show password"
+                            >
+                                👁️
+                            </button>
+                        </div>
+
+                        <div class="form-options">
+                            <label
+                                class="remember-label"
+                                for="rememberCheckbox"
+                            >
+                                <input
+                                    id="rememberCheckbox"
+                                    type="checkbox"
+                                    name="remember"
+                                />
+                                Remember me
+                            </label>
+                            <a
+                                id="forgotPasswordLink"
+                                class="forgot-link"
+                                href="#"
+                                >Forgot password?</a
+                            >
+                        </div>
+
+                        <p
+                            id="authError"
+                            style="
+                                display: none;
+                                color: var(--red, #c0392b);
+                                font-size: 13px;
+                                margin-bottom: 12px;
+                            "
+                        ></p>
+
+                        <button
+                            id="signInBtn"
+                            class="sign-in-btn"
+                            type="submit"
+                        >
+                            Sign in →
+                        </button>
+                    </form>
+
+                    <p
+                        style="
+                            margin-top: 16px;
+                            font-size: 12px;
+                            color: var(--text-soft);
+                            text-align: center;
+                        "
+                    >
+                        Demo: candidate@demo.com · member@demo.com ·
+                        employer@demo.com · bigco@demo.com — password
+                        <strong>password123</strong>
+                    </p>
+
+                    <p class="divider">or continue with</p>
+
+                    <div class="social-buttons">
+                        <button
+                            id="facebookSignInBtn"
+                            class="social-btn"
+                            type="button"
+                        >
+                            <svg
+                                class="social-icon"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                            >
+                                <path
+                                    d="M12.5 3H10.8C9.2 3 8.5 4 8.5 5.3V7H6V10H8.5V17H11.6V10H14L14.5 7H11.6V5.8C11.6 5.1 11.9 4.8 12.7 4.8H14.5V3H12.5Z"
+                                    fill="#16452a"
+                                />
+                            </svg>
+                            Facebook
+                        </button>
+                        <button
+                            id="googleSignInBtn"
+                            class="social-btn"
+                            type="button"
+                        >
+                            <svg
+                                class="social-icon"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                            >
+                                <path
+                                    d="M19.6 10.23c0-.72-.06-1.25-.19-1.8H10v3.27h5.52c-.11.81-.71 2.03-2.04 2.85l2.96 2.27C18.47 14.95 19.6 12.74 19.6 10.23Z"
+                                    fill="#518EF8"
+                                />
+                                <path
+                                    d="M10 20c2.65 0 4.88-.86 6.5-2.35l-3.1-2.4c-.83.57-1.94.97-3.4.97-2.6 0-4.8-1.69-5.59-4.03L1.34 14.67C2.79 17.81 6.13 20 10 20Z"
+                                    fill="#28B446"
+                                />
+                                <path
+                                    d="M4.41 12.19A6.12 6.12 0 0 1 4.08 10c0-.76.12-1.5.32-2.19L1.31 5.33A9.9 9.9 0 0 0 .1 10c0 1.68.41 3.27 1.12 4.67l3.19-2.48Z"
+                                    fill="#FBBB00"
+                                />
+                                <path
+                                    d="M10 3.78c1.84 0 3.08.79 3.79 1.45l2.77-2.68C14.86.99 12.65 0 10 0 6.13 0 2.79 2.19 1.19 5.33l3.2 2.48C5.2 5.47 7.4 3.78 10 3.78Z"
+                                    fill="#F14336"
+                                />
+                            </svg>
+                            Google
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="visual-side" aria-label="Platform statistics">
+                <div class="visual-content">
+                    <h2>
+                        Over 175,324 candidates waiting for great employers.
+                    </h2>
+                    <div class="stats-row">
+                        <article class="stat-card">
+                            <div class="stat-icon-box">
+                                <svg viewBox="0 0 32 32" fill="none">
+                                    <path
+                                        d="M4 11H28V27H4V11Z"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                    />
+                                    <path
+                                        d="M11 11V7H21V11"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                    />
+                                    <path
+                                        d="M4 17H28"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="stat-number">175,324</p>
+                                <p class="stat-label">Live Jobs</p>
+                            </div>
+                        </article>
+                        <article class="stat-card">
+                            <div class="stat-icon-box">
+                                <svg viewBox="0 0 32 32" fill="none">
+                                    <path
+                                        d="M5 27V5H18V27"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                    />
+                                    <path
+                                        d="M18 13H27V27"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="stat-number">97,354</p>
+                                <p class="stat-label">Companies</p>
+                            </div>
+                        </article>
+                        <article class="stat-card">
+                            <div class="stat-icon-box">
+                                <svg viewBox="0 0 32 32" fill="none">
+                                    <circle
+                                        cx="16"
+                                        cy="10"
+                                        r="6"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                    />
+                                    <path
+                                        d="M4 27c0-6.627 5.373-12 12-12s12 5.373 12 12"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="stat-number">7,532</p>
+                                <p class="stat-label">New Jobs Today</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/theme.js"></script>
+        <script src="js/toast.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>

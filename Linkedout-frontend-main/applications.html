@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LinkedOut | My Applications</title>
+        <link rel="stylesheet" href="css/themes.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+            .apps-shell {
+                width: 100%;
+                max-width: 1100px;
+                margin: 30px auto;
+                padding: 0 20px 60px;
+                display: grid;
+                grid-template-columns: 280px 1fr;
+                gap: 22px;
+                align-items: start;
+            }
+
+            /* Left sidebar (reuse profile nav) */
+            .apps-left {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .profile-mini-card {
+                padding: 20px;
+                text-align: center;
+            }
+            .profile-avatar-sm {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background: var(--primary);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 22px;
+                font-weight: 800;
+                margin: 0 auto 10px;
+            }
+            .profile-mini-name {
+                font-size: 16px;
+                font-weight: 800;
+                margin-bottom: 3px;
+            }
+            .profile-mini-headline {
+                font-size: 12px;
+                color: var(--text-muted);
+            }
+
+            .apps-nav-card {
+                padding: 14px;
+            }
+            .apps-nav-card ul {
+                list-style: none;
+            }
+            .apps-nav-card ul li a {
+                display: flex;
+                align-items: center;
+                gap: 9px;
+                padding: 9px 10px;
+                border-radius: 8px;
+                color: var(--text-muted);
+                font-size: 13px;
+                text-decoration: none;
+                transition: all 0.15s;
+            }
+            .apps-nav-card ul li a:hover {
+                background: var(--primary-light);
+                color: var(--primary);
+            }
+            .apps-nav-card ul li a.active {
+                background: var(--primary-light);
+                color: var(--primary);
+                font-weight: 600;
+            }
+            .apps-nav-card ul li a svg {
+                width: 15px;
+                height: 15px;
+                flex-shrink: 0;
+            }
+
+            /* Stats summary */
+            .stats-summary-card {
+                padding: 18px;
+            }
+            .stats-summary-card h3 {
+                font-size: 13px;
+                font-weight: 700;
+                margin-bottom: 12px;
+                color: var(--text-muted);
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+            }
+            .summary-stat {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 8px 0;
+                border-bottom: 1px solid var(--border);
+                font-size: 13px;
+            }
+            .summary-stat:last-child {
+                border-bottom: none;
+            }
+            .summary-stat-label {
+                color: var(--text-muted);
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+            .summary-stat-val {
+                font-weight: 800;
+            }
+            .val-pending {
+                color: #d97706;
+            }
+            .val-accepted {
+                color: var(--primary);
+            }
+            .val-rejected {
+                color: var(--red);
+            }
+
+            /* Right: applications list */
+            .apps-right {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .apps-header-card {
+                padding: 18px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .apps-header-card h1 {
+                font-size: 20px;
+                font-weight: 800;
+            }
+            .apps-count {
+                font-size: 13px;
+                color: var(--text-muted);
+            }
+
+            /* Filter tabs */
+            .filter-tabs {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+            .filter-tab {
+                padding: 6px 16px;
+                border-radius: 999px;
+                font-size: 12px;
+                font-weight: 700;
+                border: 1.5px solid var(--border);
+                background: transparent;
+                color: var(--text-muted);
+                cursor: pointer;
+                transition: all 0.15s;
+            }
+            .filter-tab:hover,
+            .filter-tab.active {
+                border-color: var(--primary);
+                color: var(--primary);
+                background: var(--primary-light);
+            }
+
+            /* Application cards */
+            .application-list {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            .application-card {
+                padding: 20px;
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+                transition: box-shadow 0.2s;
+            }
+            .application-card:hover {
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            }
+
+            .app-company-icon {
+                width: 52px;
+                height: 52px;
+                border-radius: 12px;
+                background: var(--input-bg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                flex-shrink: 0;
+            }
+
+            .app-content {
+                flex: 1;
+            }
+            .app-top {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin-bottom: 6px;
+            }
+            .app-job-title {
+                font-size: 16px;
+                font-weight: 800;
+                margin-bottom: 2px;
+            }
+            .app-company {
+                font-size: 13px;
+                color: var(--text-muted);
+                font-weight: 600;
+            }
+            .app-meta {
+                display: flex;
+                gap: 14px;
+                color: var(--text-muted);
+                font-size: 12px;
+                margin-top: 8px;
+                flex-wrap: wrap;
+            }
+
+            /* Status badges */
+            .status-badge {
+                font-size: 11px;
+                font-weight: 700;
+                padding: 4px 12px;
+                border-radius: 999px;
+                white-space: nowrap;
+                flex-shrink: 0;
+            }
+            .status-pending {
+                background: #fef3c7;
+                color: #92400e;
+            }
+            .status-review {
+                background: #dbeafe;
+                color: #1e40af;
+            }
+            .status-accepted {
+                background: #d1fae5;
+                color: #065f46;
+            }
+            .status-rejected {
+                background: var(--red-light);
+                color: var(--red);
+            }
+            .status-withdrawn {
+                background: var(--input-bg);
+                color: var(--text-soft);
+            }
+
+            /* Progress tracker */
+            .app-progress {
+                margin-top: 12px;
+            }
+            .progress-steps {
+                display: flex;
+                align-items: center;
+                gap: 0;
+                position: relative;
+            }
+            .progress-step {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex: 1;
+                position: relative;
+                z-index: 1;
+            }
+            .step-dot {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 2px solid var(--border);
+                background: var(--card-bg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 9px;
+                margin-bottom: 4px;
+                transition: all 0.2s;
+            }
+            .step-dot.done {
+                background: var(--primary);
+                border-color: var(--primary);
+                color: #fff;
+            }
+            .step-dot.current {
+                background: #fff;
+                border-color: var(--primary);
+                border-width: 3px;
+            }
+            .step-dot.failed {
+                background: var(--red);
+                border-color: var(--red);
+                color: #fff;
+            }
+            .step-label {
+                font-size: 9px;
+                color: var(--text-soft);
+                text-align: center;
+            }
+            .step-label.done {
+                color: var(--primary);
+                font-weight: 600;
+            }
+            .step-label.current {
+                color: var(--primary);
+                font-weight: 700;
+            }
+
+            .step-line {
+                position: absolute;
+                top: 9px;
+                left: 50%;
+                right: -50%;
+                height: 2px;
+                background: var(--border);
+                z-index: 0;
+            }
+            .step-line.done {
+                background: var(--primary);
+            }
+            .progress-step:last-child .step-line {
+                display: none;
+            }
+
+            /* App actions */
+            .app-actions {
+                display: flex;
+                gap: 8px;
+                margin-top: 14px;
+            }
+
+            /* Empty state */
+            .empty-state {
+                text-align: center;
+                padding: 60px 20px;
+                color: var(--text-muted);
+            }
+            .empty-state-icon {
+                font-size: 48px;
+                margin-bottom: 14px;
+            }
+            .empty-state h3 {
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 8px;
+                color: var(--text-main);
+            }
+            .empty-state p {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body class="light">
+        <header class="app-header">
+            <div class="header-inner">
+                <a id="logoLink" class="logo" href="dashboard.html"
+                    >LinkedOut</a
+                >
+                <nav class="header-nav" aria-label="Navigation">
+                    <button
+                        class="nav-btn"
+                        id="homeNavBtn"
+                        type="button"
+                        aria-label="Home"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                            />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </button>
+                    <button
+                        class="nav-btn active"
+                        id="applicationsNavBtn"
+                        type="button"
+                        aria-label="Applications"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                            />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                        </svg>
+                    </button>
+                    <button
+                        class="nav-btn"
+                        id="notificationsNavBtn"
+                        type="button"
+                        aria-label="Notifications"
+                        style="position: relative"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
+                            />
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                        </svg>
+                        <span class="notif-badge"></span>
+                    </button>
+                    <button
+                        id="themeToggleBtn"
+                        class="nav-btn"
+                        type="button"
+                        aria-label="Toggle theme"
+                    >
+                        🌙
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <div class="apps-shell">
+            <aside class="apps-left">
+                <div class="card profile-mini-card">
+                    <div class="profile-avatar-sm" id="appProfileAvatar">
+                        AJ
+                    </div>
+                    <p class="profile-mini-name" id="appProfileName">
+                        Arjun Vijayaraj
+                    </p>
+                    <p class="profile-mini-headline" id="appProfileHeadline">
+                        Frontend Developer
+                    </p>
+                </div>
+
+                <div class="card apps-nav-card">
+                    <ul>
+                        <li>
+                            <a href="profile.html">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                                    />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                                My Profile</a
+                            >
+                        </li>
+                        <li>
+                            <a href="applications.html" class="active">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                                    />
+                                    <polyline points="14 2 14 8 20 8" />
+                                </svg>
+                                My Applications</a
+                            >
+                        </li>
+                        <li>
+                            <a href="dashboard.html">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <rect
+                                        x="2"
+                                        y="7"
+                                        width="20"
+                                        height="14"
+                                        rx="2"
+                                    />
+                                    <path
+                                        d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"
+                                    />
+                                </svg>
+                                Browse Jobs</a
+                            >
+                        </li>
+                        <li>
+                            <a href="login.html" id="appsLogoutBtn">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"
+                                    />
+                                    <polyline points="16 17 21 12 16 7" />
+                                    <line x1="21" y1="12" x2="9" y2="12" />
+                                </svg>
+                                Log Out</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card stats-summary-card">
+                    <h3>Summary</h3>
+                    <div class="summary-stat">
+                        <span class="summary-stat-label">📋 Total Applied</span>
+                        <span class="summary-stat-val" id="totalApplied"
+                            >3</span
+                        >
+                    </div>
+                    <div class="summary-stat">
+                        <span class="summary-stat-label">⏳ Pending</span>
+                        <span
+                            class="summary-stat-val val-pending"
+                            id="totalPending"
+                            >1</span
+                        >
+                    </div>
+                    <div class="summary-stat">
+                        <span class="summary-stat-label">👀 Under Review</span>
+                        <span
+                            class="summary-stat-val"
+                            style="color: #1e40af"
+                            id="totalReview"
+                            >1</span
+                        >
+                    </div>
+                    <div class="summary-stat">
+                        <span class="summary-stat-label">✅ Accepted</span>
+                        <span
+                            class="summary-stat-val val-accepted"
+                            id="totalAccepted"
+                            >1</span
+                        >
+                    </div>
+                    <div class="summary-stat">
+                        <span class="summary-stat-label">❌ Rejected</span>
+                        <span
+                            class="summary-stat-val val-rejected"
+                            id="totalRejected"
+                            >0</span
+                        >
+                    </div>
+                </div>
+            </aside>
+
+            <div class="apps-right">
+                <div class="card apps-header-card">
+                    <div>
+                        <h1>My Applications</h1>
+                        <p id="appsCountText" class="apps-count">
+                            3 applications
+                        </p>
+                    </div>
+                    <div class="filter-tabs">
+                        <button
+                            class="filter-tab active"
+                            id="tabAll"
+                            data-filter="all"
+                            type="button"
+                        >
+                            All
+                        </button>
+                        <button
+                            class="filter-tab"
+                            id="tabPending"
+                            data-filter="pending"
+                            type="button"
+                        >
+                            Pending
+                        </button>
+                        <button
+                            class="filter-tab"
+                            id="tabReview"
+                            data-filter="review"
+                            type="button"
+                        >
+                            In Review
+                        </button>
+                        <button
+                            class="filter-tab"
+                            id="tabAccepted"
+                            data-filter="accepted"
+                            type="button"
+                        >
+                            Accepted
+                        </button>
+                        <button
+                            class="filter-tab"
+                            id="tabRejected"
+                            data-filter="rejected"
+                            type="button"
+                        >
+                            Rejected
+                        </button>
+                    </div>
+                </div>
+
+                <div id="applicationList" class="application-list">
+                    <div
+                        class="card application-card"
+                        id="appCardProductDesigner"
+                        data-application-id="app-001"
+                        data-status="accepted"
+                    >
+                        <div class="app-company-icon">💼</div>
+                        <div class="app-content">
+                            <div class="app-top">
+                                <div>
+                                    <p class="app-job-title">
+                                        Senior Product Designer
+                                    </p>
+                                    <p class="app-company">TechVision Inc.</p>
+                                </div>
+                                <span class="status-badge status-accepted"
+                                    >✅ Accepted</span
+                                >
+                            </div>
+                            <div class="app-meta">
+                                <span>📍 San Francisco, CA</span>
+                                <span>💼 Full-time</span>
+                                <span>🗓 Applied 28 May 2026</span>
+                            </div>
+                            <div class="app-progress">
+                                <div class="progress-steps">
+                                    <div class="progress-step">
+                                        <div class="step-dot done">✓</div>
+                                        <div class="step-label done">
+                                            Applied
+                                        </div>
+                                        <div class="step-line done"></div>
+                                    </div>
+                                    <div class="progress-step">
+                                        <div class="step-dot done">✓</div>
+                                        <div class="step-label done">
+                                            Reviewed
+                                        </div>
+                                        <div class="step-line done"></div>
+                                    </div>
+                                    <div class="progress-step">
+                                        <div class="step-dot done">✓</div>
+                                        <div class="step-label done">
+                                            Interview
+                                        </div>
+                                        <div class="step-line done"></div>
+                                    </div>
+                                    <div class="progress-step">
+                                        <div class="step-dot done">✓</div>
+                                        <div class="step-label done">Offer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-actions">
+                                <button
+                                    class="secondary-btn"
+                                    id="viewJobApp001Btn"
+                                    data-job-id="product-designer"
+                                    type="button"
+                                    style="
+                                        font-size: 12px;
+                                        min-height: 34px;
+                                        padding: 6px 14px;
+                                    "
+                                >
+                                    View Job
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card application-card"
+                        id="appCardFullStack"
+                        data-application-id="app-002"
+                        data-status="review"
+                    >
+                        <div class="app-company-icon">💻</div>
+                        <div class="app-content">
+                            <div class="app-top">
+                                <div>
+                                    <p class="app-job-title">
+                                        Full Stack Developer
+                                    </p>
+                                    <p class="app-company">StartupXYZ</p>
+                                </div>
+                                <span class="status-badge status-review"
+                                    >👀 Under Review</span
+                                >
+                            </div>
+                            <div class="app-meta">
+                                <span>📍 New York, NY</span>
+                                <span>💼 Full-time</span>
+                                <span>🗓 Applied 1 Jun 2026</span>
+                            </div>
+                            <div class="app-progress">
+                                <div class="progress-steps">
+                                    <div class="progress-step">
+                                        <div class="step-dot done">✓</div>
+                                        <div class="step-label done">
+                                            Applied
+                                        </div>
+                                        <div class="step-line done"></div>
+                                    </div>
+                                    <div class="progress-step">
+                                        <div class="step-dot current"></div>
+                                        <div class="step-label current">
+                                            Reviewed
+                                        </div>
+                                        <div class="step-line"></div>
+                                    </div>
+                                    <div class="progress-step">
+                                        <div class="step-dot"></div>
+                                        <div class="step-label">Interview</div>
+                                        <div class="step-line"></div>
+                                    </div>
+                                    <div class="progress-step">
+                                        <div class="step-dot"></div>
+                                        <div class="step-label">Offer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-actions">
+                                <button
+                                    class="secondary-btn"
+                                    id="viewJobApp002Btn"
+                                    data-job-id="full-stack-developer"
+                                    type="button"
+                                    style="
+                                        font-size: 12px;
+                                        min-height: 34px;
+                                        padding: 6px 14px;
+                                    "
+                                >
+                                    View Job
+                                </button>
+                                <button
+                                    class="secondary-btn"
+                                    id="withdrawApp002Btn"
+                                    data-application-id="app-002"
+                                    type="button"
+                                    style="
+                                        font-size: 12px;
+                                        min-height: 34px;
+                                        padding: 6px 14px;
+                                        color: var(--red);
+                                        border-color: var(--red);
+                                    "
+                                >
+                                    Withdraw
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card application-card"
+                        id="appCardDataScientist"
+                        data-application-id="app-003"
+                        data-status="pending"
+                    >
+                        <div class="app-company-icon">📊</div>
+                        <div class="app-content">
+                            <div class="app-top">
+                                <div>
+                                    <p class="app-job-title">Data Scientist</p>
+                                    <p class="app-company">Analytics Corp</p>
+                                </div>
+                                <span class="status-badge status-pending"
+                                    >⏳ Pending</span
+                                >
+                            </div>
+                            <div class="app-meta">
+                                <span>📍 Austin, TX</span>
+                                <span>💼 Full-time</span>
+                                <span>🗓 Applied 3 Jun 2026</span>
+                            </div>
+                            <div class="app-progress">
+                                <div class="progress-steps">
+                                    <div class="progress-step">
+                                        <div class="step-dot done">✓</div>
+                                        <div class="step-label done">
+                                            Applied
+                                        </div>
+                                        <div class="step-line"></div>
+                                    </div>
+                                    <div class="progress-step">
+                                        <div class="step-dot"></div>
+                                        <div class="step-label">Reviewed</div>
+                                        <div class="step-line"></div>
+                                    </div>
+                                    <div class="progress-step">
+                                        <div class="step-dot"></div>
+                                        <div class="step-label">Interview</div>
+                                        <div class="step-line"></div>
+                                    </div>
+                                    <div class="progress-step">
+                                        <div class="step-dot"></div>
+                                        <div class="step-label">Offer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-actions">
+                                <button
+                                    class="secondary-btn"
+                                    id="viewJobApp003Btn"
+                                    data-job-id="data-scientist"
+                                    type="button"
+                                    style="
+                                        font-size: 12px;
+                                        min-height: 34px;
+                                        padding: 6px 14px;
+                                    "
+                                >
+                                    View Job
+                                </button>
+                                <button
+                                    class="secondary-btn"
+                                    id="withdrawApp003Btn"
+                                    data-application-id="app-003"
+                                    type="button"
+                                    style="
+                                        font-size: 12px;
+                                        min-height: 34px;
+                                        padding: 6px 14px;
+                                        color: var(--red);
+                                        border-color: var(--red);
+                                    "
+                                >
+                                    Withdraw
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toast"></div>
+
+        <script src="js/theme.js"></script>
+        <script src="js/toast.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/applications.js"></script>
+        <script src="js/notifications.js"></script>
+    </body>
+</html>

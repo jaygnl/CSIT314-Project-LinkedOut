@@ -1,0 +1,5139 @@
+[
+  {
+    "id": "job_001",
+    "title": "Software Engineer",
+    "company": {
+      "name": "TechNova Solutions",
+      "website": "www.technova.com",
+      "phone": "0312345678",
+      "email": "hr@technova.com",
+      "location": {
+        "com_streetNum": "10",
+        "com_streetName": "Innovation Drive",
+        "com_town": "San Francisco",
+        "com_postcode": 94105,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "TechNova Solutions",
+    "description": "Design, develop and maintain scalable software applications. AAAAAAAAAAAA",
+    "requirements": {
+      "education": "",
+      "educationRank": 0,
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "REST APIs",
+        "Docker",
+        "Git"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "10",
+      "streetName": "Innovation Drive",
+      "town": "San Francisco, California, USA",
+      "postcode": 94105,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-05T04:32:40.599Z"
+  },
+  {
+    "id": "job_002",
+    "title": "Data Scientist",
+    "company": {
+      "name": "Insightful Analytics",
+      "website": "www.insightfulanalytics.com",
+      "phone": "0398765432",
+      "email": "careers@insightfulanalytics.com",
+      "location": {
+        "com_streetNum": "45",
+        "com_streetName": "Data Boulevard",
+        "com_town": "New York",
+        "com_postcode": 10001,
+        "com_state": "New York",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "Insightful Analytics",
+    "description": "Analyse large datasets to extract actionable insights and build predictive models.",
+    "requirements": {
+      "education": "Master's in Data Science",
+      "educationRank": 4,
+      "skills": [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "TensorFlow",
+        "Tableau"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "45",
+      "streetName": "Data Boulevard",
+      "town": "New York",
+      "postcode": 10001,
+      "state": "New York",
+      "country": "USA"
+    },
+    "locationText": "New York, New York, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-04T04:32:40.599Z"
+  },
+  {
+    "id": "job_003",
+    "title": "UX Designer",
+    "company": {
+      "name": "Creative Minds Studio",
+      "website": "www.creativeminds.io",
+      "phone": "0411223344",
+      "email": "jobs@creativeminds.io",
+      "location": {
+        "com_streetNum": "88",
+        "com_streetName": "Design Lane",
+        "com_town": "Austin",
+        "com_postcode": 73301,
+        "com_state": "Texas",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "Creative Minds Studio",
+    "description": "Create intuitive and visually appealing user experiences for web and mobile products.",
+    "requirements": {
+      "education": "Bachelor's in Graphic Design",
+      "educationRank": 3,
+      "skills": [
+        "Figma",
+        "Adobe XD",
+        "Prototyping",
+        "User Research",
+        "Wireframing"
+      ],
+      "experienceYears": 2
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "88",
+      "streetName": "Design Lane",
+      "town": "Austin",
+      "postcode": 73301,
+      "state": "Texas",
+      "country": "USA"
+    },
+    "locationText": "Austin, Texas, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 84000,
+    "salaryMax": 114000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-03T04:32:40.599Z"
+  },
+  {
+    "id": "job_004",
+    "title": "DevOps Engineer",
+    "company": {
+      "name": "CloudBridge Systems",
+      "website": "www.cloudbridgesys.com",
+      "phone": "0287654321",
+      "email": "recruit@cloudbridgesys.com",
+      "location": {
+        "com_streetNum": "200",
+        "com_streetName": "Cloud Street",
+        "com_town": "Seattle",
+        "com_postcode": 98101,
+        "com_state": "Washington",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "CloudBridge Systems",
+    "description": "Manage CI/CD pipelines, cloud infrastructure, and deployment automation.",
+    "requirements": {
+      "education": "Bachelor's in Information Technology",
+      "educationRank": 3,
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "Jenkins",
+        "Linux"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "200",
+      "streetName": "Cloud Street",
+      "town": "Seattle",
+      "postcode": 98101,
+      "state": "Washington",
+      "country": "USA"
+    },
+    "locationText": "Seattle, Washington, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-02T04:32:40.599Z"
+  },
+  {
+    "id": "job_005",
+    "title": "Product Manager",
+    "company": {
+      "name": "Launchpad Ventures",
+      "website": "www.launchpadventures.com",
+      "phone": "0455667788",
+      "email": "pm@launchpadventures.com",
+      "location": {
+        "com_streetNum": "5",
+        "com_streetName": "Startup Way",
+        "com_town": "Boston",
+        "com_postcode": 2101,
+        "com_state": "Massachusetts",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "Launchpad Ventures",
+    "description": "Lead product strategy and roadmap from ideation to launch.",
+    "requirements": {
+      "education": "Bachelor's in Business Administration",
+      "educationRank": 3,
+      "skills": [
+        "Agile",
+        "Scrum",
+        "Roadmapping",
+        "Stakeholder Management",
+        "JIRA"
+      ],
+      "experienceYears": 6
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "5",
+      "streetName": "Startup Way",
+      "town": "Boston",
+      "postcode": 2101,
+      "state": "Massachusetts",
+      "country": "USA"
+    },
+    "locationText": "Boston, Massachusetts, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 132000,
+    "salaryMax": 162000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-01T04:32:40.599Z"
+  },
+  {
+    "id": "job_006",
+    "title": "Cybersecurity Analyst",
+    "company": {
+      "name": "SecureNet Corp",
+      "website": "www.securenet.com",
+      "phone": "0321987654",
+      "email": "security@securenet.com",
+      "location": {
+        "com_streetNum": "99",
+        "com_streetName": "Firewall Road",
+        "com_town": "Washington",
+        "com_postcode": 20001,
+        "com_state": "DC",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "SecureNet Corp",
+    "description": "Monitor, detect, and respond to cybersecurity threats and vulnerabilities.",
+    "requirements": {
+      "education": "Bachelor's in Cybersecurity",
+      "educationRank": 3,
+      "skills": [
+        "SIEM",
+        "Penetration Testing",
+        "Network Security",
+        "Incident Response",
+        "CISSP"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "99",
+      "streetName": "Firewall Road",
+      "town": "Washington",
+      "postcode": 20001,
+      "state": "DC",
+      "country": "USA"
+    },
+    "locationText": "Washington, DC, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-31T04:32:40.599Z"
+  },
+  {
+    "id": "job_007",
+    "title": "Frontend Developer",
+    "company": {
+      "name": "PixelPerfect Labs",
+      "website": "www.pixelperfectlabs.com",
+      "phone": "0467891234",
+      "email": "dev@pixelperfectlabs.com",
+      "location": {
+        "com_streetNum": "32",
+        "com_streetName": "Component Court",
+        "com_town": "Los Angeles",
+        "com_postcode": 90001,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "PixelPerfect Labs",
+    "description": "Build responsive and interactive web interfaces using modern JavaScript frameworks.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "React",
+        "TypeScript",
+        "CSS",
+        "HTML5",
+        "Jest"
+      ],
+      "experienceYears": 2
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "32",
+      "streetName": "Component Court",
+      "town": "Los Angeles",
+      "postcode": 90001,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "Los Angeles, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 84000,
+    "salaryMax": 114000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-30T04:32:40.599Z"
+  },
+  {
+    "id": "job_008",
+    "title": "Backend Developer",
+    "company": {
+      "name": "ServerSide Technologies",
+      "website": "www.serverside.tech",
+      "phone": "0299887766",
+      "email": "jobs@serverside.tech",
+      "location": {
+        "com_streetNum": "17",
+        "com_streetName": "API Avenue",
+        "com_town": "Chicago",
+        "com_postcode": 60601,
+        "com_state": "Illinois",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ServerSide Technologies",
+    "description": "Develop and maintain server-side logic, databases, and APIs.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "GraphQL",
+        "AWS Lambda"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "17",
+      "streetName": "API Avenue",
+      "town": "Chicago",
+      "postcode": 60601,
+      "state": "Illinois",
+      "country": "USA"
+    },
+    "locationText": "Chicago, Illinois, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-29T04:32:40.599Z"
+  },
+  {
+    "id": "job_009",
+    "title": "Machine Learning Engineer",
+    "company": {
+      "name": "NeuralWave AI",
+      "website": "www.neuralwave.ai",
+      "phone": "0388112233",
+      "email": "ml@neuralwave.ai",
+      "location": {
+        "com_streetNum": "1",
+        "com_streetName": "Neural Network Path",
+        "com_town": "San Jose",
+        "com_postcode": 95101,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "NeuralWave AI",
+    "description": "Design and implement ML pipelines and production-grade AI models.",
+    "requirements": {
+      "education": "Master's in Artificial Intelligence",
+      "educationRank": 4,
+      "skills": [
+        "Python",
+        "PyTorch",
+        "MLflow",
+        "Spark",
+        "Feature Engineering"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "1",
+      "streetName": "Neural Network Path",
+      "town": "San Jose",
+      "postcode": 95101,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Jose, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-28T04:32:40.599Z"
+  },
+  {
+    "id": "job_010",
+    "title": "Mobile Developer",
+    "company": {
+      "name": "AppForge Inc",
+      "website": "www.appforge.io",
+      "phone": "0412334455",
+      "email": "hire@appforge.io",
+      "location": {
+        "com_streetNum": "67",
+        "com_streetName": "App Store Alley",
+        "com_town": "Denver",
+        "com_postcode": 80201,
+        "com_state": "Colorado",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "AppForge Inc",
+    "description": "Build cross-platform mobile applications for iOS and Android.",
+    "requirements": {
+      "education": "Bachelor's in Software Engineering",
+      "educationRank": 3,
+      "skills": [
+        "React Native",
+        "Flutter",
+        "Swift",
+        "Kotlin",
+        "Firebase"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote",
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "67",
+      "streetName": "App Store Alley",
+      "town": "Denver",
+      "postcode": 80201,
+      "state": "Colorado",
+      "country": "USA"
+    },
+    "locationText": "Denver, Colorado, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-27T04:32:40.599Z"
+  },
+  {
+    "id": "job_011",
+    "title": "Database Administrator",
+    "company": {
+      "name": "DataVault Systems",
+      "website": "www.datavault.com",
+      "phone": "0344556677",
+      "email": "dba@datavault.com",
+      "location": {
+        "com_streetNum": "150",
+        "com_streetName": "Schema Street",
+        "com_town": "Phoenix",
+        "com_postcode": 85001,
+        "com_state": "Arizona",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "DataVault Systems",
+    "description": "Manage, optimise, and secure relational and NoSQL database systems.",
+    "requirements": {
+      "education": "Bachelor's in Information Systems",
+      "educationRank": 3,
+      "skills": [
+        "MySQL",
+        "MongoDB",
+        "Oracle",
+        "Query Optimisation",
+        "Backup & Recovery"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "150",
+      "streetName": "Schema Street",
+      "town": "Phoenix",
+      "postcode": 85001,
+      "state": "Arizona",
+      "country": "USA"
+    },
+    "locationText": "Phoenix, Arizona, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-26T04:32:40.599Z"
+  },
+  {
+    "id": "job_012",
+    "title": "Cloud Architect",
+    "company": {
+      "name": "SkyLayer Technologies",
+      "website": "www.skylayer.tech",
+      "phone": "0422113344",
+      "email": "cloud@skylayer.tech",
+      "location": {
+        "com_streetNum": "300",
+        "com_streetName": "Cumulus Road",
+        "com_town": "Atlanta",
+        "com_postcode": 30301,
+        "com_state": "Georgia",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "SkyLayer Technologies",
+    "description": "Design and oversee enterprise-level cloud infrastructure and migration strategies.",
+    "requirements": {
+      "education": "Bachelor's in Computer Engineering",
+      "educationRank": 3,
+      "skills": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "Terraform",
+        "Networking"
+      ],
+      "experienceYears": 8
+    },
+    "workMode": [
+      "Hybrid",
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "300",
+      "streetName": "Cumulus Road",
+      "town": "Atlanta",
+      "postcode": 30301,
+      "state": "Georgia",
+      "country": "USA"
+    },
+    "locationText": "Atlanta, Georgia, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 156000,
+    "salaryMax": 186000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-25T04:32:40.599Z"
+  },
+  {
+    "id": "job_013",
+    "title": "QA Engineer",
+    "company": {
+      "name": "BugBuster Labs",
+      "website": "www.bugbuster.com",
+      "phone": "0355443322",
+      "email": "qa@bugbuster.com",
+      "location": {
+        "com_streetNum": "22",
+        "com_streetName": "Test Case Terrace",
+        "com_town": "Portland",
+        "com_postcode": 97201,
+        "com_state": "Oregon",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "BugBuster Labs",
+    "description": "Design and execute test plans to ensure software quality and reliability.",
+    "requirements": {
+      "education": "Bachelor's in Software Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Selenium",
+        "Cypress",
+        "Postman",
+        "JIRA",
+        "Test Planning"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "22",
+      "streetName": "Test Case Terrace",
+      "town": "Portland",
+      "postcode": 97201,
+      "state": "Oregon",
+      "country": "USA"
+    },
+    "locationText": "Portland, Oregon, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-24T04:32:40.599Z"
+  },
+  {
+    "id": "job_014",
+    "title": "Systems Analyst",
+    "company": {
+      "name": "Meridian IT Group",
+      "website": "www.meridianit.com",
+      "phone": "0266778899",
+      "email": "analyst@meridianit.com",
+      "location": {
+        "com_streetNum": "78",
+        "com_streetName": "Integration Avenue",
+        "com_town": "Minneapolis",
+        "com_postcode": 55401,
+        "com_state": "Minnesota",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "Meridian IT Group",
+    "description": "Analyse business requirements and design IT solutions to meet operational needs.",
+    "requirements": {
+      "education": "Bachelor's in Information Systems",
+      "educationRank": 3,
+      "skills": [
+        "Business Analysis",
+        "UML",
+        "SQL",
+        "Process Mapping",
+        "Requirements Gathering"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "On-site",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "78",
+      "streetName": "Integration Avenue",
+      "town": "Minneapolis",
+      "postcode": 55401,
+      "state": "Minnesota",
+      "country": "USA"
+    },
+    "locationText": "Minneapolis, Minnesota, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-23T04:32:40.599Z"
+  },
+  {
+    "id": "job_015",
+    "title": "Network Engineer",
+    "company": {
+      "name": "PulseNet Communications",
+      "website": "www.pulsenet.com",
+      "phone": "0433221100",
+      "email": "network@pulsenet.com",
+      "location": {
+        "com_streetNum": "55",
+        "com_streetName": "Router Row",
+        "com_town": "Dallas",
+        "com_postcode": 75201,
+        "com_state": "Texas",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "PulseNet Communications",
+    "description": "Design, implement, and maintain enterprise network infrastructure.",
+    "requirements": {
+      "education": "Bachelor's in Network Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Cisco",
+        "OSPF",
+        "BGP",
+        "VPN",
+        "Firewall Management"
+      ],
+      "experienceYears": 6
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "55",
+      "streetName": "Router Row",
+      "town": "Dallas",
+      "postcode": 75201,
+      "state": "Texas",
+      "country": "USA"
+    },
+    "locationText": "Dallas, Texas, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 132000,
+    "salaryMax": 162000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-05T04:32:40.599Z"
+  },
+  {
+    "id": "job_016",
+    "title": "Blockchain Developer",
+    "company": {
+      "name": "ChainLink Labs",
+      "website": "www.chainlinklabs.io",
+      "phone": "0488990011",
+      "email": "dev@chainlinklabs.io",
+      "location": {
+        "com_streetNum": "9",
+        "com_streetName": "Ledger Lane",
+        "com_town": "Miami",
+        "com_postcode": 33101,
+        "com_state": "Florida",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ChainLink Labs",
+    "description": "Develop smart contracts and decentralised applications on blockchain platforms.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "Solidity",
+        "Ethereum",
+        "Web3.js",
+        "Hardhat",
+        "IPFS"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "9",
+      "streetName": "Ledger Lane",
+      "town": "Miami",
+      "postcode": 33101,
+      "state": "Florida",
+      "country": "USA"
+    },
+    "locationText": "Miami, Florida, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-04T04:32:40.599Z"
+  },
+  {
+    "id": "job_017",
+    "title": "Full Stack Developer",
+    "company": {
+      "name": "StackHouse Digital",
+      "website": "www.stackhouse.io",
+      "phone": "0277889900",
+      "email": "hello@stackhouse.io",
+      "location": {
+        "com_streetNum": "41",
+        "com_streetName": "Stack Street",
+        "com_town": "Nashville",
+        "com_postcode": 37201,
+        "com_state": "Tennessee",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "StackHouse Digital",
+    "description": "Build end-to-end web applications across frontend and backend layers.",
+    "requirements": {
+      "education": "Bachelor's in Software Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Vue.js",
+        "Django",
+        "PostgreSQL",
+        "Docker",
+        "GitHub Actions"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "41",
+      "streetName": "Stack Street",
+      "town": "Nashville",
+      "postcode": 37201,
+      "state": "Tennessee",
+      "country": "USA"
+    },
+    "locationText": "Nashville, Tennessee, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-03T04:32:40.599Z"
+  },
+  {
+    "id": "job_018",
+    "title": "Technical Writer",
+    "company": {
+      "name": "DocuPro Publishing",
+      "website": "www.docupro.com",
+      "phone": "0466009988",
+      "email": "write@docupro.com",
+      "location": {
+        "com_streetNum": "13",
+        "com_streetName": "Markdown Mews",
+        "com_town": "Raleigh",
+        "com_postcode": 27601,
+        "com_state": "North Carolina",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "DocuPro Publishing",
+    "description": "Produce clear technical documentation, API guides, and user manuals.",
+    "requirements": {
+      "education": "Bachelor's in English or Technical Communication",
+      "educationRank": 3,
+      "skills": [
+        "Markdown",
+        "Confluence",
+        "Swagger",
+        "Docs-as-Code",
+        "XML"
+      ],
+      "experienceYears": 2
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "13",
+      "streetName": "Markdown Mews",
+      "town": "Raleigh",
+      "postcode": 27601,
+      "state": "North Carolina",
+      "country": "USA"
+    },
+    "locationText": "Raleigh, North Carolina, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 84000,
+    "salaryMax": 114000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-02T04:32:40.599Z"
+  },
+  {
+    "id": "job_019",
+    "title": "IT Support Specialist",
+    "company": {
+      "name": "HelpDesk Heroes",
+      "website": "www.helpdeskheroes.com",
+      "phone": "0355001122",
+      "email": "support@helpdeskheroes.com",
+      "location": {
+        "com_streetNum": "6",
+        "com_streetName": "Ticket Lane",
+        "com_town": "Columbus",
+        "com_postcode": 43201,
+        "com_state": "Ohio",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "HelpDesk Heroes",
+    "description": "Provide technical support and troubleshooting for end users and internal systems.",
+    "requirements": {
+      "education": "Diploma in IT",
+      "educationRank": 2,
+      "skills": [
+        "Windows",
+        "Active Directory",
+        "Office 365",
+        "Ticketing Systems",
+        "Networking Basics"
+      ],
+      "experienceYears": 1
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "6",
+      "streetName": "Ticket Lane",
+      "town": "Columbus",
+      "postcode": 43201,
+      "state": "Ohio",
+      "country": "USA"
+    },
+    "locationText": "Columbus, Ohio, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Entry Level",
+    "salaryMin": 72000,
+    "salaryMax": 102000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-01T04:32:40.599Z"
+  },
+  {
+    "id": "job_020",
+    "title": "AI Research Scientist",
+    "company": {
+      "name": "DeepThink Research",
+      "website": "www.deepthink.ai",
+      "phone": "0422001122",
+      "email": "research@deepthink.ai",
+      "location": {
+        "com_streetNum": "100",
+        "com_streetName": "Algorithm Alley",
+        "com_town": "Cambridge",
+        "com_postcode": 2139,
+        "com_state": "Massachusetts",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "DeepThink Research",
+    "description": "Conduct fundamental and applied research in artificial intelligence and machine learning.",
+    "requirements": {
+      "education": "PhD in Computer Science or AI",
+      "educationRank": 5,
+      "skills": [
+        "Deep Learning",
+        "NLP",
+        "Reinforcement Learning",
+        "Research Papers",
+        "Python"
+      ],
+      "experienceYears": 6
+    },
+    "workMode": [
+      "On-site",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "100",
+      "streetName": "Algorithm Alley",
+      "town": "Cambridge",
+      "postcode": 2139,
+      "state": "Massachusetts",
+      "country": "USA"
+    },
+    "locationText": "Cambridge, Massachusetts, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 132000,
+    "salaryMax": 162000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-31T04:32:40.599Z"
+  },
+  {
+    "id": "job_021",
+    "title": "Scrum Master",
+    "company": {
+      "name": "AgilePulse Consulting",
+      "website": "www.agilepulse.com",
+      "phone": "0411334466",
+      "email": "agile@agilepulse.com",
+      "location": {
+        "com_streetNum": "28",
+        "com_streetName": "Sprint Circle",
+        "com_town": "Salt Lake City",
+        "com_postcode": 84101,
+        "com_state": "Utah",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "AgilePulse Consulting",
+    "description": "Facilitate agile ceremonies and guide teams toward continuous improvement.",
+    "requirements": {
+      "education": "Bachelor's in any discipline",
+      "educationRank": 3,
+      "skills": [
+        "Scrum",
+        "Kanban",
+        "Facilitation",
+        "JIRA",
+        "Conflict Resolution"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "28",
+      "streetName": "Sprint Circle",
+      "town": "Salt Lake City",
+      "postcode": 84101,
+      "state": "Utah",
+      "country": "USA"
+    },
+    "locationText": "Salt Lake City, Utah, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-30T04:32:40.599Z"
+  },
+  {
+    "id": "job_022",
+    "title": "Site Reliability Engineer",
+    "company": {
+      "name": "UptimeFirst Technologies",
+      "website": "www.uptimefirst.com",
+      "phone": "0299001100",
+      "email": "sre@uptimefirst.com",
+      "location": {
+        "com_streetNum": "72",
+        "com_streetName": "Uptime Road",
+        "com_town": "San Diego",
+        "com_postcode": 92101,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "UptimeFirst Technologies",
+    "description": "Ensure system reliability, scalability, and performance through engineering principles.",
+    "requirements": {
+      "education": "Bachelor's in Computer Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Prometheus",
+        "Grafana",
+        "Go",
+        "Kubernetes",
+        "Incident Management"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "Remote",
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "72",
+      "streetName": "Uptime Road",
+      "town": "San Diego",
+      "postcode": 92101,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Diego, California, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-29T04:32:40.599Z"
+  },
+  {
+    "id": "job_023",
+    "title": "Business Intelligence Analyst",
+    "company": {
+      "name": "Lumina BI",
+      "website": "www.luminabi.com",
+      "phone": "0366778800",
+      "email": "bi@luminabi.com",
+      "location": {
+        "com_streetNum": "34",
+        "com_streetName": "Dashboard Drive",
+        "com_town": "Kansas City",
+        "com_postcode": 64101,
+        "com_state": "Missouri",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "Lumina BI",
+    "description": "Develop BI dashboards and reports to support executive decision-making.",
+    "requirements": {
+      "education": "Bachelor's in Business Analytics",
+      "educationRank": 3,
+      "skills": [
+        "Power BI",
+        "SQL",
+        "DAX",
+        "Data Modelling",
+        "Excel"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "34",
+      "streetName": "Dashboard Drive",
+      "town": "Kansas City",
+      "postcode": 64101,
+      "state": "Missouri",
+      "country": "USA"
+    },
+    "locationText": "Kansas City, Missouri, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-28T04:32:40.599Z"
+  },
+  {
+    "id": "job_024",
+    "title": "Embedded Systems Engineer",
+    "company": {
+      "name": "SilicoPulse Engineering",
+      "website": "www.silicopulse.com",
+      "phone": "0444556677",
+      "email": "embedded@silicopulse.com",
+      "location": {
+        "com_streetNum": "19",
+        "com_streetName": "Microchip Boulevard",
+        "com_town": "San Antonio",
+        "com_postcode": 78201,
+        "com_state": "Texas",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "SilicoPulse Engineering",
+    "description": "Develop firmware and software for embedded hardware platforms.",
+    "requirements": {
+      "education": "Bachelor's in Electrical Engineering",
+      "educationRank": 3,
+      "skills": [
+        "C",
+        "C++",
+        "RTOS",
+        "ARM",
+        "UART/SPI/I2C"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "19",
+      "streetName": "Microchip Boulevard",
+      "town": "San Antonio",
+      "postcode": 78201,
+      "state": "Texas",
+      "country": "USA"
+    },
+    "locationText": "San Antonio, Texas, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-27T04:32:40.599Z"
+  },
+  {
+    "id": "job_025",
+    "title": "Digital Marketing Specialist",
+    "company": {
+      "name": "ClickBoom Agency",
+      "website": "www.clickboom.agency",
+      "phone": "0477889900",
+      "email": "market@clickboom.agency",
+      "location": {
+        "com_streetNum": "3",
+        "com_streetName": "Conversion Court",
+        "com_town": "Las Vegas",
+        "com_postcode": 89101,
+        "com_state": "Nevada",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ClickBoom Agency",
+    "description": "Plan and execute digital marketing campaigns across SEO, SEM, and social media.",
+    "requirements": {
+      "education": "Bachelor's in Marketing",
+      "educationRank": 3,
+      "skills": [
+        "Google Ads",
+        "SEO",
+        "Meta Ads",
+        "Analytics",
+        "Content Strategy"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "3",
+      "streetName": "Conversion Court",
+      "town": "Las Vegas",
+      "postcode": 89101,
+      "state": "Nevada",
+      "country": "USA"
+    },
+    "locationText": "Las Vegas, Nevada, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-26T04:32:40.599Z"
+  },
+  {
+    "id": "job_026",
+    "title": "Software Architect",
+    "company": {
+      "name": "BluePrint Technologies",
+      "website": "www.blueprint.tech",
+      "phone": "0288990011",
+      "email": "architect@blueprint.tech",
+      "location": {
+        "com_streetNum": "120",
+        "com_streetName": "Architecture Avenue",
+        "com_town": "San Francisco",
+        "com_postcode": 94102,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "BluePrint Technologies",
+    "description": "Define technical direction and high-level design of complex software systems.",
+    "requirements": {
+      "education": "Master's in Software Engineering",
+      "educationRank": 4,
+      "skills": [
+        "Microservices",
+        "System Design",
+        "Cloud",
+        "Design Patterns",
+        "Leadership"
+      ],
+      "experienceYears": 10
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "120",
+      "streetName": "Architecture Avenue",
+      "town": "San Francisco",
+      "postcode": 94102,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 180000,
+    "salaryMax": 210000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-25T04:32:40.599Z"
+  },
+  {
+    "id": "job_027",
+    "title": "Game Developer",
+    "company": {
+      "name": "Neon Pixel Games",
+      "website": "www.neonpixel.games",
+      "phone": "0433110099",
+      "email": "studio@neonpixel.games",
+      "location": {
+        "com_streetNum": "50",
+        "com_streetName": "Pixel Plaza",
+        "com_town": "Seattle",
+        "com_postcode": 98102,
+        "com_state": "Washington",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "Neon Pixel Games",
+    "description": "Design and develop engaging game mechanics and systems for PC and console.",
+    "requirements": {
+      "education": "Bachelor's in Game Development",
+      "educationRank": 3,
+      "skills": [
+        "Unity",
+        "C#",
+        "Shader Programming",
+        "Physics Simulation",
+        "Version Control"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "50",
+      "streetName": "Pixel Plaza",
+      "town": "Seattle",
+      "postcode": 98102,
+      "state": "Washington",
+      "country": "USA"
+    },
+    "locationText": "Seattle, Washington, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-24T04:32:40.599Z"
+  },
+  {
+    "id": "job_028",
+    "title": "ERP Consultant",
+    "company": {
+      "name": "EnterpriseFlow Solutions",
+      "website": "www.enterpriseflow.com",
+      "phone": "0366001133",
+      "email": "erp@enterpriseflow.com",
+      "location": {
+        "com_streetNum": "8",
+        "com_streetName": "Module Mile",
+        "com_town": "Houston",
+        "com_postcode": 77001,
+        "com_state": "Texas",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "EnterpriseFlow Solutions",
+    "description": "Implement and customise ERP systems to optimise business processes.",
+    "requirements": {
+      "education": "Bachelor's in Business or IT",
+      "educationRank": 3,
+      "skills": [
+        "SAP",
+        "Oracle ERP",
+        "Business Process Analysis",
+        "Change Management",
+        "SQL"
+      ],
+      "experienceYears": 6
+    },
+    "workMode": [
+      "On-site",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "8",
+      "streetName": "Module Mile",
+      "town": "Houston",
+      "postcode": 77001,
+      "state": "Texas",
+      "country": "USA"
+    },
+    "locationText": "Houston, Texas, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 132000,
+    "salaryMax": 162000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-23T04:32:40.599Z"
+  },
+  {
+    "id": "job_029",
+    "title": "Data Engineer",
+    "company": {
+      "name": "FlowData Inc",
+      "website": "www.flowdata.io",
+      "phone": "0422009977",
+      "email": "data@flowdata.io",
+      "location": {
+        "com_streetNum": "60",
+        "com_streetName": "Pipeline Place",
+        "com_town": "Charlotte",
+        "com_postcode": 28201,
+        "com_state": "North Carolina",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "FlowData Inc",
+    "description": "Build and maintain scalable data pipelines and ETL processes.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science or Data Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Apache Kafka",
+        "Airflow",
+        "dbt",
+        "Snowflake",
+        "Python"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "60",
+      "streetName": "Pipeline Place",
+      "town": "Charlotte",
+      "postcode": 28201,
+      "state": "North Carolina",
+      "country": "USA"
+    },
+    "locationText": "Charlotte, North Carolina, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-05T04:32:40.599Z"
+  },
+  {
+    "id": "job_030",
+    "title": "Solutions Architect",
+    "company": {
+      "name": "Vertex Consulting Group",
+      "website": "www.vertexgroup.com",
+      "phone": "0277110033",
+      "email": "solutions@vertexgroup.com",
+      "location": {
+        "com_streetNum": "25",
+        "com_streetName": "Enterprise Edge",
+        "com_town": "Philadelphia",
+        "com_postcode": 19101,
+        "com_state": "Pennsylvania",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "Vertex Consulting Group",
+    "description": "Design and present technical solutions that align with client business objectives.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "AWS",
+        "Solution Design",
+        "Enterprise Architecture",
+        "Pre-sales",
+        "Presentation"
+      ],
+      "experienceYears": 8
+    },
+    "workMode": [
+      "Hybrid",
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "25",
+      "streetName": "Enterprise Edge",
+      "town": "Philadelphia",
+      "postcode": 19101,
+      "state": "Pennsylvania",
+      "country": "USA"
+    },
+    "locationText": "Philadelphia, Pennsylvania, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 156000,
+    "salaryMax": 186000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-04T04:32:40.599Z"
+  },
+  {
+    "id": "job_031",
+    "title": "NLP Engineer",
+    "company": {
+      "name": "LinguaTech AI",
+      "website": "www.linguatech.ai",
+      "phone": "0411000222",
+      "email": "nlp@linguatech.ai",
+      "location": {
+        "com_streetNum": "7",
+        "com_streetName": "Semantics Street",
+        "com_town": "New York",
+        "com_postcode": 10002,
+        "com_state": "New York",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "LinguaTech AI",
+    "description": "Build natural language processing models and conversational AI pipelines.",
+    "requirements": {
+      "education": "Master's in Computational Linguistics or AI",
+      "educationRank": 4,
+      "skills": [
+        "Transformers",
+        "BERT",
+        "HuggingFace",
+        "spaCy",
+        "Python"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "7",
+      "streetName": "Semantics Street",
+      "town": "New York",
+      "postcode": 10002,
+      "state": "New York",
+      "country": "USA"
+    },
+    "locationText": "New York, New York, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-03T04:32:40.599Z"
+  },
+  {
+    "id": "job_032",
+    "title": "IT Project Manager",
+    "company": {
+      "name": "MilestonePro Group",
+      "website": "www.milestonepro.com",
+      "phone": "0399002244",
+      "email": "pm@milestonepro.com",
+      "location": {
+        "com_streetNum": "18",
+        "com_streetName": "Gantt Court",
+        "com_town": "Detroit",
+        "com_postcode": 48201,
+        "com_state": "Michigan",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "MilestonePro Group",
+    "description": "Lead IT projects from initiation through delivery within scope, time, and budget.",
+    "requirements": {
+      "education": "Bachelor's in Project Management or IT",
+      "educationRank": 3,
+      "skills": [
+        "PMP",
+        "MS Project",
+        "Stakeholder Management",
+        "Risk Management",
+        "Agile"
+      ],
+      "experienceYears": 7
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "18",
+      "streetName": "Gantt Court",
+      "town": "Detroit",
+      "postcode": 48201,
+      "state": "Michigan",
+      "country": "USA"
+    },
+    "locationText": "Detroit, Michigan, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 144000,
+    "salaryMax": 174000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-02T04:32:40.599Z"
+  },
+  {
+    "id": "job_033",
+    "title": "AR/VR Developer",
+    "company": {
+      "name": "ImmerseTech Studios",
+      "website": "www.immersetech.com",
+      "phone": "0433556677",
+      "email": "xr@immersetech.com",
+      "location": {
+        "com_streetNum": "14",
+        "com_streetName": "Reality Road",
+        "com_town": "Los Angeles",
+        "com_postcode": 90002,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ImmerseTech Studios",
+    "description": "Develop immersive AR/VR experiences for enterprise and consumer platforms.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science or Interactive Media",
+      "educationRank": 3,
+      "skills": [
+        "Unity",
+        "Unreal Engine",
+        "ARCore",
+        "ARKit",
+        "3D Modelling"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "14",
+      "streetName": "Reality Road",
+      "town": "Los Angeles",
+      "postcode": 90002,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "Los Angeles, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-01T04:32:40.599Z"
+  },
+  {
+    "id": "job_034",
+    "title": "Penetration Tester",
+    "company": {
+      "name": "RedTeam Global",
+      "website": "www.redteamglobal.com",
+      "phone": "0488001234",
+      "email": "pentest@redteamglobal.com",
+      "location": {
+        "com_streetNum": "33",
+        "com_streetName": "Exploit Lane",
+        "com_town": "Chicago",
+        "com_postcode": 60602,
+        "com_state": "Illinois",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "RedTeam Global",
+    "description": "Conduct authorised security assessments to identify vulnerabilities in client systems.",
+    "requirements": {
+      "education": "Bachelor's in Cybersecurity",
+      "educationRank": 3,
+      "skills": [
+        "Metasploit",
+        "Burp Suite",
+        "Kali Linux",
+        "OWASP",
+        "Report Writing"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote",
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "33",
+      "streetName": "Exploit Lane",
+      "town": "Chicago",
+      "postcode": 60602,
+      "state": "Illinois",
+      "country": "USA"
+    },
+    "locationText": "Chicago, Illinois, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-31T04:32:40.599Z"
+  },
+  {
+    "id": "job_035",
+    "title": "Robotics Engineer",
+    "company": {
+      "name": "AutoDrive Robotics",
+      "website": "www.autodriverobotics.com",
+      "phone": "0411009977",
+      "email": "robots@autodriverobotics.com",
+      "location": {
+        "com_streetNum": "80",
+        "com_streetName": "Servo Street",
+        "com_town": "Detroit",
+        "com_postcode": 48202,
+        "com_state": "Michigan",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "AutoDrive Robotics",
+    "description": "Design, build, and program robotic systems for industrial and autonomous applications.",
+    "requirements": {
+      "education": "Bachelor's in Robotics or Mechatronics",
+      "educationRank": 3,
+      "skills": [
+        "ROS",
+        "Python",
+        "C++",
+        "Computer Vision",
+        "Path Planning"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "80",
+      "streetName": "Servo Street",
+      "town": "Detroit",
+      "postcode": 48202,
+      "state": "Michigan",
+      "country": "USA"
+    },
+    "locationText": "Detroit, Michigan, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-30T04:32:40.599Z"
+  },
+  {
+    "id": "job_036",
+    "title": "Platform Engineer",
+    "company": {
+      "name": "CoreStack Engineering",
+      "website": "www.corestack.io",
+      "phone": "0355778899",
+      "email": "platform@corestack.io",
+      "location": {
+        "com_streetNum": "91",
+        "com_streetName": "Infrastructure Way",
+        "com_town": "Austin",
+        "com_postcode": 73302,
+        "com_state": "Texas",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "CoreStack Engineering",
+    "description": "Build and maintain internal developer platforms and tooling infrastructure.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "Helm",
+        "ArgoCD",
+        "Kubernetes",
+        "Go",
+        "Platform Engineering"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "91",
+      "streetName": "Infrastructure Way",
+      "town": "Austin",
+      "postcode": 73302,
+      "state": "Texas",
+      "country": "USA"
+    },
+    "locationText": "Austin, Texas, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-29T04:32:40.599Z"
+  },
+  {
+    "id": "job_037",
+    "title": "Data Analyst",
+    "company": {
+      "name": "NumericEdge Solutions",
+      "website": "www.numericedge.com",
+      "phone": "0422667788",
+      "email": "analyst@numericedge.com",
+      "location": {
+        "com_streetNum": "44",
+        "com_streetName": "Regression Road",
+        "com_town": "Denver",
+        "com_postcode": 80202,
+        "com_state": "Colorado",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "NumericEdge Solutions",
+    "description": "Interpret data to identify trends, patterns, and insights for business teams.",
+    "requirements": {
+      "education": "Bachelor's in Statistics or Mathematics",
+      "educationRank": 3,
+      "skills": [
+        "Excel",
+        "Python",
+        "SQL",
+        "Power BI",
+        "Statistical Analysis"
+      ],
+      "experienceYears": 2
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "44",
+      "streetName": "Regression Road",
+      "town": "Denver",
+      "postcode": 80202,
+      "state": "Colorado",
+      "country": "USA"
+    },
+    "locationText": "Denver, Colorado, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 84000,
+    "salaryMax": 114000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-28T04:32:40.599Z"
+  },
+  {
+    "id": "job_038",
+    "title": "CTO",
+    "company": {
+      "name": "VisionForge Corp",
+      "website": "www.visionforge.com",
+      "phone": "0299113344",
+      "email": "executive@visionforge.com",
+      "location": {
+        "com_streetNum": "500",
+        "com_streetName": "Executive Parkway",
+        "com_town": "New York",
+        "com_postcode": 10003,
+        "com_state": "New York",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "VisionForge Corp",
+    "description": "Lead the company's technology vision, strategy, and engineering organisation.",
+    "requirements": {
+      "education": "Master's in Computer Science or MBA",
+      "educationRank": 4,
+      "skills": [
+        "Technology Strategy",
+        "Team Leadership",
+        "Architecture",
+        "Investor Relations",
+        "OKRs"
+      ],
+      "experienceYears": 15
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "500",
+      "streetName": "Executive Parkway",
+      "town": "New York",
+      "postcode": 10003,
+      "state": "New York",
+      "country": "USA"
+    },
+    "locationText": "New York, New York, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 240000,
+    "salaryMax": 270000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-27T04:32:40.599Z"
+  },
+  {
+    "id": "job_039",
+    "title": "Automation Engineer",
+    "company": {
+      "name": "FlowBot Systems",
+      "website": "www.flowbot.systems",
+      "phone": "0444223311",
+      "email": "automate@flowbot.systems",
+      "location": {
+        "com_streetNum": "62",
+        "com_streetName": "Workflow Way",
+        "com_town": "Phoenix",
+        "com_postcode": 85002,
+        "com_state": "Arizona",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "FlowBot Systems",
+    "description": "Design and build automation frameworks for software testing and process automation.",
+    "requirements": {
+      "education": "Bachelor's in Software Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Python",
+        "Selenium",
+        "Robot Framework",
+        "CI/CD",
+        "API Testing"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "62",
+      "streetName": "Workflow Way",
+      "town": "Phoenix",
+      "postcode": 85002,
+      "state": "Arizona",
+      "country": "USA"
+    },
+    "locationText": "Phoenix, Arizona, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-26T04:32:40.599Z"
+  },
+  {
+    "id": "job_040",
+    "title": "MLOps Engineer",
+    "company": {
+      "name": "ModelOps Technologies",
+      "website": "www.modelops.tech",
+      "phone": "0388223300",
+      "email": "mlops@modelops.tech",
+      "location": {
+        "com_streetNum": "36",
+        "com_streetName": "Model Street",
+        "com_town": "San Francisco",
+        "com_postcode": 94103,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ModelOps Technologies",
+    "description": "Operationalise machine learning models from experimentation to production deployment.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science or Data Science",
+      "educationRank": 3,
+      "skills": [
+        "MLflow",
+        "Kubeflow",
+        "Docker",
+        "Python",
+        "Monitoring"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "36",
+      "streetName": "Model Street",
+      "town": "San Francisco",
+      "postcode": 94103,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-25T04:32:40.599Z"
+  },
+  {
+    "id": "job_041",
+    "title": "Cloud Security Engineer",
+    "company": {
+      "name": "ShieldCloud Inc",
+      "website": "www.shieldcloud.io",
+      "phone": "0477009988",
+      "email": "security@shieldcloud.io",
+      "location": {
+        "com_streetNum": "49",
+        "com_streetName": "Zero Trust Terrace",
+        "com_town": "Washington",
+        "com_postcode": 20002,
+        "com_state": "DC",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ShieldCloud Inc",
+    "description": "Secure cloud environments and enforce compliance across AWS and Azure platforms.",
+    "requirements": {
+      "education": "Bachelor's in Cybersecurity",
+      "educationRank": 3,
+      "skills": [
+        "AWS Security",
+        "IAM",
+        "Compliance",
+        "CSPM",
+        "Threat Modelling"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "Hybrid",
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "49",
+      "streetName": "Zero Trust Terrace",
+      "town": "Washington",
+      "postcode": 20002,
+      "state": "DC",
+      "country": "USA"
+    },
+    "locationText": "Washington, DC, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-24T04:32:40.599Z"
+  },
+  {
+    "id": "job_042",
+    "title": "UI Engineer",
+    "company": {
+      "name": "Interface Innovations",
+      "website": "www.interface.dev",
+      "phone": "0355112299",
+      "email": "ui@interface.dev",
+      "location": {
+        "com_streetNum": "11",
+        "com_streetName": "Pixel Point",
+        "com_town": "Portland",
+        "com_postcode": 97202,
+        "com_state": "Oregon",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "Interface Innovations",
+    "description": "Implement highly polished and accessible user interfaces from design specs.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science or Design",
+      "educationRank": 3,
+      "skills": [
+        "React",
+        "CSS-in-JS",
+        "Storybook",
+        "Accessibility",
+        "Animation"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "11",
+      "streetName": "Pixel Point",
+      "town": "Portland",
+      "postcode": 97202,
+      "state": "Oregon",
+      "country": "USA"
+    },
+    "locationText": "Portland, Oregon, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-23T04:32:40.599Z"
+  },
+  {
+    "id": "job_043",
+    "title": "Compliance Officer",
+    "company": {
+      "name": "RegGuard Financial",
+      "website": "www.regguard.com",
+      "phone": "0266001122",
+      "email": "compliance@regguard.com",
+      "location": {
+        "com_streetNum": "250",
+        "com_streetName": "Regulation Road",
+        "com_town": "New York",
+        "com_postcode": 10004,
+        "com_state": "New York",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "RegGuard Financial",
+    "description": "Ensure the company adheres to legal standards and internal policies.",
+    "requirements": {
+      "education": "Bachelor's in Law or Finance",
+      "educationRank": 3,
+      "skills": [
+        "Regulatory Compliance",
+        "AML",
+        "KYC",
+        "Risk Assessment",
+        "Policy Writing"
+      ],
+      "experienceYears": 6
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "250",
+      "streetName": "Regulation Road",
+      "town": "New York",
+      "postcode": 10004,
+      "state": "New York",
+      "country": "USA"
+    },
+    "locationText": "New York, New York, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 132000,
+    "salaryMax": 162000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-05T04:32:40.599Z"
+  },
+  {
+    "id": "job_044",
+    "title": "Healthcare IT Specialist",
+    "company": {
+      "name": "MediCore Systems",
+      "website": "www.medicore.health",
+      "phone": "0422991100",
+      "email": "it@medicore.health",
+      "location": {
+        "com_streetNum": "400",
+        "com_streetName": "Health Hub Road",
+        "com_town": "Boston",
+        "com_postcode": 2102,
+        "com_state": "Massachusetts",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "MediCore Systems",
+    "description": "Manage and support clinical IT systems including EHR and PACS platforms.",
+    "requirements": {
+      "education": "Bachelor's in Health Informatics",
+      "educationRank": 3,
+      "skills": [
+        "HL7",
+        "FHIR",
+        "Epic",
+        "HIPAA",
+        "IT Support"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "400",
+      "streetName": "Health Hub Road",
+      "town": "Boston",
+      "postcode": 2102,
+      "state": "Massachusetts",
+      "country": "USA"
+    },
+    "locationText": "Boston, Massachusetts, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-04T04:32:40.599Z"
+  },
+  {
+    "id": "job_045",
+    "title": "FinTech Developer",
+    "company": {
+      "name": "Moneta Digital Bank",
+      "website": "www.monetabank.io",
+      "phone": "0388000099",
+      "email": "dev@monetabank.io",
+      "location": {
+        "com_streetNum": "16",
+        "com_streetName": "Ledger Street",
+        "com_town": "San Francisco",
+        "com_postcode": 94104,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "Moneta Digital Bank",
+    "description": "Build secure financial technology features including payments and open banking APIs.",
+    "requirements": {
+      "education": "Bachelor's in Software Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Java",
+        "Spring Security",
+        "OAuth2",
+        "PCI-DSS",
+        "Microservices"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "16",
+      "streetName": "Ledger Street",
+      "town": "San Francisco",
+      "postcode": 94104,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-03T04:32:40.599Z"
+  },
+  {
+    "id": "job_046",
+    "title": "EdTech Product Designer",
+    "company": {
+      "name": "LearnSphere Platform",
+      "website": "www.learnsphere.io",
+      "phone": "0444778800",
+      "email": "design@learnsphere.io",
+      "location": {
+        "com_streetNum": "23",
+        "com_streetName": "Knowledge Court",
+        "com_town": "Boston",
+        "com_postcode": 2103,
+        "com_state": "Massachusetts",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "LearnSphere Platform",
+    "description": "Design user-centred products for digital learning environments.",
+    "requirements": {
+      "education": "Bachelor's in Interaction Design",
+      "educationRank": 3,
+      "skills": [
+        "Figma",
+        "Learning Experience Design",
+        "Prototyping",
+        "Usability Testing",
+        "Accessibility"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "23",
+      "streetName": "Knowledge Court",
+      "town": "Boston",
+      "postcode": 2103,
+      "state": "Massachusetts",
+      "country": "USA"
+    },
+    "locationText": "Boston, Massachusetts, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-02T04:32:40.599Z"
+  },
+  {
+    "id": "job_047",
+    "title": "Supply Chain Analyst",
+    "company": {
+      "name": "LogiCore Industries",
+      "website": "www.logicore.com",
+      "phone": "0311889900",
+      "email": "supply@logicore.com",
+      "location": {
+        "com_streetNum": "74",
+        "com_streetName": "Logistics Loop",
+        "com_town": "Chicago",
+        "com_postcode": 60603,
+        "com_state": "Illinois",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "LogiCore Industries",
+    "description": "Analyse supply chain data to improve efficiency and reduce operational costs.",
+    "requirements": {
+      "education": "Bachelor's in Supply Chain Management",
+      "educationRank": 3,
+      "skills": [
+        "SAP SCM",
+        "Excel",
+        "SQL",
+        "Forecasting",
+        "Inventory Management"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "On-site",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "74",
+      "streetName": "Logistics Loop",
+      "town": "Chicago",
+      "postcode": 60603,
+      "state": "Illinois",
+      "country": "USA"
+    },
+    "locationText": "Chicago, Illinois, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-01T04:32:40.599Z"
+  },
+  {
+    "id": "job_048",
+    "title": "Firmware Engineer",
+    "company": {
+      "name": "IoT Foundry",
+      "website": "www.iotfoundry.com",
+      "phone": "0477001122",
+      "email": "firmware@iotfoundry.com",
+      "location": {
+        "com_streetNum": "38",
+        "com_streetName": "Device Drive",
+        "com_town": "San Jose",
+        "com_postcode": 95102,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "IoT Foundry",
+    "description": "Write and maintain firmware for IoT devices and connected hardware products.",
+    "requirements": {
+      "education": "Bachelor's in Electrical Engineering",
+      "educationRank": 3,
+      "skills": [
+        "C",
+        "FreeRTOS",
+        "Bluetooth LE",
+        "Zephyr",
+        "JTAG Debugging"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "38",
+      "streetName": "Device Drive",
+      "town": "San Jose",
+      "postcode": 95102,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Jose, California, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-31T04:32:40.599Z"
+  },
+  {
+    "id": "job_049",
+    "title": "Risk Analyst",
+    "company": {
+      "name": "PrecisionRisk Advisory",
+      "website": "www.precisionrisk.com",
+      "phone": "0288330099",
+      "email": "risk@precisionrisk.com",
+      "location": {
+        "com_streetNum": "102",
+        "com_streetName": "Exposure Avenue",
+        "com_town": "New York",
+        "com_postcode": 10005,
+        "com_state": "New York",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "PrecisionRisk Advisory",
+    "description": "Identify, model, and mitigate financial and operational risks for clients.",
+    "requirements": {
+      "education": "Bachelor's in Finance or Mathematics",
+      "educationRank": 3,
+      "skills": [
+        "VaR Modelling",
+        "Monte Carlo Simulation",
+        "Excel",
+        "Python",
+        "Regulatory Reporting"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "102",
+      "streetName": "Exposure Avenue",
+      "town": "New York",
+      "postcode": 10005,
+      "state": "New York",
+      "country": "USA"
+    },
+    "locationText": "New York, New York, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-30T04:32:40.599Z"
+  },
+  {
+    "id": "job_050",
+    "title": "Cloud Cost Optimisation Engineer",
+    "company": {
+      "name": "FinOps Partners",
+      "website": "www.finopspartners.com",
+      "phone": "0411226677",
+      "email": "cloud@finopspartners.com",
+      "location": {
+        "com_streetNum": "57",
+        "com_streetName": "Budget Boulevard",
+        "com_town": "Seattle",
+        "com_postcode": 98103,
+        "com_state": "Washington",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "FinOps Partners",
+    "description": "Analyse and optimise cloud infrastructure spending across multi-cloud environments.",
+    "requirements": {
+      "education": "Bachelor's in Cloud Computing or Finance",
+      "educationRank": 3,
+      "skills": [
+        "AWS Cost Explorer",
+        "Spot Instances",
+        "FinOps",
+        "Tagging",
+        "Reporting"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "57",
+      "streetName": "Budget Boulevard",
+      "town": "Seattle",
+      "postcode": 98103,
+      "state": "Washington",
+      "country": "USA"
+    },
+    "locationText": "Seattle, Washington, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-29T04:32:40.599Z"
+  },
+  {
+    "id": "job_051",
+    "title": "Java Developer",
+    "company": {
+      "name": "ByteForce Software",
+      "website": "www.byteforce.dev",
+      "phone": "0366009911",
+      "email": "java@byteforce.dev",
+      "location": {
+        "com_streetNum": "21",
+        "com_streetName": "Bytecode Boulevard",
+        "com_town": "Atlanta",
+        "com_postcode": 30302,
+        "com_state": "Georgia",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ByteForce Software",
+    "description": "Develop and maintain enterprise Java applications with a focus on performance.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "Java 17",
+        "Spring Boot",
+        "Hibernate",
+        "JUnit",
+        "Maven"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "21",
+      "streetName": "Bytecode Boulevard",
+      "town": "Atlanta",
+      "postcode": 30302,
+      "state": "Georgia",
+      "country": "USA"
+    },
+    "locationText": "Atlanta, Georgia, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-28T04:32:40.599Z"
+  },
+  {
+    "id": "job_052",
+    "title": "Python Developer",
+    "company": {
+      "name": "SerpentCode Labs",
+      "website": "www.serpentcode.io",
+      "phone": "0455334411",
+      "email": "python@serpentcode.io",
+      "location": {
+        "com_streetNum": "4",
+        "com_streetName": "Indentation Avenue",
+        "com_town": "Austin",
+        "com_postcode": 73303,
+        "com_state": "Texas",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "SerpentCode Labs",
+    "description": "Write clean, efficient Python code for web backends and automation tools.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "Python",
+        "FastAPI",
+        "SQLAlchemy",
+        "Pytest",
+        "Celery"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "4",
+      "streetName": "Indentation Avenue",
+      "town": "Austin",
+      "postcode": 73303,
+      "state": "Texas",
+      "country": "USA"
+    },
+    "locationText": "Austin, Texas, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-27T04:32:40.599Z"
+  },
+  {
+    "id": "job_053",
+    "title": "Go Developer",
+    "company": {
+      "name": "GopherCore Systems",
+      "website": "www.gophercore.com",
+      "phone": "0488113344",
+      "email": "go@gophercore.com",
+      "location": {
+        "com_streetNum": "63",
+        "com_streetName": "Concurrency Close",
+        "com_town": "San Francisco",
+        "com_postcode": 94105,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "GopherCore Systems",
+    "description": "Build high-performance microservices and CLI tools using Go.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "Go",
+        "gRPC",
+        "Protocol Buffers",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "63",
+      "streetName": "Concurrency Close",
+      "town": "San Francisco",
+      "postcode": 94105,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-26T04:32:40.599Z"
+  },
+  {
+    "id": "job_054",
+    "title": "Rust Developer",
+    "company": {
+      "name": "SafeMem Technologies",
+      "website": "www.safemem.tech",
+      "phone": "0422334400",
+      "email": "rust@safemem.tech",
+      "location": {
+        "com_streetNum": "29",
+        "com_streetName": "Ownership Oval",
+        "com_town": "Seattle",
+        "com_postcode": 98104,
+        "com_state": "Washington",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "SafeMem Technologies",
+    "description": "Develop systems-level software using Rust for performance and safety.",
+    "requirements": {
+      "education": "Bachelor's in Computer Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Rust",
+        "async/await",
+        "Tokio",
+        "WebAssembly",
+        "Low-level Debugging"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "29",
+      "streetName": "Ownership Oval",
+      "town": "Seattle",
+      "postcode": 98104,
+      "state": "Washington",
+      "country": "USA"
+    },
+    "locationText": "Seattle, Washington, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-25T04:32:40.599Z"
+  },
+  {
+    "id": "job_055",
+    "title": "iOS Developer",
+    "company": {
+      "name": "CupertinoCode Studios",
+      "website": "www.cupertinocode.com",
+      "phone": "0399442211",
+      "email": "ios@cupertinocode.com",
+      "location": {
+        "com_streetNum": "48",
+        "com_streetName": "Swift Street",
+        "com_town": "San Jose",
+        "com_postcode": 95103,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "CupertinoCode Studios",
+    "description": "Build and maintain native iOS applications with a focus on performance and UX.",
+    "requirements": {
+      "education": "Bachelor's in Software Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Swift",
+        "SwiftUI",
+        "Combine",
+        "CoreData",
+        "XCTest"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "On-site",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "48",
+      "streetName": "Swift Street",
+      "town": "San Jose",
+      "postcode": 95103,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Jose, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-24T04:32:40.599Z"
+  },
+  {
+    "id": "job_056",
+    "title": "Android Developer",
+    "company": {
+      "name": "GreenRobot Apps",
+      "website": "www.greenrobotapps.com",
+      "phone": "0344990011",
+      "email": "android@greenrobotapps.com",
+      "location": {
+        "com_streetNum": "15",
+        "com_streetName": "Kotlin Court",
+        "com_town": "Los Angeles",
+        "com_postcode": 90003,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "GreenRobot Apps",
+    "description": "Create polished Android applications using Jetpack Compose and modern architecture.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Room",
+        "Retrofit",
+        "Hilt"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "15",
+      "streetName": "Kotlin Court",
+      "town": "Los Angeles",
+      "postcode": 90003,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "Los Angeles, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-23T04:32:40.599Z"
+  },
+  {
+    "id": "job_057",
+    "title": "Data Governance Manager",
+    "company": {
+      "name": "TrustLayer Data",
+      "website": "www.trustlayer.data",
+      "phone": "0266112200",
+      "email": "governance@trustlayer.data",
+      "location": {
+        "com_streetNum": "77",
+        "com_streetName": "Stewardship Street",
+        "com_town": "New York",
+        "com_postcode": 10006,
+        "com_state": "New York",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "TrustLayer Data",
+    "description": "Define and enforce data governance policies, data quality standards, and lineage tracking.",
+    "requirements": {
+      "education": "Bachelor's in Information Management",
+      "educationRank": 3,
+      "skills": [
+        "Collibra",
+        "Data Cataloguing",
+        "GDPR",
+        "Data Quality",
+        "SQL"
+      ],
+      "experienceYears": 7
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "77",
+      "streetName": "Stewardship Street",
+      "town": "New York",
+      "postcode": 10006,
+      "state": "New York",
+      "country": "USA"
+    },
+    "locationText": "New York, New York, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 144000,
+    "salaryMax": 174000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-05T04:32:40.599Z"
+  },
+  {
+    "id": "job_058",
+    "title": "API Developer",
+    "company": {
+      "name": "EndpointPro Labs",
+      "website": "www.endpointpro.dev",
+      "phone": "0411778822",
+      "email": "api@endpointpro.dev",
+      "location": {
+        "com_streetNum": "53",
+        "com_streetName": "Request Row",
+        "com_town": "Denver",
+        "com_postcode": 80203,
+        "com_state": "Colorado",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "EndpointPro Labs",
+    "description": "Design, build, and document RESTful and GraphQL APIs consumed by third-party clients.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "REST",
+        "GraphQL",
+        "OpenAPI",
+        "Node.js",
+        "Rate Limiting"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "53",
+      "streetName": "Request Row",
+      "town": "Denver",
+      "postcode": 80203,
+      "state": "Colorado",
+      "country": "USA"
+    },
+    "locationText": "Denver, Colorado, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-04T04:32:40.599Z"
+  },
+  {
+    "id": "job_059",
+    "title": "Microservices Engineer",
+    "company": {
+      "name": "ScaleGrid Technologies",
+      "website": "www.scalegrid.tech",
+      "phone": "0388441100",
+      "email": "micro@scalegrid.tech",
+      "location": {
+        "com_streetNum": "86",
+        "com_streetName": "Service Mesh Lane",
+        "com_town": "San Francisco",
+        "com_postcode": 94106,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ScaleGrid Technologies",
+    "description": "Decompose monolithic systems into scalable and independently deployable microservices.",
+    "requirements": {
+      "education": "Bachelor's in Software Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Java",
+        "Spring Cloud",
+        "Kafka",
+        "Service Mesh",
+        "Docker"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "86",
+      "streetName": "Service Mesh Lane",
+      "town": "San Francisco",
+      "postcode": 94106,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-03T04:32:40.599Z"
+  },
+  {
+    "id": "job_060",
+    "title": "Salesforce Developer",
+    "company": {
+      "name": "CRM Wizards Inc",
+      "website": "www.crmwizards.com",
+      "phone": "0433009988",
+      "email": "sf@crmwizards.com",
+      "location": {
+        "com_streetNum": "37",
+        "com_streetName": "CRM Corner",
+        "com_town": "Chicago",
+        "com_postcode": 60604,
+        "com_state": "Illinois",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "CRM Wizards Inc",
+    "description": "Build and customise Salesforce solutions using Apex, Flows, and Lightning components.",
+    "requirements": {
+      "education": "Bachelor's in IT or Business",
+      "educationRank": 3,
+      "skills": [
+        "Apex",
+        "Lightning Web Components",
+        "SOQL",
+        "Flows",
+        "Salesforce Platform"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "37",
+      "streetName": "CRM Corner",
+      "town": "Chicago",
+      "postcode": 60604,
+      "state": "Illinois",
+      "country": "USA"
+    },
+    "locationText": "Chicago, Illinois, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-02T04:32:40.599Z"
+  },
+  {
+    "id": "job_061",
+    "title": "Security Operations Engineer",
+    "company": {
+      "name": "SentinelOps Group",
+      "website": "www.sentinelops.com",
+      "phone": "0277556633",
+      "email": "soc@sentinelops.com",
+      "location": {
+        "com_streetNum": "42",
+        "com_streetName": "Alert Avenue",
+        "com_town": "Dallas",
+        "com_postcode": 75202,
+        "com_state": "Texas",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "SentinelOps Group",
+    "description": "Monitor security events and respond to threats within the Security Operations Centre.",
+    "requirements": {
+      "education": "Bachelor's in Cybersecurity",
+      "educationRank": 3,
+      "skills": [
+        "Splunk",
+        "SOAR",
+        "Threat Intelligence",
+        "Incident Response",
+        "IDS/IPS"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "42",
+      "streetName": "Alert Avenue",
+      "town": "Dallas",
+      "postcode": 75202,
+      "state": "Texas",
+      "country": "USA"
+    },
+    "locationText": "Dallas, Texas, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-01T04:32:40.599Z"
+  },
+  {
+    "id": "job_062",
+    "title": "Data Warehouse Engineer",
+    "company": {
+      "name": "WarehouseWorks Analytics",
+      "website": "www.warehouseworks.io",
+      "phone": "0466223311",
+      "email": "dw@warehouseworks.io",
+      "location": {
+        "com_streetNum": "69",
+        "com_streetName": "Dimension Drive",
+        "com_town": "Minneapolis",
+        "com_postcode": 55402,
+        "com_state": "Minnesota",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "WarehouseWorks Analytics",
+    "description": "Design and build data warehouse solutions for reporting and analytics use cases.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science or Information Systems",
+      "educationRank": 3,
+      "skills": [
+        "Redshift",
+        "Snowflake",
+        "dbt",
+        "Dimensional Modelling",
+        "SQL"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "69",
+      "streetName": "Dimension Drive",
+      "town": "Minneapolis",
+      "postcode": 55402,
+      "state": "Minnesota",
+      "country": "USA"
+    },
+    "locationText": "Minneapolis, Minnesota, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-31T04:32:40.599Z"
+  },
+  {
+    "id": "job_063",
+    "title": "CRM Developer",
+    "company": {
+      "name": "RelationTech Solutions",
+      "website": "www.relationtech.com",
+      "phone": "0422778855",
+      "email": "crm@relationtech.com",
+      "location": {
+        "com_streetNum": "26",
+        "com_streetName": "Customer Lane",
+        "com_town": "Philadelphia",
+        "com_postcode": 19102,
+        "com_state": "Pennsylvania",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "RelationTech Solutions",
+    "description": "Customise and integrate CRM systems to support sales and marketing operations.",
+    "requirements": {
+      "education": "Bachelor's in IT or Business",
+      "educationRank": 3,
+      "skills": [
+        "HubSpot",
+        "Dynamics 365",
+        "API Integration",
+        "JavaScript",
+        "SQL"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Hybrid",
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "26",
+      "streetName": "Customer Lane",
+      "town": "Philadelphia",
+      "postcode": 19102,
+      "state": "Pennsylvania",
+      "country": "USA"
+    },
+    "locationText": "Philadelphia, Pennsylvania, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-30T04:32:40.599Z"
+  },
+  {
+    "id": "job_064",
+    "title": "Low-Code Developer",
+    "company": {
+      "name": "NoCode Nation",
+      "website": "www.nocodenation.io",
+      "phone": "0355440099",
+      "email": "build@nocodenation.io",
+      "location": {
+        "com_streetNum": "2",
+        "com_streetName": "Workflow Walk",
+        "com_town": "Nashville",
+        "com_postcode": 37202,
+        "com_state": "Tennessee",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "NoCode Nation",
+    "description": "Develop internal tools and automations using low-code/no-code platforms.",
+    "requirements": {
+      "education": "Bachelor's in any discipline",
+      "educationRank": 3,
+      "skills": [
+        "Power Apps",
+        "Bubble",
+        "Zapier",
+        "Airtable",
+        "Process Automation"
+      ],
+      "experienceYears": 2
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "2",
+      "streetName": "Workflow Walk",
+      "town": "Nashville",
+      "postcode": 37202,
+      "state": "Tennessee",
+      "country": "USA"
+    },
+    "locationText": "Nashville, Tennessee, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 84000,
+    "salaryMax": 114000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-29T04:32:40.599Z"
+  },
+  {
+    "id": "job_065",
+    "title": "Integration Engineer",
+    "company": {
+      "name": "BridgeAPI Solutions",
+      "website": "www.bridgeapi.com",
+      "phone": "0299667711",
+      "email": "integration@bridgeapi.com",
+      "location": {
+        "com_streetNum": "58",
+        "com_streetName": "Connector Street",
+        "com_town": "Houston",
+        "com_postcode": 77002,
+        "com_state": "Texas",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "BridgeAPI Solutions",
+    "description": "Connect enterprise systems and third-party services through robust integrations.",
+    "requirements": {
+      "education": "Bachelor's in Software Engineering",
+      "educationRank": 3,
+      "skills": [
+        "MuleSoft",
+        "REST APIs",
+        "EDI",
+        "iPaaS",
+        "XML/JSON"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "58",
+      "streetName": "Connector Street",
+      "town": "Houston",
+      "postcode": 77002,
+      "state": "Texas",
+      "country": "USA"
+    },
+    "locationText": "Houston, Texas, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-28T04:32:40.599Z"
+  },
+  {
+    "id": "job_066",
+    "title": "Observability Engineer",
+    "company": {
+      "name": "WatchTower Engineering",
+      "website": "www.watchtower.eng",
+      "phone": "0411887766",
+      "email": "obs@watchtower.eng",
+      "location": {
+        "com_streetNum": "93",
+        "com_streetName": "Trace Terrace",
+        "com_town": "San Francisco",
+        "com_postcode": 94107,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "WatchTower Engineering",
+    "description": "Implement and maintain distributed tracing, logging, and metrics infrastructure.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "OpenTelemetry",
+        "Datadog",
+        "Grafana",
+        "ELK Stack",
+        "Python"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "93",
+      "streetName": "Trace Terrace",
+      "town": "San Francisco",
+      "postcode": 94107,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-27T04:32:40.599Z"
+  },
+  {
+    "id": "job_067",
+    "title": "Quantum Computing Researcher",
+    "company": {
+      "name": "QubitForge Institute",
+      "website": "www.qubitforge.com",
+      "phone": "0422001199",
+      "email": "quantum@qubitforge.com",
+      "location": {
+        "com_streetNum": "1",
+        "com_streetName": "Superposition Street",
+        "com_town": "Cambridge",
+        "com_postcode": 2140,
+        "com_state": "Massachusetts",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "QubitForge Institute",
+    "description": "Research quantum algorithms and hardware implementations for real-world applications.",
+    "requirements": {
+      "education": "PhD in Physics or Quantum Computing",
+      "educationRank": 5,
+      "skills": [
+        "Qiskit",
+        "Cirq",
+        "Linear Algebra",
+        "Quantum Error Correction",
+        "Python"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "1",
+      "streetName": "Superposition Street",
+      "town": "Cambridge",
+      "postcode": 2140,
+      "state": "Massachusetts",
+      "country": "USA"
+    },
+    "locationText": "Cambridge, Massachusetts, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-26T04:32:40.599Z"
+  },
+  {
+    "id": "job_068",
+    "title": "Growth Engineer",
+    "company": {
+      "name": "Accelerate Digital",
+      "website": "www.acceleratedigital.io",
+      "phone": "0455890011",
+      "email": "growth@acceleratedigital.io",
+      "location": {
+        "com_streetNum": "31",
+        "com_streetName": "Funnel Road",
+        "com_town": "New York",
+        "com_postcode": 10007,
+        "com_state": "New York",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "Accelerate Digital",
+    "description": "Run data-driven experiments to grow user acquisition, activation, and retention.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science or Marketing",
+      "educationRank": 3,
+      "skills": [
+        "A/B Testing",
+        "SQL",
+        "Python",
+        "Analytics",
+        "Product Analytics"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Hybrid",
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "31",
+      "streetName": "Funnel Road",
+      "town": "New York",
+      "postcode": 10007,
+      "state": "New York",
+      "country": "USA"
+    },
+    "locationText": "New York, New York, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-25T04:32:40.599Z"
+  },
+  {
+    "id": "job_069",
+    "title": "Accessibility Engineer",
+    "company": {
+      "name": "IncludeAll Tech",
+      "website": "www.includeall.tech",
+      "phone": "0388556699",
+      "email": "a11y@includeall.tech",
+      "location": {
+        "com_streetNum": "66",
+        "com_streetName": "WCAG Way",
+        "com_town": "Portland",
+        "com_postcode": 97203,
+        "com_state": "Oregon",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "IncludeAll Tech",
+    "description": "Audit and remediate web and mobile applications for WCAG 2.1 AA accessibility compliance.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science or UX Design",
+      "educationRank": 3,
+      "skills": [
+        "WCAG",
+        "ARIA",
+        "Screen Readers",
+        "Axe",
+        "React"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "66",
+      "streetName": "WCAG Way",
+      "town": "Portland",
+      "postcode": 97203,
+      "state": "Oregon",
+      "country": "USA"
+    },
+    "locationText": "Portland, Oregon, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-24T04:32:40.599Z"
+  },
+  {
+    "id": "job_070",
+    "title": "VP of Engineering",
+    "company": {
+      "name": "ScaleUp Corp",
+      "website": "www.scaleupcorp.com",
+      "phone": "0299001234",
+      "email": "vpe@scaleupcorp.com",
+      "location": {
+        "com_streetNum": "1000",
+        "com_streetName": "Leadership Boulevard",
+        "com_town": "San Francisco",
+        "com_postcode": 94108,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ScaleUp Corp",
+    "description": "Own the engineering organisation, drive technical strategy and team growth.",
+    "requirements": {
+      "education": "Master's in Computer Science or MBA",
+      "educationRank": 4,
+      "skills": [
+        "Engineering Leadership",
+        "Hiring",
+        "OKRs",
+        "Architecture",
+        "Stakeholder Management"
+      ],
+      "experienceYears": 12
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "1000",
+      "streetName": "Leadership Boulevard",
+      "town": "San Francisco",
+      "postcode": 94108,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 204000,
+    "salaryMax": 234000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-23T04:32:40.599Z"
+  },
+  {
+    "id": "job_071",
+    "title": "Conversational AI Engineer",
+    "company": {
+      "name": "BotWorks Platform",
+      "website": "www.botworks.io",
+      "phone": "0444116677",
+      "email": "chat@botworks.io",
+      "location": {
+        "com_streetNum": "20",
+        "com_streetName": "Dialogue Drive",
+        "com_town": "New York",
+        "com_postcode": 10008,
+        "com_state": "New York",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "BotWorks Platform",
+    "description": "Design and build conversational AI systems and chatbots for enterprise deployments.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science or Linguistics",
+      "educationRank": 3,
+      "skills": [
+        "Rasa",
+        "Dialogflow",
+        "LLMs",
+        "Prompt Engineering",
+        "Python"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "20",
+      "streetName": "Dialogue Drive",
+      "town": "New York",
+      "postcode": 10008,
+      "state": "New York",
+      "country": "USA"
+    },
+    "locationText": "New York, New York, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-05T04:32:40.599Z"
+  },
+  {
+    "id": "job_072",
+    "title": "Infrastructure Engineer",
+    "company": {
+      "name": "IronStack Engineering",
+      "website": "www.ironstack.io",
+      "phone": "0355772233",
+      "email": "infra@ironstack.io",
+      "location": {
+        "com_streetNum": "84",
+        "com_streetName": "Rack Row",
+        "com_town": "Chicago",
+        "com_postcode": 60605,
+        "com_state": "Illinois",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "IronStack Engineering",
+    "description": "Provision, manage, and scale physical and virtual infrastructure for engineering teams.",
+    "requirements": {
+      "education": "Bachelor's in Network Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Linux",
+        "Ansible",
+        "VMware",
+        "Terraform",
+        "Storage Systems"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "84",
+      "streetName": "Rack Row",
+      "town": "Chicago",
+      "postcode": 60605,
+      "state": "Illinois",
+      "country": "USA"
+    },
+    "locationText": "Chicago, Illinois, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-04T04:32:40.599Z"
+  },
+  {
+    "id": "job_073",
+    "title": "Privacy Engineer",
+    "company": {
+      "name": "ConsentFlow Technologies",
+      "website": "www.consentflow.tech",
+      "phone": "0466334400",
+      "email": "privacy@consentflow.tech",
+      "location": {
+        "com_streetNum": "47",
+        "com_streetName": "GDPR Grove",
+        "com_town": "Boston",
+        "com_postcode": 2104,
+        "com_state": "Massachusetts",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ConsentFlow Technologies",
+    "description": "Embed privacy principles into product and engineering workflows by design.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science or Law",
+      "educationRank": 3,
+      "skills": [
+        "GDPR",
+        "CCPA",
+        "Privacy Impact Assessment",
+        "Data Minimisation",
+        "Python"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "47",
+      "streetName": "GDPR Grove",
+      "town": "Boston",
+      "postcode": 2104,
+      "state": "Massachusetts",
+      "country": "USA"
+    },
+    "locationText": "Boston, Massachusetts, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-03T04:32:40.599Z"
+  },
+  {
+    "id": "job_074",
+    "title": "Search Engineer",
+    "company": {
+      "name": "DiscoverEngine Corp",
+      "website": "www.discoverengine.com",
+      "phone": "0422559977",
+      "email": "search@discoverengine.com",
+      "location": {
+        "com_streetNum": "39",
+        "com_streetName": "Index Lane",
+        "com_town": "Seattle",
+        "com_postcode": 98105,
+        "com_state": "Washington",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "DiscoverEngine Corp",
+    "description": "Build and tune search relevance systems for large-scale product catalogues.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "Elasticsearch",
+        "Solr",
+        "Relevance Tuning",
+        "Query Analysis",
+        "Python"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "39",
+      "streetName": "Index Lane",
+      "town": "Seattle",
+      "postcode": 98105,
+      "state": "Washington",
+      "country": "USA"
+    },
+    "locationText": "Seattle, Washington, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-02T04:32:40.599Z"
+  },
+  {
+    "id": "job_075",
+    "title": "AR Engineer",
+    "company": {
+      "name": "SpatialLayer Inc",
+      "website": "www.spatiallayer.io",
+      "phone": "0399220011",
+      "email": "ar@spatiallayer.io",
+      "location": {
+        "com_streetNum": "12",
+        "com_streetName": "Overlay Road",
+        "com_town": "San Francisco",
+        "com_postcode": 94109,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "SpatialLayer Inc",
+    "description": "Develop spatial computing experiences for iOS, Android, and HMDs using AR frameworks.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "ARKit",
+        "ARCore",
+        "RealityKit",
+        "Metal",
+        "3D Math"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "On-site",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "12",
+      "streetName": "Overlay Road",
+      "town": "San Francisco",
+      "postcode": 94109,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-01T04:32:40.599Z"
+  },
+  {
+    "id": "job_076",
+    "title": "Chaos Engineer",
+    "company": {
+      "name": "ResilienceFirst Labs",
+      "website": "www.resiliencefirst.io",
+      "phone": "0411667722",
+      "email": "chaos@resiliencefirst.io",
+      "location": {
+        "com_streetNum": "73",
+        "com_streetName": "Fault Injection Way",
+        "com_town": "New York",
+        "com_postcode": 10009,
+        "com_state": "New York",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ResilienceFirst Labs",
+    "description": "Run controlled fault injection experiments to uncover system weaknesses in production.",
+    "requirements": {
+      "education": "Bachelor's in Computer Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Chaos Monkey",
+        "Litmus",
+        "Kubernetes",
+        "Distributed Systems",
+        "SRE"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "73",
+      "streetName": "Fault Injection Way",
+      "town": "New York",
+      "postcode": 10009,
+      "state": "New York",
+      "country": "USA"
+    },
+    "locationText": "New York, New York, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-31T04:32:40.599Z"
+  },
+  {
+    "id": "job_077",
+    "title": "ETL Developer",
+    "company": {
+      "name": "DataBridge Corp",
+      "website": "www.databridge.corp",
+      "phone": "0344002233",
+      "email": "etl@databridge.corp",
+      "location": {
+        "com_streetNum": "55",
+        "com_streetName": "Extract Place",
+        "com_town": "Atlanta",
+        "com_postcode": 30303,
+        "com_state": "Georgia",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "DataBridge Corp",
+    "description": "Build ETL pipelines to move and transform data across enterprise systems.",
+    "requirements": {
+      "education": "Bachelor's in Information Systems",
+      "educationRank": 3,
+      "skills": [
+        "Talend",
+        "SSIS",
+        "SQL",
+        "Python",
+        "Data Profiling"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "55",
+      "streetName": "Extract Place",
+      "town": "Atlanta",
+      "postcode": 30303,
+      "state": "Georgia",
+      "country": "USA"
+    },
+    "locationText": "Atlanta, Georgia, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-30T04:32:40.599Z"
+  },
+  {
+    "id": "job_078",
+    "title": "Senior React Developer",
+    "company": {
+      "name": "ComponentHub",
+      "website": "www.componenthub.dev",
+      "phone": "0488223344",
+      "email": "react@componenthub.dev",
+      "location": {
+        "com_streetNum": "19",
+        "com_streetName": "Hook Street",
+        "com_town": "Austin",
+        "com_postcode": 73304,
+        "com_state": "Texas",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ComponentHub",
+    "description": "Lead frontend development using React and contribute to the component design system.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "React",
+        "Redux",
+        "Next.js",
+        "Testing Library",
+        "TypeScript"
+      ],
+      "experienceYears": 6
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "19",
+      "streetName": "Hook Street",
+      "town": "Austin",
+      "postcode": 73304,
+      "state": "Texas",
+      "country": "USA"
+    },
+    "locationText": "Austin, Texas, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 132000,
+    "salaryMax": 162000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-29T04:32:40.599Z"
+  },
+  {
+    "id": "job_079",
+    "title": "Identity & Access Management Engineer",
+    "company": {
+      "name": "ZeroTrust Networks",
+      "website": "www.zerotrust.net",
+      "phone": "0366551122",
+      "email": "iam@zerotrust.net",
+      "location": {
+        "com_streetNum": "64",
+        "com_streetName": "Privilege Path",
+        "com_town": "Washington",
+        "com_postcode": 20003,
+        "com_state": "DC",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ZeroTrust Networks",
+    "description": "Design and enforce identity and access management solutions across cloud and on-prem.",
+    "requirements": {
+      "education": "Bachelor's in Cybersecurity or IT",
+      "educationRank": 3,
+      "skills": [
+        "Okta",
+        "Azure AD",
+        "SAML",
+        "OAuth2",
+        "LDAP"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "On-site",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "64",
+      "streetName": "Privilege Path",
+      "town": "Washington",
+      "postcode": 20003,
+      "state": "DC",
+      "country": "USA"
+    },
+    "locationText": "Washington, DC, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-28T04:32:40.599Z"
+  },
+  {
+    "id": "job_080",
+    "title": "Streaming Engineer",
+    "company": {
+      "name": "EventFlow Systems",
+      "website": "www.eventflow.io",
+      "phone": "0422110099",
+      "email": "stream@eventflow.io",
+      "location": {
+        "com_streetNum": "76",
+        "com_streetName": "Throughput Terrace",
+        "com_town": "Seattle",
+        "com_postcode": 98106,
+        "com_state": "Washington",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "EventFlow Systems",
+    "description": "Develop real-time data streaming pipelines for high-throughput event-driven systems.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "Apache Kafka",
+        "Flink",
+        "Spark Streaming",
+        "Java",
+        "Schema Registry"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "76",
+      "streetName": "Throughput Terrace",
+      "town": "Seattle",
+      "postcode": 98106,
+      "state": "Washington",
+      "country": "USA"
+    },
+    "locationText": "Seattle, Washington, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-27T04:32:40.599Z"
+  },
+  {
+    "id": "job_081",
+    "title": "Developer Advocate",
+    "company": {
+      "name": "DevRel Collective",
+      "website": "www.devrelcollective.io",
+      "phone": "0444998877",
+      "email": "devrel@devrelcollective.io",
+      "location": {
+        "com_streetNum": "8",
+        "com_streetName": "Community Court",
+        "com_town": "San Francisco",
+        "com_postcode": 94110,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "DevRel Collective",
+    "description": "Champion the developer experience, create content, and engage the technical community.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science or Communications",
+      "educationRank": 3,
+      "skills": [
+        "Public Speaking",
+        "Technical Writing",
+        "Demo Building",
+        "APIs",
+        "Community Management"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "8",
+      "streetName": "Community Court",
+      "town": "San Francisco",
+      "postcode": 94110,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-26T04:32:40.599Z"
+  },
+  {
+    "id": "job_082",
+    "title": "Geospatial Developer",
+    "company": {
+      "name": "MapForce Analytics",
+      "website": "www.mapforceanalytics.com",
+      "phone": "0311225566",
+      "email": "geo@mapforceanalytics.com",
+      "location": {
+        "com_streetNum": "90",
+        "com_streetName": "Latitude Lane",
+        "com_town": "Denver",
+        "com_postcode": 80204,
+        "com_state": "Colorado",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "MapForce Analytics",
+    "description": "Build geospatial applications and analytics tools for location-based services.",
+    "requirements": {
+      "education": "Bachelor's in Geospatial Science or Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "PostGIS",
+        "QGIS",
+        "Mapbox",
+        "Python",
+        "GeoJSON"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "90",
+      "streetName": "Latitude Lane",
+      "town": "Denver",
+      "postcode": 80204,
+      "state": "Colorado",
+      "country": "USA"
+    },
+    "locationText": "Denver, Colorado, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-25T04:32:40.599Z"
+  },
+  {
+    "id": "job_083",
+    "title": "Technical Program Manager",
+    "company": {
+      "name": "DeliveryForce Global",
+      "website": "www.deliveryforce.com",
+      "phone": "0277334411",
+      "email": "tpm@deliveryforce.com",
+      "location": {
+        "com_streetNum": "35",
+        "com_streetName": "Roadmap Road",
+        "com_town": "Seattle",
+        "com_postcode": 98107,
+        "com_state": "Washington",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "DeliveryForce Global",
+    "description": "Coordinate complex cross-functional technical programmes across distributed teams.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science or Project Management",
+      "educationRank": 3,
+      "skills": [
+        "Programme Management",
+        "Agile",
+        "Risk Management",
+        "OKRs",
+        "Communication"
+      ],
+      "experienceYears": 8
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "35",
+      "streetName": "Roadmap Road",
+      "town": "Seattle",
+      "postcode": 98107,
+      "state": "Washington",
+      "country": "USA"
+    },
+    "locationText": "Seattle, Washington, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 156000,
+    "salaryMax": 186000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-24T04:32:40.599Z"
+  },
+  {
+    "id": "job_084",
+    "title": "AI Safety Engineer",
+    "company": {
+      "name": "AlignmentLab AI",
+      "website": "www.alignmentlab.ai",
+      "phone": "0422667700",
+      "email": "safety@alignmentlab.ai",
+      "location": {
+        "com_streetNum": "7",
+        "com_streetName": "Alignment Alley",
+        "com_town": "San Francisco",
+        "com_postcode": 94111,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "AlignmentLab AI",
+    "description": "Develop tools and methods to ensure AI systems behave safely and as intended.",
+    "requirements": {
+      "education": "PhD in Computer Science, AI, or related field",
+      "educationRank": 5,
+      "skills": [
+        "RLHF",
+        "Interpretability",
+        "Red Teaming",
+        "Python",
+        "Research"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "On-site",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "7",
+      "streetName": "Alignment Alley",
+      "town": "San Francisco",
+      "postcode": 94111,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-23T04:32:40.599Z"
+  },
+  {
+    "id": "job_085",
+    "title": "Performance Engineer",
+    "company": {
+      "name": "FastLane Performance",
+      "website": "www.fastlane.perf",
+      "phone": "0433770099",
+      "email": "perf@fastlane.perf",
+      "location": {
+        "com_streetNum": "27",
+        "com_streetName": "Latency Lane",
+        "com_town": "Austin",
+        "com_postcode": 73305,
+        "com_state": "Texas",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "FastLane Performance",
+    "description": "Profile and optimise system performance across backend, frontend, and infrastructure.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "JMeter",
+        "k6",
+        "Flame Graphs",
+        "Load Testing",
+        "SQL Tuning"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "27",
+      "streetName": "Latency Lane",
+      "town": "Austin",
+      "postcode": 73305,
+      "state": "Texas",
+      "country": "USA"
+    },
+    "locationText": "Austin, Texas, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-05T04:32:40.599Z"
+  },
+  {
+    "id": "job_086",
+    "title": "Bioinformatics Engineer",
+    "company": {
+      "name": "GenomeX Research",
+      "website": "www.genomex.bio",
+      "phone": "0388001177",
+      "email": "bio@genomex.bio",
+      "location": {
+        "com_streetNum": "3",
+        "com_streetName": "Helix Hollow",
+        "com_town": "San Diego",
+        "com_postcode": 92102,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "GenomeX Research",
+    "description": "Develop computational tools for genomic data analysis and biological research pipelines.",
+    "requirements": {
+      "education": "Master's in Bioinformatics or Computational Biology",
+      "educationRank": 4,
+      "skills": [
+        "Python",
+        "R",
+        "BWA",
+        "GATK",
+        "HPC"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "3",
+      "streetName": "Helix Hollow",
+      "town": "San Diego",
+      "postcode": 92102,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Diego, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-04T04:32:40.599Z"
+  },
+  {
+    "id": "job_087",
+    "title": "Prompt Engineer",
+    "company": {
+      "name": "ContextCraft AI",
+      "website": "www.contextcraft.ai",
+      "phone": "0466112200",
+      "email": "prompts@contextcraft.ai",
+      "location": {
+        "com_streetNum": "17",
+        "com_streetName": "Token Trail",
+        "com_town": "San Francisco",
+        "com_postcode": 94112,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ContextCraft AI",
+    "description": "Design, test, and refine prompts for LLMs to power enterprise AI applications.",
+    "requirements": {
+      "education": "Bachelor's in Linguistics, CS, or Psychology",
+      "educationRank": 3,
+      "skills": [
+        "Prompt Engineering",
+        "LLM Evaluation",
+        "Python",
+        "RAG",
+        "LangChain"
+      ],
+      "experienceYears": 2
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "17",
+      "streetName": "Token Trail",
+      "town": "San Francisco",
+      "postcode": 94112,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 84000,
+    "salaryMax": 114000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-03T04:32:40.599Z"
+  },
+  {
+    "id": "job_088",
+    "title": "Digital Twin Engineer",
+    "company": {
+      "name": "MirrorWorld Systems",
+      "website": "www.mirrorworld.systems",
+      "phone": "0422887766",
+      "email": "twin@mirrorworld.systems",
+      "location": {
+        "com_streetNum": "52",
+        "com_streetName": "Simulation Square",
+        "com_town": "Detroit",
+        "com_postcode": 48203,
+        "com_state": "Michigan",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "MirrorWorld Systems",
+    "description": "Build digital twin models of physical assets for simulation and predictive maintenance.",
+    "requirements": {
+      "education": "Bachelor's in Mechanical or Software Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Azure Digital Twins",
+        "IoT",
+        "Python",
+        "MQTT",
+        "Simulation"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Hybrid",
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "52",
+      "streetName": "Simulation Square",
+      "town": "Detroit",
+      "postcode": 48203,
+      "state": "Michigan",
+      "country": "USA"
+    },
+    "locationText": "Detroit, Michigan, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-02T04:32:40.599Z"
+  },
+  {
+    "id": "job_089",
+    "title": "Fintech Risk Engineer",
+    "company": {
+      "name": "ClearRisk Analytics",
+      "website": "www.clearrisk.io",
+      "phone": "0377889900",
+      "email": "risk@clearrisk.io",
+      "location": {
+        "com_streetNum": "105",
+        "com_streetName": "Volatility Vale",
+        "com_town": "New York",
+        "com_postcode": 10010,
+        "com_state": "New York",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "ClearRisk Analytics",
+    "description": "Build real-time risk scoring and fraud detection systems for financial products.",
+    "requirements": {
+      "education": "Master's in Financial Engineering",
+      "educationRank": 4,
+      "skills": [
+        "Fraud Detection",
+        "Machine Learning",
+        "Kafka",
+        "Python",
+        "SQL"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "105",
+      "streetName": "Volatility Vale",
+      "town": "New York",
+      "postcode": 10010,
+      "state": "New York",
+      "country": "USA"
+    },
+    "locationText": "New York, New York, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-01T04:32:40.599Z"
+  },
+  {
+    "id": "job_090",
+    "title": "Content Engineer",
+    "company": {
+      "name": "CMS Masters",
+      "website": "www.cmsmasters.io",
+      "phone": "0455229900",
+      "email": "content@cmsmasters.io",
+      "location": {
+        "com_streetNum": "40",
+        "com_streetName": "CMS Close",
+        "com_town": "Los Angeles",
+        "com_postcode": 90004,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "CMS Masters",
+    "description": "Develop and manage content delivery infrastructure and CMS integrations.",
+    "requirements": {
+      "education": "Bachelor's in Software Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Contentful",
+        "Sanity",
+        "GraphQL",
+        "React",
+        "CDN Management"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "40",
+      "streetName": "CMS Close",
+      "town": "Los Angeles",
+      "postcode": 90004,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "Los Angeles, California, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-31T04:32:40.599Z"
+  },
+  {
+    "id": "job_091",
+    "title": "Feature Flag Engineer",
+    "company": {
+      "name": "LaunchDark Technologies",
+      "website": "www.launchdark.tech",
+      "phone": "0399445566",
+      "email": "flags@launchdark.tech",
+      "location": {
+        "com_streetNum": "30",
+        "com_streetName": "Toggle Terrace",
+        "com_town": "San Francisco",
+        "com_postcode": 94113,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "LaunchDark Technologies",
+    "description": "Manage feature rollout infrastructure and champion progressive delivery practices.",
+    "requirements": {
+      "education": "Bachelor's in Software Engineering",
+      "educationRank": 3,
+      "skills": [
+        "LaunchDarkly",
+        "A/B Testing",
+        "Go",
+        "CI/CD",
+        "Experimentation Platforms"
+      ],
+      "experienceYears": 3
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "30",
+      "streetName": "Toggle Terrace",
+      "town": "San Francisco",
+      "postcode": 94113,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 96000,
+    "salaryMax": 126000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-30T04:32:40.599Z"
+  },
+  {
+    "id": "job_092",
+    "title": "Autonomous Vehicle Engineer",
+    "company": {
+      "name": "SelfDrive Labs",
+      "website": "www.selfdrivelabs.com",
+      "phone": "0411334422",
+      "email": "av@selfdrivelabs.com",
+      "location": {
+        "com_streetNum": "6",
+        "com_streetName": "Autopilot Avenue",
+        "com_town": "San Jose",
+        "com_postcode": 95104,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "SelfDrive Labs",
+    "description": "Develop perception, planning, and control systems for autonomous vehicles.",
+    "requirements": {
+      "education": "Master's in Robotics or Computer Vision",
+      "educationRank": 4,
+      "skills": [
+        "C++",
+        "ROS",
+        "LiDAR",
+        "SLAM",
+        "Computer Vision"
+      ],
+      "experienceYears": 6
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "6",
+      "streetName": "Autopilot Avenue",
+      "town": "San Jose",
+      "postcode": 95104,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Jose, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 132000,
+    "salaryMax": 162000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-29T04:32:40.599Z"
+  },
+  {
+    "id": "job_093",
+    "title": "Tech Lead",
+    "company": {
+      "name": "PinnacleSoft",
+      "website": "www.pinnaclesoft.com",
+      "phone": "0288776655",
+      "email": "lead@pinnaclesoft.com",
+      "location": {
+        "com_streetNum": "85",
+        "com_streetName": "Leadership Lane",
+        "com_town": "Austin",
+        "com_postcode": 73306,
+        "com_state": "Texas",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "PinnacleSoft",
+    "description": "Lead an engineering team, set technical direction, and contribute hands-on to delivery.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "Technical Leadership",
+        "Code Review",
+        "System Design",
+        "Mentoring",
+        "TypeScript"
+      ],
+      "experienceYears": 8
+    },
+    "workMode": [
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "85",
+      "streetName": "Leadership Lane",
+      "town": "Austin",
+      "postcode": 73306,
+      "state": "Texas",
+      "country": "USA"
+    },
+    "locationText": "Austin, Texas, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Senior Level",
+    "salaryMin": 156000,
+    "salaryMax": 186000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-28T04:32:40.599Z"
+  },
+  {
+    "id": "job_094",
+    "title": "Platform Security Engineer",
+    "company": {
+      "name": "TrustBridge Security",
+      "website": "www.trustbridge.sec",
+      "phone": "0466000099",
+      "email": "platsec@trustbridge.sec",
+      "location": {
+        "com_streetNum": "23",
+        "com_streetName": "Hardening Highway",
+        "com_town": "San Francisco",
+        "com_postcode": 94114,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "TrustBridge Security",
+    "description": "Secure the software supply chain, developer tooling, and deployment pipelines.",
+    "requirements": {
+      "education": "Bachelor's in Cybersecurity or Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "SBOM",
+        "SLSA",
+        "Sigstore",
+        "CI/CD Security",
+        "DevSecOps"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "23",
+      "streetName": "Hardening Highway",
+      "town": "San Francisco",
+      "postcode": 94114,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Francisco, California, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-27T04:32:40.599Z"
+  },
+  {
+    "id": "job_095",
+    "title": "Video Streaming Engineer",
+    "company": {
+      "name": "FluxMedia Platform",
+      "website": "www.fluxmedia.io",
+      "phone": "0344771100",
+      "email": "stream@fluxmedia.io",
+      "location": {
+        "com_streetNum": "97",
+        "com_streetName": "Buffer Boulevard",
+        "com_town": "Los Angeles",
+        "com_postcode": 90005,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "FluxMedia Platform",
+    "description": "Design and optimise video encoding, transcoding, and delivery infrastructure at scale.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "FFmpeg",
+        "HLS",
+        "DASH",
+        "CDN",
+        "C++"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "Remote",
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "97",
+      "streetName": "Buffer Boulevard",
+      "town": "Los Angeles",
+      "postcode": 90005,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "Los Angeles, California, USA",
+    "jobType": "Part-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-26T04:32:40.599Z"
+  },
+  {
+    "id": "job_096",
+    "title": "Simulation Engineer",
+    "company": {
+      "name": "PhysicsFirst Labs",
+      "website": "www.physicsfirst.com",
+      "phone": "0422776644",
+      "email": "sim@physicsfirst.com",
+      "location": {
+        "com_streetNum": "43",
+        "com_streetName": "Dynamics Drive",
+        "com_town": "Houston",
+        "com_postcode": 77003,
+        "com_state": "Texas",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "PhysicsFirst Labs",
+    "description": "Develop physics-based simulations for aerospace, automotive, and industrial applications.",
+    "requirements": {
+      "education": "Master's in Engineering or Applied Mathematics",
+      "educationRank": 4,
+      "skills": [
+        "C++",
+        "MATLAB",
+        "FEA",
+        "Numerical Methods",
+        "OpenFOAM"
+      ],
+      "experienceYears": 5
+    },
+    "workMode": [
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "43",
+      "streetName": "Dynamics Drive",
+      "town": "Houston",
+      "postcode": 77003,
+      "state": "Texas",
+      "country": "USA"
+    },
+    "locationText": "Houston, Texas, USA",
+    "jobType": "Internship",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 120000,
+    "salaryMax": 150000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-25T04:32:40.599Z"
+  },
+  {
+    "id": "job_097",
+    "title": "Open Source Engineer",
+    "company": {
+      "name": "CommonCode Foundation",
+      "website": "www.commoncode.org",
+      "phone": "0355880022",
+      "email": "oss@commoncode.org",
+      "location": {
+        "com_streetNum": "1",
+        "com_streetName": "Open Source Avenue",
+        "com_town": "Portland",
+        "com_postcode": 97204,
+        "com_state": "Oregon",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "CommonCode Foundation",
+    "description": "Maintain and grow open source projects and collaborate with the community.",
+    "requirements": {
+      "education": "Bachelor's in Computer Science",
+      "educationRank": 3,
+      "skills": [
+        "Open Source Contribution",
+        "GitHub",
+        "Documentation",
+        "Python",
+        "Community"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote"
+    ],
+    "location": {
+      "streetNum": "1",
+      "streetName": "Open Source Avenue",
+      "town": "Portland",
+      "postcode": 97204,
+      "state": "Oregon",
+      "country": "USA"
+    },
+    "locationText": "Portland, Oregon, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-05-24T04:32:40.599Z"
+  },
+  {
+    "id": "job_098",
+    "title": "Computer Vision Engineer",
+    "company": {
+      "name": "VisualAI Labs",
+      "website": "www.visualai.labs",
+      "phone": "0411990044",
+      "email": "vision@visualai.labs",
+      "location": {
+        "com_streetNum": "56",
+        "com_streetName": "Pixel Processing Place",
+        "com_town": "San Jose",
+        "com_postcode": 95105,
+        "com_state": "California",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "VisualAI Labs",
+    "description": "Build computer vision models for object detection, segmentation, and recognition.",
+    "requirements": {
+      "education": "Master's in Computer Vision or AI",
+      "educationRank": 4,
+      "skills": [
+        "OpenCV",
+        "YOLO",
+        "PyTorch",
+        "Image Processing",
+        "CUDA"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "On-site",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "56",
+      "streetName": "Pixel Processing Place",
+      "town": "San Jose",
+      "postcode": 95105,
+      "state": "California",
+      "country": "USA"
+    },
+    "locationText": "San Jose, California, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-05-23T04:32:40.599Z"
+  },
+  {
+    "id": "job_099",
+    "title": "SaaS Engineer",
+    "company": {
+      "name": "CloudSuite Solutions",
+      "website": "www.cloudsuite.io",
+      "phone": "0388334455",
+      "email": "saas@cloudsuite.io",
+      "location": {
+        "com_streetNum": "68",
+        "com_streetName": "Subscription Street",
+        "com_town": "Chicago",
+        "com_postcode": 60606,
+        "com_state": "Illinois",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "CloudSuite Solutions",
+    "description": "Build and maintain a multi-tenant SaaS platform with a focus on scalability and security.",
+    "requirements": {
+      "education": "Bachelor's in Software Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Multi-tenancy",
+        "PostgreSQL",
+        "React",
+        "Node.js",
+        "Stripe"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote",
+      "Hybrid"
+    ],
+    "location": {
+      "streetNum": "68",
+      "streetName": "Subscription Street",
+      "town": "Chicago",
+      "postcode": 60606,
+      "state": "Illinois",
+      "country": "USA"
+    },
+    "locationText": "Chicago, Illinois, USA",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_91fc697455",
+    "createdAt": "2026-06-05T04:32:40.599Z"
+  },
+  {
+    "id": "job_100",
+    "title": "Edge Computing Engineer",
+    "company": {
+      "name": "EdgeNode Technologies",
+      "website": "www.edgenode.tech",
+      "phone": "0477665544",
+      "email": "edge@edgenode.tech",
+      "location": {
+        "com_streetNum": "75",
+        "com_streetName": "Edge City Road",
+        "com_town": "Dallas",
+        "com_postcode": 75203,
+        "com_state": "Texas",
+        "com_country": "USA"
+      }
+    },
+    "companyName": "EdgeNode Technologies",
+    "description": "Deploy and manage compute workloads at the edge for low-latency applications.",
+    "requirements": {
+      "education": "Bachelor's in Computer Engineering",
+      "educationRank": 3,
+      "skills": [
+        "Edge Computing",
+        "WebAssembly",
+        "Rust",
+        "IoT",
+        "Distributed Systems"
+      ],
+      "experienceYears": 4
+    },
+    "workMode": [
+      "Remote",
+      "On-site"
+    ],
+    "location": {
+      "streetNum": "75",
+      "streetName": "Edge City Road",
+      "town": "Dallas",
+      "postcode": 75203,
+      "state": "Texas",
+      "country": "USA"
+    },
+    "locationText": "Dallas, Texas, USA",
+    "jobType": "Contract",
+    "experienceLevel": "Mid Level",
+    "salaryMin": 108000,
+    "salaryMax": 138000,
+    "status": "open",
+    "employerId": "user_2375a033ad",
+    "createdAt": "2026-06-04T04:32:40.599Z"
+  }
+]

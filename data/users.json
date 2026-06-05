@@ -1,0 +1,46 @@
+[
+  {
+    "id": "user_6ef574b755",
+    "email": "candidate@demo.com",
+    "passwordHash": "a53972334d5a5cc595565fdc332dc4e4:cd0584c4ce45212f18873db14601944012333edae4c8dd4b564d11cf07ea209255a23c0e405bf4db539c0ec6a04ac03001f0ac0ba862eb8bfacc3dc52fb63417",
+    "tokenSecret": "514d4fce73adcc820c69946e68fe089e1104e702d3171ba3",
+    "role": "candidate",
+    "membership": "free",
+    "candidateId": "cand_001",
+    "companyName": null,
+    "createdAt": "2026-06-05T04:32:40.635Z"
+  },
+  {
+    "id": "user_e0d730a51e",
+    "email": "member@demo.com",
+    "passwordHash": "b5738fe69cf99c520658f076277367af:d38c7b886f96c8d9f76df69db12887abfb6046e296e8e1513577e19c474b6db897efc69852f685a90980d2c66d1d4ec211eef3fce38bd07411f6c9d81db3f4ed",
+    "tokenSecret": "c39ae66584ab29689161c922aeb36583f754536699a53b3c",
+    "role": "candidate",
+    "membership": "member",
+    "candidateId": "cand_002",
+    "companyName": null,
+    "createdAt": "2026-06-05T04:32:40.667Z"
+  },
+  {
+    "id": "user_91fc697455",
+    "email": "employer@demo.com",
+    "passwordHash": "089cae7f3baa3918bd4010f3d3818e8a:4c1bd8eb2472c6a093b34e9d4195015e8d41149fb3a373b963aaf5dc7b2ab4d8b9f6453f4dc104d4ce8dd2b23be8a055a52a96f7759a4ca118168c4ef8b6b266",
+    "tokenSecret": "5f33e7742cdb7ae395a6a3ccc3b09aab108a4441fb1b6fcf",
+    "role": "employer",
+    "membership": "free",
+    "candidateId": null,
+    "companyName": "TechNova Solutions",
+    "createdAt": "2026-06-05T04:32:40.698Z"
+  },
+  {
+    "id": "user_2375a033ad",
+    "email": "bigco@demo.com",
+    "passwordHash": "8a3198697584158ce599e44b9d0dbff6:8866e02a97c66b36c4101213139a221daa18222422d95bd9b70d51dd8eddd9b5c99bd89edbf0cbfe95a077439cf1f4f0c2b0a1aba0e53a84551b78854518dfed",
+    "tokenSecret": "42ce42e94df0359c8ca03474062c008e71a5677976180c50",
+    "role": "employer",
+    "membership": "member",
+    "candidateId": null,
+    "companyName": "Insightful Analytics",
+    "createdAt": "2026-06-05T04:32:40.729Z"
+  }
+]

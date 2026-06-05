@@ -1,0 +1,1018 @@
+[
+  {
+    "id": "cand_001",
+    "userId": "user_6ef574b755",
+    "fullName": "John Smith",
+    "initials": "JS",
+    "headline": "Senior Developer",
+    "contactInfo": {
+      "email": "john.smith@email.com",
+      "phone": "+61 412 345 678",
+      "address": "123 George St, Sydney NSW 2000"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Computer Science",
+        "institution": "University of Sydney",
+        "graduationYear": 2018
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Computer Science",
+    "yearsOfExperience": 5,
+    "experienceLevel": "Mid Level",
+    "workExperience": [
+      {
+        "company": "Tech Corp",
+        "position": "Software Developer",
+        "startDate": "2019-01",
+        "endDate": "2022-06",
+        "responsibilities": "Full-stack development, React and Node.js"
+      },
+      {
+        "company": "StartUp Inc",
+        "position": "Senior Developer",
+        "startDate": "2022-07",
+        "endDate": "present",
+        "responsibilities": "Leading development team, architecture decisions"
+      }
+    ],
+    "skills": [
+      "JavaScript",
+      "Python",
+      "React",
+      "MongoDB",
+      "Node.js",
+      "AWS"
+    ],
+    "preferredWorkingMode": "Hybrid",
+    "preferredLocation": "Sydney, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_002",
+    "userId": "user_e0d730a51e",
+    "fullName": "Sarah Johnson",
+    "initials": "SJ",
+    "headline": "Data Analyst",
+    "contactInfo": {
+      "email": "sarah.j@email.com",
+      "phone": "+61 423 456 789",
+      "address": "45 Collins St, Melbourne VIC 3000"
+    },
+    "education": [
+      {
+        "degree": "Master of Data Science",
+        "institution": "UNSW Sydney",
+        "graduationYear": 2020
+      },
+      {
+        "degree": "Bachelor of Mathematics",
+        "institution": "University of Melbourne",
+        "graduationYear": 2018
+      }
+    ],
+    "educationLevel": "Master's Degree",
+    "educationRank": 4,
+    "major": "Data Science",
+    "yearsOfExperience": 3,
+    "experienceLevel": "Mid Level",
+    "workExperience": [
+      {
+        "company": "Data Analytics Co",
+        "position": "Data Analyst",
+        "startDate": "2020-03",
+        "endDate": "present",
+        "responsibilities": "Data analysis, visualization, and machine learning models"
+      }
+    ],
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Machine Learning",
+      "R",
+      "Power BI"
+    ],
+    "preferredWorkingMode": "Remote",
+    "preferredLocation": "Melbourne, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_003",
+    "userId": null,
+    "fullName": "Michael Chen",
+    "initials": "MC",
+    "headline": "Senior Engineer",
+    "contactInfo": {
+      "email": "m.chen@email.com",
+      "phone": "+61 434 567 890",
+      "address": "78 Queen St, Brisbane QLD 4000"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Engineering (Software)",
+        "institution": "Queensland University of Technology",
+        "graduationYear": 2015
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Software Engineering",
+    "yearsOfExperience": 8,
+    "experienceLevel": "Senior Level",
+    "workExperience": [
+      {
+        "company": "Enterprise Solutions",
+        "position": "Junior Developer",
+        "startDate": "2015-07",
+        "endDate": "2018-12",
+        "responsibilities": "Backend development, API design"
+      },
+      {
+        "company": "CloudTech",
+        "position": "Senior Engineer",
+        "startDate": "2019-01",
+        "endDate": "present",
+        "responsibilities": "Cloud architecture, DevOps, team leadership"
+      }
+    ],
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "PostgreSQL"
+    ],
+    "preferredWorkingMode": "On-site",
+    "preferredLocation": "Brisbane, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_004",
+    "userId": null,
+    "fullName": "Emma Wilson",
+    "initials": "EW",
+    "headline": "Senior Security Engineer",
+    "contactInfo": {
+      "email": "emma.wilson@email.com",
+      "phone": "+61 445 678 901",
+      "address": "12 King William St, Adelaide SA 5000"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Information Technology",
+        "institution": "University of Adelaide",
+        "graduationYear": 2019
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Cybersecurity",
+    "yearsOfExperience": 4,
+    "experienceLevel": "Mid Level",
+    "workExperience": [
+      {
+        "company": "SecureNet",
+        "position": "Security Analyst",
+        "startDate": "2019-08",
+        "endDate": "2021-11",
+        "responsibilities": "Network security, vulnerability assessments"
+      },
+      {
+        "company": "CyberGuard",
+        "position": "Senior Security Engineer",
+        "startDate": "2021-12",
+        "endDate": "present",
+        "responsibilities": "Penetration testing, security architecture"
+      }
+    ],
+    "skills": [
+      "Network Security",
+      "Python",
+      "Penetration Testing",
+      "SIEM",
+      "Firewall Management"
+    ],
+    "preferredWorkingMode": "Hybrid",
+    "preferredLocation": "Adelaide, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_005",
+    "userId": null,
+    "fullName": "David Kumar",
+    "initials": "DK",
+    "headline": "AI Engineer",
+    "contactInfo": {
+      "email": "d.kumar@email.com",
+      "phone": "+61 456 789 012",
+      "address": "90 St Georges Terrace, Perth WA 6000"
+    },
+    "education": [
+      {
+        "degree": "PhD in Artificial Intelligence",
+        "institution": "University of Western Australia",
+        "graduationYear": 2021
+      },
+      {
+        "degree": "Master of Computer Science",
+        "institution": "University of Western Australia",
+        "graduationYear": 2017
+      }
+    ],
+    "educationLevel": "PhD",
+    "educationRank": 5,
+    "major": "Artificial Intelligence",
+    "yearsOfExperience": 6,
+    "experienceLevel": "Senior Level",
+    "workExperience": [
+      {
+        "company": "AI Research Lab",
+        "position": "Research Assistant",
+        "startDate": "2017-02",
+        "endDate": "2021-06",
+        "responsibilities": "AI research, neural networks, publications"
+      },
+      {
+        "company": "InnovateTech",
+        "position": "AI Engineer",
+        "startDate": "2021-07",
+        "endDate": "present",
+        "responsibilities": "Machine learning models, NLP applications"
+      }
+    ],
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "NLP",
+      "Deep Learning",
+      "Computer Vision"
+    ],
+    "preferredWorkingMode": "Remote",
+    "preferredLocation": "Perth, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_006",
+    "userId": null,
+    "fullName": "Lisa Anderson",
+    "initials": "LA",
+    "headline": "Senior Business Analyst",
+    "contactInfo": {
+      "email": "l.anderson@email.com",
+      "phone": "+61 467 890 123",
+      "address": "56 Hunter St, Newcastle NSW 2300"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Business Information Systems",
+        "institution": "University of Newcastle",
+        "graduationYear": 2017
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Business Information Systems",
+    "yearsOfExperience": 6,
+    "experienceLevel": "Senior Level",
+    "workExperience": [
+      {
+        "company": "Retail Tech",
+        "position": "Business Analyst",
+        "startDate": "2017-09",
+        "endDate": "2020-03",
+        "responsibilities": "Requirements gathering, process improvement"
+      },
+      {
+        "company": "Finance Solutions",
+        "position": "Senior Business Analyst",
+        "startDate": "2020-04",
+        "endDate": "present",
+        "responsibilities": "Product management, stakeholder engagement"
+      }
+    ],
+    "skills": [
+      "SQL",
+      "Tableau",
+      "JIRA",
+      "Agile",
+      "Business Process Modeling"
+    ],
+    "preferredWorkingMode": "Hybrid",
+    "preferredLocation": "Newcastle, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_007",
+    "userId": null,
+    "fullName": "James Rodriguez",
+    "initials": "JR",
+    "headline": "Lead Frontend Developer",
+    "contactInfo": {
+      "email": "j.rodriguez@email.com",
+      "phone": "+61 478 901 234",
+      "address": "234 Flinders St, Townsville QLD 4810"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Computer Science",
+        "institution": "James Cook University",
+        "graduationYear": 2016
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Computer Science",
+    "yearsOfExperience": 7,
+    "experienceLevel": "Senior Level",
+    "workExperience": [
+      {
+        "company": "Web Agency",
+        "position": "Frontend Developer",
+        "startDate": "2016-06",
+        "endDate": "2019-12",
+        "responsibilities": "Website development, UI/UX implementation"
+      },
+      {
+        "company": "Digital Solutions",
+        "position": "Lead Frontend Developer",
+        "startDate": "2020-01",
+        "endDate": "present",
+        "responsibilities": "Team leadership, architecture, client presentations"
+      }
+    ],
+    "skills": [
+      "React",
+      "Vue.js",
+      "TypeScript",
+      "CSS",
+      "Webpack",
+      "Figma"
+    ],
+    "preferredWorkingMode": "Remote",
+    "preferredLocation": "Townsville, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_008",
+    "userId": null,
+    "fullName": "Priya Patel",
+    "initials": "PP",
+    "headline": "Mobile Developer",
+    "contactInfo": {
+      "email": "priya.patel@email.com",
+      "phone": "+61 489 012 345",
+      "address": "45 Pirie St, Adelaide SA 5000"
+    },
+    "education": [
+      {
+        "degree": "Master of Information Technology",
+        "institution": "Flinders University",
+        "graduationYear": 2019
+      }
+    ],
+    "educationLevel": "Master's Degree",
+    "educationRank": 4,
+    "major": "Software Development",
+    "yearsOfExperience": 4,
+    "experienceLevel": "Mid Level",
+    "workExperience": [
+      {
+        "company": "Mobile Apps Inc",
+        "position": "Mobile Developer",
+        "startDate": "2019-07",
+        "endDate": "present",
+        "responsibilities": "iOS and Android app development, API integration"
+      }
+    ],
+    "skills": [
+      "Swift",
+      "Kotlin",
+      "React Native",
+      "Firebase",
+      "RESTful APIs"
+    ],
+    "preferredWorkingMode": "On-site",
+    "preferredLocation": "Adelaide, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_009",
+    "userId": null,
+    "fullName": "Thomas Baker",
+    "initials": "TB",
+    "headline": "Solutions Architect",
+    "contactInfo": {
+      "email": "t.baker@email.com",
+      "phone": "+61 490 123 456",
+      "address": "67 Murray St, Hobart TAS 7000"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Software Engineering",
+        "institution": "University of Tasmania",
+        "graduationYear": 2014
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Software Engineering",
+    "yearsOfExperience": 9,
+    "experienceLevel": "Senior Level",
+    "workExperience": [
+      {
+        "company": "Systems Corp",
+        "position": "Backend Developer",
+        "startDate": "2014-08",
+        "endDate": "2018-05",
+        "responsibilities": "Database design, API development"
+      },
+      {
+        "company": "Enterprise Tech",
+        "position": "Solutions Architect",
+        "startDate": "2018-06",
+        "endDate": "present",
+        "responsibilities": "System design, technical leadership, cloud migration"
+      }
+    ],
+    "skills": [
+      "C#",
+      ".NET",
+      "Azure",
+      "SQL Server",
+      "Microservices",
+      "API Design"
+    ],
+    "preferredWorkingMode": "Hybrid",
+    "preferredLocation": "Hobart, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_010",
+    "userId": null,
+    "fullName": "Olivia Martinez",
+    "initials": "OM",
+    "headline": "Software Engineer",
+    "contactInfo": {
+      "email": "o.martinez@email.com",
+      "phone": "+61 401 234 567",
+      "address": "89 Victoria Parade, Canberra ACT 2600"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Computer Science",
+        "institution": "Australian National University",
+        "graduationYear": 2020
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Computer Science",
+    "yearsOfExperience": 3,
+    "experienceLevel": "Mid Level",
+    "workExperience": [
+      {
+        "company": "Gov Tech",
+        "position": "Graduate Developer",
+        "startDate": "2020-02",
+        "endDate": "2022-01",
+        "responsibilities": "Government application development"
+      },
+      {
+        "company": "Public Sector Solutions",
+        "position": "Software Engineer",
+        "startDate": "2022-02",
+        "endDate": "present",
+        "responsibilities": "Full-stack development, security compliance"
+      }
+    ],
+    "skills": [
+      "Java",
+      "Spring",
+      "Angular",
+      "PostgreSQL",
+      "Git"
+    ],
+    "preferredWorkingMode": "On-site",
+    "preferredLocation": "Canberra, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_011",
+    "userId": null,
+    "fullName": "Daniel Lee",
+    "initials": "DL",
+    "headline": "Senior DBA",
+    "contactInfo": {
+      "email": "d.lee@email.com",
+      "phone": "+61 412 345 679",
+      "address": "123 William St, Perth WA 6000"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Information Systems",
+        "institution": "Curtin University",
+        "graduationYear": 2016
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Information Systems",
+    "yearsOfExperience": 7,
+    "experienceLevel": "Senior Level",
+    "workExperience": [
+      {
+        "company": "Database Solutions",
+        "position": "Database Administrator",
+        "startDate": "2016-07",
+        "endDate": "2020-06",
+        "responsibilities": "Database maintenance, performance tuning"
+      },
+      {
+        "company": "Data Corp",
+        "position": "Senior DBA",
+        "startDate": "2020-07",
+        "endDate": "present",
+        "responsibilities": "Database architecture, disaster recovery planning"
+      }
+    ],
+    "skills": [
+      "Oracle",
+      "MySQL",
+      "MongoDB",
+      "Database Design",
+      "Performance Tuning",
+      "Backup & Recovery"
+    ],
+    "preferredWorkingMode": "Hybrid",
+    "preferredLocation": "Perth, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_012",
+    "userId": null,
+    "fullName": "Sophie Turner",
+    "initials": "ST",
+    "headline": "Senior UX Designer",
+    "contactInfo": {
+      "email": "s.turner@email.com",
+      "phone": "+61 423 456 780",
+      "address": "234 Lonsdale St, Melbourne VIC 3000"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Design (Digital Media)",
+        "institution": "RMIT University",
+        "graduationYear": 2018
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Digital Media Design",
+    "yearsOfExperience": 5,
+    "experienceLevel": "Mid Level",
+    "workExperience": [
+      {
+        "company": "Creative Agency",
+        "position": "UI/UX Designer",
+        "startDate": "2018-03",
+        "endDate": "2021-08",
+        "responsibilities": "User interface design, prototyping"
+      },
+      {
+        "company": "Design Studio",
+        "position": "Senior UX Designer",
+        "startDate": "2021-09",
+        "endDate": "present",
+        "responsibilities": "User research, design systems, client workshops"
+      }
+    ],
+    "skills": [
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "User Research",
+      "Prototyping",
+      "Wireframing"
+    ],
+    "preferredWorkingMode": "Remote",
+    "preferredLocation": "Melbourne, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_013",
+    "userId": null,
+    "fullName": "Ryan O'Connor",
+    "initials": "RO",
+    "headline": "Senior Network Engineer",
+    "contactInfo": {
+      "email": "r.oconnor@email.com",
+      "phone": "+61 434 567 891",
+      "address": "45 Eagle St, Brisbane QLD 4000"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of IT (Network Security)",
+        "institution": "Griffith University",
+        "graduationYear": 2017
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Network Security",
+    "yearsOfExperience": 6,
+    "experienceLevel": "Senior Level",
+    "workExperience": [
+      {
+        "company": "Network Services",
+        "position": "Network Engineer",
+        "startDate": "2017-06",
+        "endDate": "2020-12",
+        "responsibilities": "Network configuration, troubleshooting"
+      },
+      {
+        "company": "Infrastructure Solutions",
+        "position": "Senior Network Engineer",
+        "startDate": "2021-01",
+        "endDate": "present",
+        "responsibilities": "Network design, security implementation, team mentoring"
+      }
+    ],
+    "skills": [
+      "Cisco",
+      "Network Security",
+      "Firewall",
+      "VPN",
+      "Linux",
+      "TCP/IP"
+    ],
+    "preferredWorkingMode": "On-site",
+    "preferredLocation": "Brisbane, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_014",
+    "userId": null,
+    "fullName": "Jessica Nguyen",
+    "initials": "JN",
+    "headline": "Junior Security Consultant",
+    "contactInfo": {
+      "email": "j.nguyen@email.com",
+      "phone": "+61 445 678 902",
+      "address": "78 Macquarie St, Sydney NSW 2000"
+    },
+    "education": [
+      {
+        "degree": "Master of Cybersecurity",
+        "institution": "Macquarie University",
+        "graduationYear": 2021
+      }
+    ],
+    "educationLevel": "Master's Degree",
+    "educationRank": 4,
+    "major": "Cybersecurity",
+    "yearsOfExperience": 2,
+    "experienceLevel": "Mid Level",
+    "workExperience": [
+      {
+        "company": "Security Firm",
+        "position": "Junior Security Consultant",
+        "startDate": "2021-08",
+        "endDate": "present",
+        "responsibilities": "Security assessments, compliance auditing, incident response"
+      }
+    ],
+    "skills": [
+      "Ethical Hacking",
+      "CISSP",
+      "Risk Assessment",
+      "Compliance",
+      "Security Auditing"
+    ],
+    "preferredWorkingMode": "Hybrid",
+    "preferredLocation": "Sydney, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_015",
+    "userId": null,
+    "fullName": "Benjamin Wright",
+    "initials": "BW",
+    "headline": "Senior Game Developer",
+    "contactInfo": {
+      "email": "b.wright@email.com",
+      "phone": "+61 456 789 013",
+      "address": "12 Rundle Mall, Adelaide SA 5000"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Games Development",
+        "institution": "University of South Australia",
+        "graduationYear": 2015
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Games Development",
+    "yearsOfExperience": 8,
+    "experienceLevel": "Senior Level",
+    "workExperience": [
+      {
+        "company": "Indie Game Studio",
+        "position": "Game Developer",
+        "startDate": "2015-09",
+        "endDate": "2019-05",
+        "responsibilities": "Gameplay programming, Unity development"
+      },
+      {
+        "company": "AAA Game Company",
+        "position": "Senior Game Developer",
+        "startDate": "2019-06",
+        "endDate": "present",
+        "responsibilities": "Lead gameplay features, optimization, team collaboration"
+      }
+    ],
+    "skills": [
+      "Unity",
+      "C#",
+      "Unreal Engine",
+      "C++",
+      "Game Design",
+      "3D Mathematics"
+    ],
+    "preferredWorkingMode": "Remote",
+    "preferredLocation": "Adelaide, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_016",
+    "userId": null,
+    "fullName": "Charlotte Brown",
+    "initials": "CB",
+    "headline": "Systems Administrator",
+    "contactInfo": {
+      "email": "c.brown@email.com",
+      "phone": "+61 467 890 124",
+      "address": "90 Elizabeth St, Hobart TAS 7000"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Information Technology",
+        "institution": "University of Tasmania",
+        "graduationYear": 2019
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Information Technology",
+    "yearsOfExperience": 4,
+    "experienceLevel": "Mid Level",
+    "workExperience": [
+      {
+        "company": "IT Support Co",
+        "position": "Help Desk Technician",
+        "startDate": "2019-02",
+        "endDate": "2021-06",
+        "responsibilities": "Technical support, troubleshooting"
+      },
+      {
+        "company": "Managed Services",
+        "position": "Systems Administrator",
+        "startDate": "2021-07",
+        "endDate": "present",
+        "responsibilities": "Server management, user administration, backup systems"
+      }
+    ],
+    "skills": [
+      "Windows Server",
+      "Active Directory",
+      "PowerShell",
+      "Office 365",
+      "Virtualization"
+    ],
+    "preferredWorkingMode": "On-site",
+    "preferredLocation": "Hobart, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_017",
+    "userId": null,
+    "fullName": "Matthew Singh",
+    "initials": "MS",
+    "headline": "Senior Embedded Engineer",
+    "contactInfo": {
+      "email": "m.singh@email.com",
+      "phone": "+61 478 901 235",
+      "address": "56 King St, Newcastle NSW 2300"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Computer Engineering",
+        "institution": "University of Newcastle",
+        "graduationYear": 2016
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Computer Engineering",
+    "yearsOfExperience": 7,
+    "experienceLevel": "Senior Level",
+    "workExperience": [
+      {
+        "company": "Embedded Systems Co",
+        "position": "Embedded Software Engineer",
+        "startDate": "2016-07",
+        "endDate": "2020-11",
+        "responsibilities": "Firmware development, hardware integration"
+      },
+      {
+        "company": "IoT Solutions",
+        "position": "Senior Embedded Engineer",
+        "startDate": "2020-12",
+        "endDate": "present",
+        "responsibilities": "IoT device development, protocol implementation"
+      }
+    ],
+    "skills": [
+      "C",
+      "C++",
+      "Embedded Systems",
+      "IoT",
+      "RTOS",
+      "ARM"
+    ],
+    "preferredWorkingMode": "Hybrid",
+    "preferredLocation": "Newcastle, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_018",
+    "userId": null,
+    "fullName": "Amelia Thompson",
+    "initials": "AT",
+    "headline": "Data Analyst",
+    "contactInfo": {
+      "email": "a.thompson@email.com",
+      "phone": "+61 489 012 346",
+      "address": "123 Hindley St, Adelaide SA 5000"
+    },
+    "education": [
+      {
+        "degree": "Master of Data Analytics",
+        "institution": "University of Adelaide",
+        "graduationYear": 2020
+      }
+    ],
+    "educationLevel": "Master's Degree",
+    "educationRank": 4,
+    "major": "Data Analytics",
+    "yearsOfExperience": 3,
+    "experienceLevel": "Mid Level",
+    "workExperience": [
+      {
+        "company": "Consulting Firm",
+        "position": "Data Analyst",
+        "startDate": "2020-06",
+        "endDate": "present",
+        "responsibilities": "Business intelligence, data visualization, predictive modeling"
+      }
+    ],
+    "skills": [
+      "Python",
+      "R",
+      "Power BI",
+      "SQL",
+      "Statistics",
+      "Excel"
+    ],
+    "preferredWorkingMode": "Remote",
+    "preferredLocation": "Adelaide, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_019",
+    "userId": null,
+    "fullName": "Jack Williams",
+    "initials": "JW",
+    "headline": "Senior Developer",
+    "contactInfo": {
+      "email": "j.williams@email.com",
+      "phone": "+61 490 123 457",
+      "address": "45 Bourke St, Melbourne VIC 3000"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Software Development",
+        "institution": "Swinburne University",
+        "graduationYear": 2017
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Software Development",
+    "yearsOfExperience": 6,
+    "experienceLevel": "Senior Level",
+    "workExperience": [
+      {
+        "company": "Fintech Startup",
+        "position": "Full Stack Developer",
+        "startDate": "2017-08",
+        "endDate": "2021-03",
+        "responsibilities": "Web application development, payment integration"
+      },
+      {
+        "company": "Banking Solutions",
+        "position": "Senior Developer",
+        "startDate": "2021-04",
+        "endDate": "present",
+        "responsibilities": "Microservices architecture, API development, code reviews"
+      }
+    ],
+    "skills": [
+      "Node.js",
+      "React",
+      "MongoDB",
+      "Express",
+      "REST APIs",
+      "GraphQL"
+    ],
+    "preferredWorkingMode": "Hybrid",
+    "preferredLocation": "Melbourne, Australia",
+    "resumeFile": null,
+    "status": "active"
+  },
+  {
+    "id": "cand_020",
+    "userId": null,
+    "fullName": "Isabella Garcia",
+    "initials": "IG",
+    "headline": "Tech Lead",
+    "contactInfo": {
+      "email": "i.garcia@email.com",
+      "phone": "+61 401 234 568",
+      "address": "67 Ann St, Brisbane QLD 4000"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Computer Science",
+        "institution": "University of Queensland",
+        "graduationYear": 2018
+      }
+    ],
+    "educationLevel": "Bachelor's Degree",
+    "educationRank": 3,
+    "major": "Computer Science",
+    "yearsOfExperience": 5,
+    "experienceLevel": "Mid Level",
+    "workExperience": [
+      {
+        "company": "E-commerce Platform",
+        "position": "Software Developer",
+        "startDate": "2018-07",
+        "endDate": "2021-09",
+        "responsibilities": "Platform development, payment systems"
+      },
+      {
+        "company": "Retail Tech",
+        "position": "Tech Lead",
+        "startDate": "2021-10",
+        "endDate": "present",
+        "responsibilities": "Technical leadership, architecture decisions, sprint planning"
+      }
+    ],
+    "skills": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "AWS"
+    ],
+    "preferredWorkingMode": "On-site",
+    "preferredLocation": "Brisbane, Australia",
+    "resumeFile": null,
+    "status": "active"
+  }
+]

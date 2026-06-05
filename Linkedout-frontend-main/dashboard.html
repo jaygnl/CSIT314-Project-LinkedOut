@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LinkedOut | Dashboard</title>
+        <link rel="stylesheet" href="css/themes.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+            .page-shell {
+                width: 100%;
+                max-width: 1320px;
+                margin: 0 auto;
+                padding: 22px 20px 50px;
+                display: grid;
+                grid-template-columns: 240px 1fr 300px;
+                gap: 20px;
+                align-items: start;
+            }
+
+            .filter-sidebar {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .filter-card,
+            .recent-card {
+                padding: 18px;
+            }
+
+            .card-heading {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom: 16px;
+            }
+
+            .filter-section {
+                border-bottom: 1px solid var(--border);
+                padding-bottom: 14px;
+                margin-bottom: 14px;
+            }
+            .filter-section:last-of-type {
+                border-bottom: none;
+                margin-bottom: 0;
+            }
+            .filter-section h3 {
+                font-size: 12px;
+                font-weight: 700;
+                color: var(--text-muted);
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                margin-bottom: 10px;
+            }
+
+            .filter-option {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 6px 8px;
+                border-radius: 6px;
+                color: var(--text-muted);
+                font-size: 13px;
+                cursor: pointer;
+            }
+            .filter-option:hover {
+                background: var(--input-bg);
+            }
+            .filter-left {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            .filter-option input {
+                accent-color: var(--primary);
+                width: 15px;
+                height: 15px;
+                border: none;
+                outline: none;
+                box-shadow: none;
+                padding: 0;
+                background: transparent;
+            }
+            .filter-count {
+                font-size: 11px;
+                color: var(--text-soft);
+            }
+
+            .clear-filters-btn {
+                width: 100%;
+                margin-top: 6px;
+            }
+
+            .recent-card h3 {
+                font-size: 14px;
+                font-weight: 700;
+                margin-bottom: 12px;
+            }
+            .recent-list {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+            }
+            .recent-search-btn {
+                width: 100%;
+                border: none;
+                background: transparent;
+                color: var(--text-muted);
+                text-align: left;
+                padding: 7px 8px;
+                border-radius: 6px;
+                font-size: 13px;
+                cursor: pointer;
+            }
+            .recent-search-btn:hover {
+                background: var(--input-bg);
+                color: var(--text-main);
+            }
+
+            .feed {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .feed-header {
+                padding: 16px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .feed-header h1 {
+                font-size: 20px;
+                font-weight: 800;
+            }
+            .job-count {
+                color: var(--text-muted);
+                font-size: 13px;
+            }
+
+            .job-list {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            .job-card {
+                padding: 20px;
+                display: grid;
+                grid-template-columns: 58px 1fr;
+                gap: 16px;
+                transition: box-shadow 0.2s;
+            }
+            .job-card:hover {
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            }
+
+            .company-icon {
+                width: 58px;
+                height: 58px;
+                border-radius: 12px;
+                background: var(--input-bg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 28px;
+                flex-shrink: 0;
+            }
+
+            .job-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 6px;
+            }
+            .job-title {
+                font-size: 17px;
+                font-weight: 800;
+                margin-bottom: 3px;
+            }
+            .company-name {
+                font-size: 13px;
+                color: var(--text-muted);
+                font-weight: 600;
+            }
+
+            .save-btn {
+                width: 34px;
+                height: 34px;
+                border-radius: 8px;
+                border: none;
+                background: transparent;
+                color: var(--text-soft);
+                font-size: 20px;
+                flex-shrink: 0;
+            }
+            .save-btn:hover,
+            .save-btn.saved {
+                color: var(--primary);
+                background: var(--primary-light);
+            }
+
+            .job-meta {
+                display: flex;
+                gap: 14px;
+                flex-wrap: wrap;
+                color: var(--text-muted);
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+
+            .job-description {
+                color: var(--text-muted);
+                line-height: 1.55;
+                margin-bottom: 12px;
+                font-size: 13px;
+            }
+
+            .tag-row {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+                margin-bottom: 14px;
+            }
+
+            .job-actions {
+                display: flex;
+                gap: 10px;
+            }
+
+            .right-panel {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .profile-card {
+                padding: 20px;
+                text-align: center;
+            }
+            .profile-avatar {
+                width: 72px;
+                height: 72px;
+                border-radius: 50%;
+                background: var(--primary);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                font-weight: 800;
+                margin: 0 auto 12px;
+            }
+            .profile-card h3 {
+                font-size: 17px;
+                margin-bottom: 4px;
+            }
+            .profile-card p {
+                color: var(--text-muted);
+                font-size: 13px;
+            }
+
+            .stats-card {
+                padding: 18px;
+            }
+            .stats-card h3 {
+                font-size: 14px;
+                font-weight: 700;
+                margin-bottom: 12px;
+            }
+            .stat-row {
+                display: flex;
+                justify-content: space-between;
+                padding: 9px 0;
+                color: var(--text-muted);
+                border-bottom: 1px solid var(--border);
+                font-size: 13px;
+            }
+            .stat-row:last-child {
+                border-bottom: none;
+            }
+            .stat-row strong {
+                color: var(--primary);
+                font-weight: 700;
+            }
+
+            .profile-link-btn {
+                width: 100%;
+                margin-top: 14px;
+            }
+        </style>
+    </head>
+    <body class="light">
+        <header class="app-header">
+            <div class="header-inner">
+                <div style="display: flex; align-items: center; gap: 16px">
+                    <a id="logoLink" class="logo" href="dashboard.html"
+                        >LinkedOut</a
+                    >
+                    <form id="topSearchForm" class="header-search-wrap">
+                        <input
+                            id="jobSearchInput"
+                            type="search"
+                            placeholder="🔍 Search jobs..."
+                        />
+                    </form>
+                </div>
+                <nav class="header-nav" aria-label="Navigation">
+                    <button
+                        id="homeNavBtn"
+                        class="nav-btn active"
+                        type="button"
+                        aria-label="Home"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                            />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </button>
+                    <button
+                        id="jobsNavBtn"
+                        class="nav-btn"
+                        type="button"
+                        aria-label="Jobs"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <rect x="2" y="7" width="20" height="14" rx="2" />
+                            <path
+                                d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"
+                            />
+                        </svg>
+                    </button>
+                    <button
+                        id="notificationsNavBtn"
+                        class="nav-btn"
+                        type="button"
+                        aria-label="Notifications"
+                        style="position: relative"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
+                            />
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                        </svg>
+                        <span id="notificationBadge" class="notif-badge"></span>
+                    </button>
+                    <button
+                        id="themeToggleBtn"
+                        class="nav-btn"
+                        type="button"
+                        aria-label="Toggle theme"
+                    >
+                        🌙
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page-shell">
+            <aside class="filter-sidebar">
+                <section class="card filter-card">
+                    <div class="card-heading">☰ Filters</div>
+
+                    <div class="filter-section">
+                        <h3>Job Type</h3>
+                        <label class="filter-option"
+                            ><span class="filter-left"
+                                ><input
+                                    id="filterFullTime"
+                                    type="checkbox"
+                                    value="Full-time"
+                                />
+                                Full-time</span
+                            >
+                            <span class="filter-count">834</span></label
+                        >
+                        <label class="filter-option"
+                            ><span class="filter-left"
+                                ><input
+                                    id="filterPartTime"
+                                    type="checkbox"
+                                    value="Part-time"
+                                />
+                                Part-time</span
+                            >
+                            <span class="filter-count">156</span></label
+                        >
+                        <label class="filter-option"
+                            ><span class="filter-left"
+                                ><input
+                                    id="filterContract"
+                                    type="checkbox"
+                                    value="Contract"
+                                />
+                                Contract</span
+                            >
+                            <span class="filter-count">243</span></label
+                        >
+                        <label class="filter-option"
+                            ><span class="filter-left"
+                                ><input
+                                    id="filterInternship"
+                                    type="checkbox"
+                                    value="Internship"
+                                />
+                                Internship</span
+                            >
+                            <span class="filter-count">89</span></label
+                        >
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>Experience Level</h3>
+                        <label class="filter-option"
+                            ><span class="filter-left"
+                                ><input
+                                    id="filterEntry"
+                                    type="checkbox"
+                                    value="Entry Level"
+                                />
+                                Entry Level</span
+                            >
+                            <span class="filter-count">312</span></label
+                        >
+                        <label class="filter-option"
+                            ><span class="filter-left"
+                                ><input
+                                    id="filterMid"
+                                    type="checkbox"
+                                    value="Mid Level"
+                                />
+                                Mid Level</span
+                            >
+                            <span class="filter-count">567</span></label
+                        >
+                        <label class="filter-option"
+                            ><span class="filter-left"
+                                ><input
+                                    id="filterSenior"
+                                    type="checkbox"
+                                    value="Senior Level"
+                                />
+                                Senior Level</span
+                            >
+                            <span class="filter-count">298</span></label
+                        >
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>Work Mode</h3>
+                        <label class="filter-option"
+                            ><span class="filter-left"
+                                ><input
+                                    id="filterRemote"
+                                    type="checkbox"
+                                    value="Remote"
+                                />
+                                Remote</span
+                            >
+                            <span class="filter-count">678</span></label
+                        >
+                        <label class="filter-option"
+                            ><span class="filter-left"
+                                ><input
+                                    id="filterHybrid"
+                                    type="checkbox"
+                                    value="Hybrid"
+                                />
+                                Hybrid</span
+                            >
+                            <span class="filter-count">389</span></label
+                        >
+                        <label class="filter-option"
+                            ><span class="filter-left"
+                                ><input
+                                    id="filterOnSite"
+                                    type="checkbox"
+                                    value="On-site"
+                                />
+                                On-site</span
+                            >
+                            <span class="filter-count">180</span></label
+                        >
+                    </div>
+
+                    <button
+                        id="clearFiltersBtn"
+                        class="secondary-btn clear-filters-btn"
+                        type="button"
+                    >
+                        Clear Filters
+                    </button>
+                </section>
+
+                <section class="card recent-card">
+                    <h3>Recent Searches</h3>
+                    <ul class="recent-list">
+                        <li>
+                            <button
+                                class="recent-search-btn"
+                                data-search="Product Designer"
+                                type="button"
+                            >
+                                💼 Product Designer
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                class="recent-search-btn"
+                                data-search="Sydney"
+                                type="button"
+                            >
+                                📍 Sydney
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                class="recent-search-btn"
+                                data-search="$120k"
+                                type="button"
+                            >
+                                💵 $120k+
+                            </button>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+
+            <section class="feed">
+                <!-- Membership banner (free users only) -->
+                <div
+                    class="card"
+                    id="membershipBanner"
+                    style="
+                        display: none;
+                        padding: 14px 18px;
+                        border-left: 4px solid var(--primary);
+                    "
+                >
+                    <div
+                        style="
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 12px;
+                            flex-wrap: wrap;
+                        "
+                    >
+                        <div>
+                            <strong>Free plan</strong> — showing your Top 10
+                            recommended jobs.
+                            <span style="color: var(--text-muted)">
+                                Upgrade to see every matching role.</span
+                            >
+                        </div>
+                        <button
+                            class="primary-btn"
+                            id="upgradeBtn"
+                            type="button"
+                            style="min-height: 36px"
+                        >
+                            ★ Upgrade to Member
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card feed-header">
+                    <div>
+                        <h1 id="feedTitle">Recommended Jobs</h1>
+                        <p id="jobCountText" class="job-count">Loading…</p>
+                    </div>
+                    <div style="display: flex; gap: 8px; align-items: center">
+                        <button
+                            class="secondary-btn view-toggle-btn active"
+                            id="tabRecommended"
+                            type="button"
+                            style="min-height: 34px"
+                        >
+                            ★ Recommended
+                        </button>
+                        <button
+                            class="secondary-btn view-toggle-btn"
+                            id="tabAll"
+                            type="button"
+                            style="min-height: 34px"
+                        >
+                            All Jobs
+                        </button>
+                        <label
+                            style="
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+                                font-size: 12px;
+                                color: var(--text-muted);
+                                cursor: pointer;
+                            "
+                        >
+                            <input
+                                type="checkbox"
+                                id="fuzzyToggle"
+                                style="accent-color: var(--primary)"
+                            />
+                            Fuzzy
+                        </label>
+                    </div>
+                </div>
+
+                <div id="jobListContainer" class="job-list">
+                    <div
+                        class="card"
+                        style="
+                            padding: 24px;
+                            text-align: center;
+                            color: var(--text-muted);
+                        "
+                    >
+                        Loading jobs…
+                    </div>
+                </div>
+            </section>
+
+            <aside class="right-panel">
+                <section class="card profile-card">
+                    <div id="profileAvatar" class="profile-avatar">AJ</div>
+                    <h3 id="profileName">Arjun</h3>
+                    <p id="profileHeadline">Frontend Developer</p>
+                    <button
+                        class="secondary-btn profile-link-btn"
+                        id="viewProfileBtn"
+                        type="button"
+                    >
+                        View Profile
+                    </button>
+                </section>
+
+                <section class="card stats-card">
+                    <h3>Application Stats</h3>
+                    <div class="stat-row">
+                        <span>Applied</span>
+                        <strong id="appliedCount">12</strong>
+                    </div>
+                    <div class="stat-row">
+                        <span>Saved</span> <strong id="savedCount">8</strong>
+                    </div>
+                    <div class="stat-row">
+                        <span>Interviews</span>
+                        <strong id="interviewCount">3</strong>
+                    </div>
+                    <!-- BACKEND TODO: fetch from /api/applicant/stats -->
+                </section>
+            </aside>
+        </main>
+
+        <div id="toast"></div>
+
+        <script src="js/theme.js"></script>
+        <script src="js/toast.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/dashboard.js"></script>
+        <script src="js/notifications.js"></script>
+    </body>
+</html>

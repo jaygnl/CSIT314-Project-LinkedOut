@@ -1,0 +1,80 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    backdrop-filter: blur(4px);
+}
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-box {
+    width: 480px;
+    background: var(--card-bg);
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 26px;
+    cursor: pointer;
+    line-height: 1;
+}
+.modal-close-btn:hover {
+    color: var(--text-main);
+}
+
+.modal-box h2 {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.modal-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+#applyForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#applyForm input,
+#applyForm textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--input-bg);
+    color: var(--text-main);
+    font-size: 13px;
+}
+#applyForm input:focus,
+#applyForm textarea:focus {
+    border-color: var(--primary);
+}
+
+#coverLetterInput {
+    min-height: 110px;
+    resize: vertical;
+}
+#submitApplicationBtn {
+    margin-top: 6px;
+}

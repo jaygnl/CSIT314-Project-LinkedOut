@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkedOut | My Job Postings</title>
+  <link rel="stylesheet" href="css/themes.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .postings-area { flex: 1; display: flex; flex-direction: column; gap: 18px; }
+    .postings-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .section-heading { font-size: 20px; font-weight: 800; }
+    .section-sub     { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+
+    .posting-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    .posting-card {
+      padding: 18px; cursor: pointer;
+      transition: box-shadow 0.2s, transform 0.1s;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .posting-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.10); transform: translateY(-1px); }
+
+    .pc-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+    .pc-title { font-size: 16px; font-weight: 800; }
+    .pc-company { font-size: 12px; color: var(--text-muted); font-weight: 600; }
+
+    .pc-status { font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 999px; white-space: nowrap; text-transform: capitalize; }
+    .status-open   { background: #d1fae5; color: #065f46; }
+    .status-draft  { background: var(--input-bg); color: var(--text-soft); }
+    .status-closed { background: var(--red-light); color: var(--red); }
+
+    .pc-meta { display: flex; gap: 12px; flex-wrap: wrap; color: var(--text-muted); font-size: 12px; }
+    .pc-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .pc-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 4px; padding-top: 10px; border-top: 1px solid var(--border); }
+    .pc-applicants { font-size: 13px; font-weight: 700; color: var(--primary); }
+    .pc-manage { font-size: 12px; font-weight: 700; color: var(--primary); }
+
+    .new-job-btn { padding: 10px 18px; }
+    .empty-postings { padding: 50px 20px; text-align: center; color: var(--text-muted); }
+    .empty-postings .icon { font-size: 44px; margin-bottom: 12px; }
+  </style>
+</head>
+<body class="light">
+
+  <header class="app-header">
+    <div class="header-inner">
+      <a id="headerLogo" class="logo" href="employer-dashboard.html">LinkedOut</a>
+      <nav class="header-nav" aria-label="Navigation">
+        <button class="nav-btn active" id="navHome" type="button" aria-label="Home">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </button>
+        <button class="nav-btn" id="navNotifications" type="button" aria-label="Notifications" style="position:relative;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="notif-badge"></span>
+        </button>
+        <button id="themeToggleBtn" class="nav-btn" type="button" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-layout">
+
+    <aside class="app-sidebar">
+      <div class="sidebar-label">Employer Dashboard</div>
+      <ul class="sidebar-nav">
+        <li><a href="employer-dashboard.html" id="sidebarPostings" class="active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>My Job Postings</a></li>
+        <li><a href="employer-candidates.html" id="sidebarCandidates">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Candidates</a></li>
+        <li><a href="employer-settings.html" id="sidebarSettings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Settings</a></li>
+        <hr class="sidebar-divider" />
+        <li><button id="sidebarLogoutBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Log Out</button></li>
+      </ul>
+    </aside>
+
+    <main class="page-main">
+      <div class="postings-area">
+        <div class="postings-head">
+          <div>
+            <h1 class="section-heading">My Job Postings</h1>
+            <p class="section-sub" id="postingsSub">An overview of the roles you've published</p>
+          </div>
+          <button class="primary-btn new-job-btn" id="postNewJobBtn" type="button">+ Post New Job</button>
+        </div>
+
+        <div id="postingGrid" class="posting-grid">
+          <div class="card" style="padding:24px;text-align:center;color:var(--text-muted);grid-column:1/-1;">Loading your postings…</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/toast.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/employer-dashboard.js"></script>
+  <script src="js/notifications.js"></script>
+</body>
+</html>

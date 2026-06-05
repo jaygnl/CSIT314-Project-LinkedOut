@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LinkedOut | Job Details</title>
+        <link rel="stylesheet" href="css/themes.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/modal.css" />
+        <style>
+            .container {
+                width: 100%;
+                max-width: 860px;
+                margin: 30px auto;
+                padding: 0 20px 60px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .job-header-card {
+                padding: 28px;
+            }
+
+            .job-top-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 20px;
+            }
+            .job-left {
+                display: flex;
+                gap: 18px;
+            }
+
+            .company-icon {
+                width: 80px;
+                height: 80px;
+                border-radius: 16px;
+                background: var(--input-bg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 38px;
+                flex-shrink: 0;
+            }
+
+            .job-title {
+                font-size: 28px;
+                font-weight: 800;
+                margin-bottom: 6px;
+            }
+            .job-company {
+                color: var(--text-muted);
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+            .job-meta {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 14px;
+                color: var(--text-muted);
+                font-size: 14px;
+            }
+
+            .button-row {
+                display: flex;
+                gap: 12px;
+                margin-top: 20px;
+                flex-wrap: wrap;
+            }
+
+            .section-card {
+                padding: 26px;
+            }
+            .section-title {
+                font-size: 20px;
+                font-weight: 800;
+                margin-bottom: 16px;
+            }
+
+            .job-description {
+                line-height: 1.8;
+                color: var(--text-muted);
+                font-size: 15px;
+            }
+
+            .responsibility-list {
+                padding-left: 20px;
+                color: var(--text-muted);
+                line-height: 2;
+                font-size: 14px;
+                list-style: disc;
+            }
+
+            .tag-row {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+                margin-top: 16px;
+            }
+
+            .back-nav {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 16px 0 0;
+            }
+        </style>
+    </head>
+    <body class="light">
+        <header class="app-header">
+            <div class="header-inner">
+                <a id="logoLink" class="logo" href="dashboard.html"
+                    >LinkedOut</a
+                >
+                <div class="header-nav" style="margin-left: auto; gap: 10px">
+                    <button
+                        id="backToDashboardBtn"
+                        class="secondary-btn"
+                        type="button"
+                    >
+                        ← Dashboard
+                    </button>
+                    <button
+                        id="themeToggleBtn"
+                        class="nav-btn"
+                        type="button"
+                        aria-label="Toggle theme"
+                    >
+                        🌙
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <section class="card job-header-card">
+                <div class="job-top-row">
+                    <div class="job-left">
+                        <div id="jobIcon" class="company-icon">💼</div>
+                        <div>
+                            <h1 id="jobTitle" class="job-title">Loading...</h1>
+                            <p id="jobCompany" class="job-company"></p>
+                            <div class="job-meta">
+                                <span id="jobLocation"></span>
+                                <span id="jobType"></span>
+                                <span id="jobSalary"></span>
+                                <span id="jobPosted"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        id="saveJobBtn"
+                        class="icon-btn"
+                        type="button"
+                        aria-label="Save job"
+                    >
+                        ♡
+                    </button>
+                </div>
+
+                <div id="jobTags" class="tag-row"></div>
+
+                <div class="button-row">
+                    <button id="applyNowBtn" class="primary-btn" type="button">
+                        Apply Now
+                    </button>
+                    <button
+                        id="copyJobLinkBtn"
+                        class="secondary-btn"
+                        type="button"
+                    >
+                        Copy Link
+                    </button>
+                </div>
+            </section>
+
+            <section class="card section-card">
+                <h2 class="section-title">Job Description</h2>
+                <p id="jobDescription" class="job-description"></p>
+            </section>
+
+            <section class="card section-card">
+                <h2 class="section-title">Responsibilities</h2>
+                <ul id="jobResponsibilities" class="responsibility-list"></ul>
+            </section>
+        </div>
+
+        <div id="applyModal" class="modal-overlay">
+            <div class="modal-box">
+                <button
+                    id="closeApplyModalBtn"
+                    class="modal-close-btn"
+                    type="button"
+                >
+                    ×
+                </button>
+                <h2>Apply for this job</h2>
+                <p class="modal-subtitle">
+                    Fill in your details below to submit your application.
+                </p>
+                <form id="applyForm">
+                    <input
+                        id="applicantNameInput"
+                        type="text"
+                        placeholder="Full name"
+                        required
+                    />
+                    <input
+                        id="applicantEmailInput"
+                        type="email"
+                        placeholder="Email address"
+                        required
+                    />
+                    <input
+                        id="resumeInput"
+                        type="file"
+                        accept=".pdf,.doc,.docx"
+                    />
+                    <textarea
+                        id="coverLetterInput"
+                        placeholder="Short cover letter (optional)"
+                    ></textarea>
+                    <button
+                        id="submitApplicationBtn"
+                        class="primary-btn"
+                        type="submit"
+                    >
+                        Submit Application
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div id="toast"></div>
+
+        <script src="js/theme.js"></script>
+        <script src="js/toast.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/job-details.js"></script>
+        <script src="js/modal.js"></script>
+    </body>
+</html>

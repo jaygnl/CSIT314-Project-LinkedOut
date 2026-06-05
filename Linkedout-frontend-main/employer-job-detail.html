@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LinkedOut | Job Posting</title>
+        <link rel="stylesheet" href="css/themes.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+            .detail-area {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                max-width: 880px;
+            }
+            .back-link {
+                font-size: 13px;
+                color: var(--text-muted);
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 0;
+            }
+            .back-link:hover {
+                color: var(--primary);
+            }
+
+            .jd-card {
+                padding: 26px;
+            }
+            .jd-head {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 14px;
+                margin-bottom: 8px;
+            }
+            .jd-title {
+                font-size: 24px;
+                font-weight: 800;
+            }
+            .jd-company {
+                font-size: 14px;
+                color: var(--text-muted);
+                font-weight: 600;
+                margin-top: 2px;
+            }
+            .jd-status {
+                font-size: 11px;
+                font-weight: 700;
+                padding: 4px 12px;
+                border-radius: 999px;
+                text-transform: capitalize;
+            }
+            .status-open {
+                background: #d1fae5;
+                color: #065f46;
+            }
+            .status-draft {
+                background: var(--input-bg);
+                color: var(--text-soft);
+            }
+            .status-closed {
+                background: var(--red-light);
+                color: var(--red);
+            }
+
+            .jd-meta {
+                display: flex;
+                gap: 16px;
+                flex-wrap: wrap;
+                color: var(--text-muted);
+                font-size: 13px;
+                margin: 14px 0;
+            }
+            .jd-section-title {
+                font-size: 12px;
+                font-weight: 800;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                color: var(--text-soft);
+                margin: 18px 0 8px;
+            }
+            .jd-desc {
+                font-size: 14px;
+                line-height: 1.6;
+                color: var(--text-main);
+            }
+            .jd-tags {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+            .jd-actions {
+                display: flex;
+                gap: 10px;
+                margin-top: 22px;
+                padding-top: 18px;
+                border-top: 1px solid var(--border);
+            }
+
+            .edit-form {
+                display: none;
+                flex-direction: column;
+                gap: 14px;
+            }
+            .edit-form.active {
+                display: flex;
+            }
+            .view-mode.hidden {
+                display: none;
+            }
+            .form-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+            }
+
+            .people-card {
+                padding: 22px;
+            }
+            .people-head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 4px;
+            }
+            .people-title {
+                font-size: 17px;
+                font-weight: 800;
+            }
+            .people-sub {
+                font-size: 12px;
+                color: var(--text-muted);
+                margin-bottom: 14px;
+            }
+            .people-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+
+            .person {
+                padding: 14px;
+                border: 1px solid var(--border);
+                border-radius: 10px;
+            }
+            .person-head {
+                display: flex;
+                gap: 10px;
+                align-items: flex-start;
+                margin-bottom: 10px;
+            }
+            .person-avatar {
+                width: 42px;
+                height: 42px;
+                border-radius: 9px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 800;
+                font-size: 16px;
+                color: #fff;
+                flex-shrink: 0;
+            }
+            .person-name {
+                font-weight: 700;
+                font-size: 14px;
+            }
+            .person-role {
+                font-size: 12px;
+                color: var(--text-muted);
+            }
+            .person-loc {
+                font-size: 11px;
+                color: var(--text-soft);
+                margin-top: 2px;
+            }
+            .person-skills {
+                display: flex;
+                gap: 5px;
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+            }
+            .person-btns {
+                display: flex;
+                gap: 8px;
+            }
+            .match-badge {
+                font-size: 10px;
+                font-weight: 700;
+                padding: 2px 8px;
+                border-radius: 10px;
+                background: var(--primary-light);
+                color: var(--primary);
+            }
+            .app-status {
+                font-size: 10px;
+                font-weight: 700;
+                padding: 3px 9px;
+                border-radius: 10px;
+                display: inline-block;
+                margin-bottom: 8px;
+            }
+            .as-pending {
+                background: #fef3c7;
+                color: #92400e;
+            }
+            .as-accepted {
+                background: #d1fae5;
+                color: #065f46;
+            }
+            .as-rejected {
+                background: var(--red-light);
+                color: var(--red);
+            }
+
+            .btn-accept {
+                background: var(--primary);
+                color: #fff;
+                flex: 1;
+                padding: 8px;
+                border-radius: 6px;
+                font-size: 12px;
+                font-weight: 700;
+                border: none;
+                cursor: pointer;
+            }
+            .btn-accept:hover {
+                background: var(--primary-hover);
+            }
+            .btn-accept:disabled {
+                opacity: 0.6;
+                cursor: default;
+            }
+            .btn-reject {
+                background: var(--red);
+                color: #fff;
+                flex: 1;
+                padding: 8px;
+                border-radius: 6px;
+                font-size: 12px;
+                font-weight: 700;
+                border: none;
+                cursor: pointer;
+            }
+            .btn-reject:hover {
+                background: var(--red-hover);
+            }
+            .btn-reject:disabled {
+                opacity: 0.6;
+                cursor: default;
+            }
+
+            .membership-note {
+                padding: 12px 16px;
+                border-left: 4px solid var(--primary);
+                margin-bottom: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+    <body class="light">
+        <header class="app-header">
+            <div class="header-inner">
+                <a id="headerLogo" class="logo" href="employer-dashboard.html"
+                    >LinkedOut</a
+                >
+                <nav class="header-nav" aria-label="Navigation">
+                    <button
+                        class="nav-btn"
+                        id="navHome"
+                        type="button"
+                        aria-label="Home"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                            />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </button>
+                    <button
+                        class="nav-btn"
+                        id="navNotifications"
+                        type="button"
+                        aria-label="Notifications"
+                        style="position: relative"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
+                            />
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                        </svg>
+                        <span class="notif-badge"></span>
+                    </button>
+                    <button
+                        id="themeToggleBtn"
+                        class="nav-btn"
+                        type="button"
+                        aria-label="Toggle theme"
+                    >
+                        🌙
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <div class="page-layout">
+            <aside class="app-sidebar">
+                <div class="sidebar-label">Employer Dashboard</div>
+                <ul class="sidebar-nav">
+                    <li>
+                        <a
+                            href="employer-dashboard.html"
+                            id="sidebarPostings"
+                            class="active"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <rect
+                                    x="3"
+                                    y="3"
+                                    width="18"
+                                    height="18"
+                                    rx="2"
+                                />
+                                <path d="M3 9h18M9 21V9" /></svg
+                            >My Job Postings</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="employer-candidates.html"
+                            id="sidebarCandidates"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path
+                                    d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                                />
+                                <circle cx="12" cy="7" r="4" /></svg
+                            >Candidates</a
+                        >
+                    </li>
+                    <li>
+                        <a href="employer-settings.html" id="sidebarSettings">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+                                /></svg
+                            >Settings</a
+                        >
+                    </li>
+                    <hr class="sidebar-divider" />
+                    <li>
+                        <button id="sidebarLogoutBtn">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path
+                                    d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"
+                                />
+                                <polyline points="16 17 21 12 16 7" />
+                                <line x1="21" y1="12" x2="9" y2="12" /></svg
+                            >Log Out
+                        </button>
+                    </li>
+                </ul>
+            </aside>
+
+            <main class="page-main">
+                <div class="detail-area">
+                    <button class="back-link" id="backLink" type="button">
+                        ← Back to My Job Postings
+                    </button>
+
+                    <!-- Job posting (view + edit) -->
+                    <section class="card jd-card">
+                        <!-- VIEW MODE -->
+                        <div class="view-mode" id="jdView">
+                            <div class="jd-head">
+                                <div>
+                                    <h1 class="jd-title" id="jdTitle">
+                                        Loading…
+                                    </h1>
+                                    <p class="jd-company" id="jdCompany"></p>
+                                </div>
+                                <span class="jd-status" id="jdStatus"></span>
+                            </div>
+                            <div class="jd-meta" id="jdMeta"></div>
+
+                            <div class="jd-section-title">Job Description</div>
+                            <p class="jd-desc" id="jdDescription"></p>
+
+                            <div class="jd-section-title">Required Skills</div>
+                            <div class="jd-tags" id="jdSkills"></div>
+
+                            <div class="jd-section-title">Requirements</div>
+                            <div class="jd-meta" id="jdRequirements"></div>
+
+                            <div class="jd-actions">
+                                <button
+                                    class="primary-btn"
+                                    id="editJobBtn"
+                                    type="button"
+                                >
+                                    ✎ Edit Posting
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- EDIT MODE -->
+                        <form class="edit-form" id="jdEditForm">
+                            <h2 style="font-size: 18px; font-weight: 800">
+                                Edit Job Posting
+                            </h2>
+                            <div class="form-group">
+                                <label for="eTitle">Job Title</label>
+                                <input
+                                    class="form-control"
+                                    id="eTitle"
+                                    type="text"
+                                />
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="eCompany">Company Name</label>
+                                    <input
+                                        class="form-control"
+                                        id="eCompany"
+                                        type="text"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="eLocation">Job Location</label>
+                                    <input
+                                        class="form-control"
+                                        id="eLocation"
+                                        type="text"
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="eDescription"
+                                    >Job Description</label
+                                >
+                                <textarea
+                                    class="form-control"
+                                    id="eDescription"
+                                ></textarea>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="eEducation"
+                                        >Required Education</label
+                                    >
+                                    <select
+                                        class="form-control"
+                                        id="eEducation"
+                                    >
+                                        <option>No requirement</option>
+                                        <option>High School</option>
+                                        <option>Associate Degree</option>
+                                        <option>Bachelor's Degree</option>
+                                        <option>Master's Degree</option>
+                                        <option>PhD</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="eExperience"
+                                        >Years of Experience</label
+                                    >
+                                    <input
+                                        class="form-control"
+                                        id="eExperience"
+                                        type="number"
+                                        min="0"
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="eSkills"
+                                    >Required Skills (comma-separated)</label
+                                >
+                                <input
+                                    class="form-control"
+                                    id="eSkills"
+                                    type="text"
+                                />
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="eWorkMode">Work Mode</label>
+                                    <select class="form-control" id="eWorkMode">
+                                        <option>Remote</option>
+                                        <option>Hybrid</option>
+                                        <option>On-site</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="eJobType">Job Type</label>
+                                    <select class="form-control" id="eJobType">
+                                        <option>Full-time</option>
+                                        <option>Part-time</option>
+                                        <option>Contract</option>
+                                        <option>Internship</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="eStatus">Status</label>
+                                    <select class="form-control" id="eStatus">
+                                        <option value="open">Open</option>
+                                        <option value="draft">Draft</option>
+                                        <option value="closed">Closed</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="eSalaryMin"
+                                        >Salary range (AUD)</label
+                                    >
+                                    <div style="display: flex; gap: 8px">
+                                        <input
+                                            class="form-control"
+                                            id="eSalaryMin"
+                                            type="number"
+                                            placeholder="min"
+                                        />
+                                        <input
+                                            class="form-control"
+                                            id="eSalaryMax"
+                                            type="number"
+                                            placeholder="max"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 10px">
+                                <button
+                                    class="primary-btn"
+                                    id="saveJobBtn"
+                                    type="button"
+                                >
+                                    Save Changes
+                                </button>
+                                <button
+                                    class="secondary-btn"
+                                    id="cancelEditBtn"
+                                    type="button"
+                                >
+                                    Cancel
+                                </button>
+                            </div>
+                        </form>
+                    </section>
+
+                    <!-- Applicants -->
+                    <section class="card people-card">
+                        <div class="people-head">
+                            <div class="people-title">Applicants</div>
+                        </div>
+                        <p class="people-sub" id="applicantsSub">
+                            People who applied to this posting
+                        </p>
+                        <div class="people-grid" id="applicantsGrid">
+                            <div
+                                style="
+                                    color: var(--text-muted);
+                                    font-size: 13px;
+                                "
+                            >
+                                Loading…
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Recommended candidates to shortlist -->
+                    <section class="card people-card">
+                        <div class="people-head">
+                            <div class="people-title">
+                                Other candidates to shortlist
+                            </div>
+                        </div>
+                        <p class="people-sub" id="recSub">
+                            Recommended matches who haven't applied yet
+                        </p>
+                        <div
+                            class="card membership-note"
+                            id="membershipNote"
+                            style="display: none"
+                        >
+                            <div>
+                                <strong>Free plan</strong> — showing your Top 10
+                                matches.
+                                <span style="color: var(--text-muted)"
+                                    >Upgrade for unlimited.</span
+                                >
+                            </div>
+                            <button
+                                class="btn-accept"
+                                id="upgradeBtn"
+                                type="button"
+                                style="flex: 0 0 auto; padding: 8px 14px"
+                            >
+                                ★ Upgrade
+                            </button>
+                        </div>
+                        <div class="people-grid" id="recGrid">
+                            <div
+                                style="
+                                    color: var(--text-muted);
+                                    font-size: 13px;
+                                "
+                            >
+                                Loading…
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <div id="toast"></div>
+
+        <script src="js/theme.js"></script>
+        <script src="js/toast.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/employer-job-detail.js"></script>
+        <script src="js/notifications.js"></script>
+    </body>
+</html>
