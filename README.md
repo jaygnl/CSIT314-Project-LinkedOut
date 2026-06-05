@@ -3,7 +3,7 @@
 ## Quick start
 
 ```bash
-npm install
+npm install             # if fails, try node server.js anyway
 node server.js          # http://localhost:3000  (redirects to the login page)
 ```
 
